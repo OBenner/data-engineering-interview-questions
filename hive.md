@@ -233,4 +233,364 @@ What is STREAMTABLE in Hive?
 In Hive, we can optimize a query by using STREAMTABLE hint. We can specify it in SELECT query with JOIN. During the map/reduce stage of JOIN, a table data can be streamed by using this hint.
 E.g. SELECT	/*+ STREAMTABLE(table1)	*/ table1.val, table2.val FROM table1	JOIN table2	ON (table1.key = table2.key1)
 In above query we are using table1 as a stream. If we do not use STREAMTABLE hint then Hive will stream the right most table in the JOIN query.
- 
+
+
+
+
+Question 1. What Are The Different Types Of Tables Available In Hive?
+
+Answer :
+
+There are two types. Managed table and external table. In managed table both the data an schema in under control of hive but in external table only the schema is under control of Hive.
+
+Question 2. Is Hive Suitable To Be Used For Oltp Systems? Why?
+
+Answer :
+
+No Hive does not provide insert and update at row level. So it is not suitable for OLTP system.
+
+Apache Tapestry Interview Questions
+Question 3. Can A Table Be Renamed In Hive?
+
+Answer :
+
+Alter Table table_name RENAME TO new_name
+
+Question 4. Can We Change The Data Type Of A Column In A Hive Table?
+
+Answer :
+
+Using REPLACE column option
+
+ALTER TABLE table_name REPLACE COLUMNS ……
+
+Apache Tapestry Tutorial
+Question 5. What Is A Metastore In Hive?
+
+Answer :
+
+It is a relational database storing the metadata of hive tables, partitions, Hive databases etc
+
+Apache Cassandra Interview Questions
+Question 6. What Is The Need For Custom Serde?
+
+Answer :
+
+Depending on the nature of data the user has, the inbuilt SerDe may not satisfy the format of the data. SO users need to write their own java code to satisfy their data format requirements.
+
+Question 7. Why Do We Need Hive?
+
+Answer :
+
+Hive is a tool in Hadoop ecosystem which provides an interface to organize and query data in a databse like fashion and write SQL like queries. It is suitable for accessing and analyzing data in Hadoop using SQL syntax.
+
+Apache Cassandra Tutorial Apache Spark Interview Questions
+Question 8. What Is The Default Location Where Hive Stores Table Data?
+
+Answer :
+
+hdfs://namenode_server/user/hive/warehouse
+
+Question 9. What Are The Three Different Modes In Which Hive Can Be Run?
+
+Answer :
+
+Local mode
+Distributed mode
+Pseudodistributed mode
+Apache Solr Interview Questions
+Question 10. Is There A Date Data Type In Hive?
+
+Answer :
+
+Yes. The TIMESTAMP data types stores date in java.sql.timestamp format
+
+Apache Solr Tutorial
+Question 11. What Are Collection Data Types In Hive?
+
+Answer :
+
+There are three collection data types in Hive.
+
+ARRAY
+MAP
+STRUCT
+Apache Storm Interview Questions
+Question 12. Can We Run Unix Shell Commands From Hive? Give Example?
+
+Answer :
+
+Yes, using the ! mark just before the command.
+
+For example !pwd at hive prompt will list the current directory.
+
+Apache Tapestry Interview Questions
+Question 13. What Is A Hive Variable? What For We Use It?
+
+Answer :
+
+The hive variable is variable created in the Hive environment that can be referenced by Hive scripts. It is used to pass some values to the hive queries when the query starts executing.
+
+Apache Storm Tutorial
+Question 14. Can Hive Queries Be Executed From Script Files? How?
+
+Answer :
+
+Using the source command.
+
+Example: Hive> source /path/to/file/file_with_query.hql
+
+Question 15. What Is The Importance Of .hiverc File?
+
+Answer :
+
+It is a file containing list of commands needs to run when the hive CLI starts. For example setting the strict mode to be true etc.
+
+Apache Pig Interview Questions
+Question 16. What Are The Default Record And Field Delimiter Used For Hive Text Files?
+
+Answer :
+
+The default record delimiter is − n
+
+And the filed delimiters are − 01,02,03
+
+Apache Hive Tutorial
+Question 17. What Do You Mean By Schema On Read?
+
+Answer :
+
+The schema is validated with the data when reading the data and not enforced when writing data.
+
+Apache Flume Interview Questions
+Question 18. How Do You List All Databases Whose Name Starts With P?
+
+Answer :
+
+SHOW DATABASES LIKE ‘p.*’
+
+Apache Cassandra Interview Questions
+Question 19. What Does The “use” Command In Hive Do?
+
+Answer :
+
+With the use command you fix the database on which all the subsequent hive queries will run.
+
+Apache Pig Tutorial
+Question 20. How Can You Delete The Dbproperty In Hive?
+
+Answer :
+
+There is no way you can delete the DBPROPERTY.
+
+Apache Kafka Interview Questions
+Question 21. What Is The Significance Of The Line Set Hive.mapred.mode = Strict;
+
+Answer :
+
+It sets the mapreduce jobs to strict mode.By which the queries on partitioned tables can not run without a WHERE clause. This prevents very large job running for long time.
+
+Question 22. How Do You Check If A Particular Partition Exists?
+
+Answer :
+
+This can be done with following query
+
+SHOW PARTITIONS table_name PARTITION(partitioned_column=’partition_value’)
+
+Apache Flume Tutorial
+Question 23. Which Java Class Handles The Input Record Encoding Into Files Which Store The Tables In Hive?
+
+Answer :
+
+org.apache.hadoop.mapred.TextInputFormat
+
+Apache Ant Interview Questions
+Question 24. Which Java Class Handles The Output Record Encoding Into Files Which Result From Hive Queries?
+
+Answer :
+
+org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+
+Apache Spark Interview Questions
+Question 25. What Is The Significance Of ‘if Exists” Clause While Dropping A Table?
+
+Answer :
+
+When we issue the command DROP TABLE IF EXISTS table_name
+
+Hive throws an error if the table being dropped does not exist in the first place.
+
+Apache Kafka Tutorial
+Question 26. When You Point A Partition Of A Hive Table To A New Directory, What Happens To The Data?
+
+Answer :
+
+The data stays in the old location. It has to be moved manually.
+
+Apache Camel Interview Questions
+Question 27. Write A Query To Insert A New Column(new_col Int) Into A Hiev Table (htab) At A Position Before An Existing Column (x_col)
+
+Answer :
+
+ALTER TABLE table_name
+CHANGE COLUMN new_col  INT
+BEFORE x_col
+
+Apache Solr Interview Questions
+Question 28. Does The Archiving Of Hive Tables Give Any Space Saving In Hdfs?
+
+Answer :
+
+No. It only reduces the number of files which becomes easier for namenode to manage.
+
+Apache Ant Tutorial
+Question 29. How Can You Stop A Partition Form Being Queried?
+
+Answer :
+
+By using the ENABLE OFFLINE clause with ALTER TABLE atatement.
+
+Apache Tajo Interview Questions
+Question 30. While Loading Data Into A Hive Table Using The Load Data Clause, How Do You Specify It Is A Hdfs File And Not A Local File ?
+
+Answer :
+
+By Omitting the LOCAL CLAUSE in the LOAD DATA statement.
+
+Question 31. If You Omit The Overwrite Clause While Creating A Hive Table,what Happens To File Which Are New And Files Which Already Exist?
+
+Answer :
+
+The new incoming files are just added to the target directory and the existing files are simply overwritten. Other files whose name does not match any of the incoming files will continue to exist.
+
+If you add the OVERWRITE clause then all the existing data in the directory will be deleted before new data is written.
+
+Apache Tajo Tutorial
+Question 32. What Does The Following Query Do? Insert Overwrite Table Employees Partition (country, State) Select ..., Se.cnty, Se.st From Staged_employees Se;
+
+Answer :
+
+It creates partition on table employees with partition values coming from the columns in the select clause. It is called Dynamic partition insert.
+
+Apache Impala Interview Questions
+Question 33. What Is A Table Generating Function On Hive?
+
+Answer :
+
+A table generating function is a function which takes a single column as argument and expands it to multiple column or rows. Example exploe()
+
+Apache Storm Interview Questions
+Question 34. How Can Hive Avoid Mapreduce?
+
+Answer :
+
+If we set the property hive.exec.mode.local.auto to true then hive will avoid mapreduce to fetch query results.
+
+Question 35. What Is The Difference Between Like And Rlike Operators In Hive?
+
+Answer :
+
+The LIKE operator behaves the same way as the regular SQL operators used in select queries.
+
+Example − street_name like ‘%Chi’
+
+But the RLIKE operator uses more advance regular expressions which are available in java
+
+Example − street_name RLIKE ‘.*(Chi|Oho).*’ which will select any word which has either chi or oho in it.
+
+Question 36. Is It Possible To Create Cartesian Join Between 2 Tables, Using Hive?
+
+Answer :
+
+No. As this kind of Join can not be implemented in mapreduce
+
+Apache Pig Interview Questions
+Question 37. As Part Of Optimizing The Queries In Hive, What Should Be The Order Of Table Size In A Join Query?
+
+Answer :
+
+In a join query the smallest table to be taken in the first position and largest table should be taken in the last position.
+
+Question 38. What Is The Usefulness Of The Distributed By Clause In Hive?
+
+Answer :
+
+It controls how the map output is reduced among the reducers. It is useful in case of streaming data.
+
+Question 39. How Will You Convert The String ’51.2’ To A Float Value In The Price Column?
+
+Answer :
+
+Select cast(price as FLOAT)
+
+Question 40. What Will Be The Result When You Do Cast(‘abc’ As Int)?
+
+Answer :
+
+Hive will return NULL
+
+Apache Flume Interview Questions
+Question 41. Can The Name Of A View Be Same As The Name Of A Hive Table?
+
+Answer :
+
+No. The name of a view must be unique when compared to all other tables and views present in the same database.
+
+Question 42. Can We Load Data Into A View?
+
+Answer :
+
+No. A view can not be the target of a INSERT or LOAD statement.
+
+Apache Kafka Interview Questions
+Question 43. What Types Of Costs Are Associated In Creating Index On Hive Tables?
+
+Answer :
+
+Indexes occupies space and there is a processing cost in arranging the values of the column on which index is cerated.
+
+Question 44. Give The Command To See The Indexes On A Table?
+
+Answer :
+
+SHOW INDEX ON table_name
+
+This will list all the indexes created on any of the columns in the table table_name.
+
+Question 45. What Is Bucketing ?
+
+Answer :
+
+The values in a column are hashed into a number of buckets which is defined by user. It is a way to avoid too many partitions or nested partitions while ensuring optimizes query output.
+
+Question 46. What Does /*streamtable(table_name)*/ Do?
+
+Answer :
+
+It is query hint to stream a table into memory before running the query. It is a query optimization Technique.
+
+Question 47. Can A Partition Be Archived? What Are The Advantages And Disadvantages?
+
+Answer :
+
+Yes. A partition can be archived. Advantage is it decreases the number of files stored in namenode and the archived file can be queried using hive. The disadvantage is it will cause less efficient query and does not offer any space savings.
+
+Question 48. What Is A Generic Udf In Hive?
+
+Answer :
+
+It is a UDF which is created using a java program to server some specific need not covered under the existing functions in Hive. It can detect the type of input argument programmatically and provide appropriate response.
+
+Question 49. The Following Statement Failed To Execute. What Can Be The Cause? Load Data Local Inpath ‘${env:home}/country/state/’ Overwrite Into Table Address;
+
+Answer :
+
+The local inpath should contain a file and not a directory. The $env:HOME is a valid variable available in the hive environment.
+
+Question 50. How Do You Specify The Table Creator Name When Creating A Table In Hive?
+
+Answer :
+
+The TBLPROPERTIES clause is used to add the creator name while creating a table.
+The TBLPROPERTIES is added like:  TBLPROPERTIES(‘creator’= ‘Joan’)
