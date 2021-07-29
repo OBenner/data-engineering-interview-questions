@@ -1,7 +1,7 @@
 [Interview questions](README.md)
 
 # HADOOP
-+ [What are the main components of a Hadoop Application?](#What are the main components of a Hadoop Application?)
++ [What are the main components of a Hadoop Application?](#What are the main components of a Hadoop Application)
 + [What is the core concept behind Apache Hadoop framework?](#What is the core concept behind Apache Hadoop framework?)
 + [What is Hadoop Streaming?](#What is Hadoop Streaming?)
 + [What is the difference between Nodes in HDFS?](#What is the difference between Nodes in HDFS?)
@@ -208,7 +208,7 @@
 
 
 
-## What are the main components of a Hadoop Application?
+## What are the main components of a Hadoop Application
     Over the time, there are various forms in which a Hadoop application is defined. But in most of the cases there are following four core components of Hadoop application:
          HDFS: This is the file system in which Hadoop data is stored. It is a distributed file system with very high bandwidth.
          Hadoop Common_: This is common set of libraries and utilities used by Hadoop.
