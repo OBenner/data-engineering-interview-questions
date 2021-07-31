@@ -209,11 +209,11 @@
 
 
 ## What are the main components of a Hadoop Application
-    Over the time, there are various forms in which a Hadoop application is defined. But in most of the cases there are following four core components of Hadoop application:
-         HDFS: This is the file system in which Hadoop data is stored. It is a distributed file system with very high bandwidth.
-         Hadoop Common_: This is common set of libraries and utilities used by Hadoop.
-         Hadoop MapReduce: This is based on MapReduce algorithm for providing large-scale data processing.
-         Hadoop YARN: This is used for resource management in a Hadoop cluster. It can also schedule tasks for users.
+Over the time, there are various forms in which a Hadoop application is defined. But in most of the cases there are following four core components of Hadoop application:
++ HDFS: This is the file system in which Hadoop data is stored. It is a distributed file system with very high bandwidth.
++ Hadoop Common_: This is common set of libraries and utilities used by Hadoop. 
++ Hadoop MapReduce: This is based on MapReduce algorithm for providing large-scale data processing.
++ Hadoop YARN: This is used for resource management in a Hadoop cluster. It can also schedule tasks for users.
 
 [Table of Contents](#HADOOP)
 
