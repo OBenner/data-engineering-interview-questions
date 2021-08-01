@@ -7,7 +7,7 @@
 
 
 ## HADOOP
-[What are the main components of a Hadoop Application?](hadoop.md#What are the main components of a Hadoop Application?)
+[What are the main components of a Hadoop Application?](hadoop.md)
 
 [What is the core concept behind Apache Hadoop framework?](hadoop.md#What is the core concept behind Apache Hadoop framework?)
 
