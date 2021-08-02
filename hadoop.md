@@ -214,7 +214,7 @@ Over the time, there are various forms in which a Hadoop application is defined.
 + Hadoop Common_: This is common set of libraries and utilities used by Hadoop. 
 + Hadoop MapReduce: This is based on MapReduce algorithm for providing large-scale data processing.
 + Hadoop YARN: This is used for resource management in a Hadoop cluster. It can also schedule tasks for users.
-abs
+
 [Table of Contents](#HADOOP)
 
 ## What is the core concept behind Apache Hadoop framework?
