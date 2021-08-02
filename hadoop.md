@@ -2,26 +2,26 @@
 
 # HADOOP
 + [What are the main components of a Hadoop Application?](#What-are-the-main-components-of-a-Hadoop-Application)
-+ [What is the core concept behind Apache Hadoop framework?](#What is the core concept behind Apache Hadoop framework?)
-+ [What is Hadoop Streaming?](#What is Hadoop Streaming?)
-+ [What is the difference between Nodes in HDFS?](#What is the difference between Nodes in HDFS?)
-+ [What is the optimum hardware configuration to run Apache Hadoop?](#What is the optimum hardware configuration to run Apache Hadoop?)
-+ [What do you know about Block and Block scanner in HDFS?](#What do you know about Block and Block scanner in HDFS?)
-+ [What are the default port numbers on which  Nodes run in Hadoop?](#What are the default port numbers on which  Nodes run in Hadoop?)
-+ [How will you disable a Block Scanner on HDFS DataNode?](#How will you disable a Block Scanner on HDFS DataNode?)
-+ [How will you get the distance between two nodes in Apache Hadoop?](#How will you get the distance between two nodes in Apache Hadoop?)
-+ [Why do we use commodity hardware in Hadoop?](#Why do we use commodity hardware in Hadoop?)
-+ [How does inter cluster data copying works in Hadoop?](#How does inter cluster data copying works in Hadoop?)
-+ [How can we update a file at an arbitrary location in HDFS?](#How can we update a file at an arbitrary location in HDFS?)
-+ [What is Replication factor in HDFS?](#What is Replication factor in HDFS?)
-+ [What is the difference between NAS and DAS in Hadoop cluster?](#What is the difference between NAS and DAS in Hadoop cluster?)
-+ [What are the two messages that NameNode receives from DataNode?](#What are the two messages that NameNode receives from DataNode?)
-+ [How does indexing work in Hadoop?](#How does indexing work in Hadoop?)
-+ [What data is stored in a HDFS NameNode?](#What data is stored in a HDFS NameNode?)
-+ [What would happen if NameNode crashes in a HDFS cluster?](#What would happen if NameNode crashes in a HDFS cluster?)
-+ [What are the main functions of Secondary NameNode?](#What are the main functions of Secondary NameNode?)
-+ [What happens if HDFS file is set with replication factor of 1 and DataNode crashes?](#What happens if HDFS file is set with replication factor of 1 and DataNode crashes?)
-+ [What is the meaning of Rack Awareness in Hadoop?](#What is the meaning of Rack Awareness in Hadoop?)
++ [What is the core concept behind Apache Hadoop framework?](#What-is-the-core-concept-behind-Apache-Hadoop-framework)
++ [What is Hadoop Streaming?](#What-is-Hadoop-Streaming)
++ [What is the difference between Nodes in HDFS?](#What-is-the-difference-between-Nodes-in-HDFS)
++ [What is the optimum hardware configuration to run Apache Hadoop?](#What-is-the-optimum-hardware-configuration-to-run-Apache-Hadoop)
++ [What do you know about Block and Block scanner in HDFS?](#What-do-you-know-about-Block-and-Block-scanner-in-HDFS)
++ [What are the default port numbers on which  Nodes run in Hadoop?](#What-are-the-default-port-numbers-on-which-Nodes-run-in-Hadoop)
++ [How will you disable a Block Scanner on HDFS DataNode?](#How-will-you-disable-a-Block-Scanner-on-HDFS-DataNode)
++ [How will you get the distance between two nodes in Apache Hadoop?](#How-will-you-get-the-distance-between-two-nodes-in-Apache-Hadoop)
++ [Why do we use commodity hardware in Hadoop?](#Why-do-we-use-commodity-hardware-in-Hadoop)
++ [How does inter cluster data copying works in Hadoop?](#How-does-inter-cluster-data-copying-works-in-Hadoop)
++ [How can we update a file at an arbitrary location in HDFS?](#How-can-we-update-a-file-at-an-arbitrary-location-in-HDFS)
++ [What is Replication factor in HDFS?](#What-is-Replication-factor-in-HDFS)
++ [What is the difference between NAS and DAS in Hadoop cluster?](#What-is-the-difference-between-NAS-and-DAS-in-Hadoop-cluster)
++ [What are the two messages that NameNode receives from DataNode?](#What-are-the-two-messages-that-NameNode-receives-from-DataNode)
++ [How does indexing work in Hadoop?](#How-does-indexing-work-in-Hadoop)
++ [What data is stored in a HDFS NameNode?](#What-data-is-stored-in-a-HDFS-NameNode)
++ [What would happen if NameNode crashes in a HDFS cluster?](#What-would-happen-if-NameNode-crashes-in-a-HDFS-cluster)
++ [What are the main functions of Secondary NameNode?](#What-are-the-main-functions-of-Secondary-NameNode)
++ [What happens if HDFS file is set with replication factor of 1 and DataNode crashes?](#What-happens-if-HDFS-file-is-set-with-replication-factor-of-1-and-DataNode-crashes)
++ [What is the meaning of Rack Awareness in Hadoop?](#What-is-the-meaning-of-Rack-Awareness-in-Hadoop)
 + [How will you check if a file exists in HDFS?](#How will you check if a file exists in HDFS?)
 + [Why do we use fsck command in HDFS?](#Why do we use fsck command in HDFS?)
 + [What will happen when NameNode is down and a user submits a new job?](#What will happen when NameNode is down and a user submits a new job?)
@@ -218,7 +218,7 @@ Over the time, there are various forms in which a Hadoop application is defined.
 [Table of Contents](#HADOOP)
 
 ## What is the core concept behind Apache Hadoop framework?
-    Apache Hadoop is based on the concept of MapReduce algorithm. In MapReduce algorithm, Map and Reduce operations are used to process very large data set.
+Apache Hadoop is based on the concept of MapReduce algorithm. In MapReduce algorithm, Map and Reduce operations are used to process very large data set.
     In this concept, Map method does the filtering and sorting of data. Reduce method performs the summarizing of data.
     This is a concept from functional programming.
     The key points in this concept are scalability and fault tolerance. In Apache Hadoop these features are achieved by multi-threading and efficient implementation of MapReduce.
@@ -226,25 +226,25 @@ Over the time, there are various forms in which a Hadoop application is defined.
 [Table of Contents](#HADOOP)
 
 ## What is Hadoop Streaming?
-    Hadoop distribution provides a Java utility called Hadoop Streaming. It is packaged in a jar file. With Hadoop Streaming, we can create and run Map Reduce jobs with an executable script.
+Hadoop distribution provides a Java utility called Hadoop Streaming. It is packaged in a jar file. With Hadoop Streaming, we can create and run Map Reduce jobs with an executable script.
     We can create executable scripts for Mapper and Reducer functions. These executable scripts are passed to Hadoop Streaming in a command.
     Hadoop Streaming utility creates Map and Reduce jobs and submits these to a cluster. We can also monitor these jobs with this utility.
 
 [Table of Contents](#HADOOP)
 
 ## What is the difference between Nodes in HDFS?
-    The differences between NameNode, BackupNode and Checkpoint NameNode are as follows:
-        NameNode: NameNode is at the heart of the HDFS file system that manages the metadata i.e. the data of the files is not stored on the NameNode but rather it has the directory tree of all the files present in the HDFS file system on a Hadoop cluster. NameNode uses two files for the namespace:
-            fsimage file: This file keeps track of the latest checkpoint of the namespace.
-            edits file: This is a log of changes made to the namespace since checkpoint.
-        Checkpoint Node:	Checkpoint Node keeps track of the latest checkpoint in a directory that has same structure as that of NameNode’s directory.
+The differences between NameNode, BackupNode and Checkpoint NameNode are as follows:
++ NameNode: NameNode is at the heart of the HDFS file system that manages the metadata i.e. the data of the files is not stored on the NameNode but rather it has the directory tree of all the files present in the HDFS file system on a Hadoop cluster. NameNode uses two files for the namespace:
+    + fsimage file: This file keeps track of the latest checkpoint of the namespace.
+    + edits file: This is a log of changes made to the namespace since checkpoint.
++ Checkpoint Node:	Checkpoint Node keeps track of the latest checkpoint in a directory that has same structure as that of NameNode’s directory.
             Checkpoint node creates checkpoints for the namespace at regular intervals by downloading the edits and fsimage file from the NameNode and merging it locally. The new image is then again updated back to the active NameNode.
-        BackupNode: This node also provides check pointing functionality like that of the Checkpoint node but it also maintains its up-to-date in-memory copy of the file system namespace that is in sync with the active NameNode.
++ BackupNode: This node also provides check pointing functionality like that of the Checkpoint node but it also maintains its up-to-date in-memory copy of the file system namespace that is in sync with the active NameNode.
 
 [Table of Contents](#HADOOP)
 
 ## What is the optimum hardware configuration to run Apache Hadoop?
-    To run Apache Hadoop jobs, it is recommended to use dual core machines or dual processors. There should be 4GB or 8GB RAM with the processor with Error-correcting code (ECC) memory.
+To run Apache Hadoop jobs, it is recommended to use dual core machines or dual processors. There should be 4GB or 8GB RAM with the processor with Error-correcting code (ECC) memory.
     Without ECC memory, there is high chance of getting checksum errors.
     For storage high capacity SATA drives (around 7200 rpm) should be used in Hadoop cluster.
     Around 10GB bandwidth Ethernet networks are good for Hadoop.
@@ -252,14 +252,14 @@ Over the time, there are various forms in which a Hadoop application is defined.
 [Table of Contents](#HADOOP)
 
 ## What do you know about Block and Block scanner in HDFS?
-    A large file in HDFS is broken into multiple parts and each part is stored on a different Block. By default a Block is of 64 MB capacity in HDFS.
+A large file in HDFS is broken into multiple parts and each part is stored on a different Block. By default a Block is of 64 MB capacity in HDFS.
     Block Scanner is a program that every Data node in HDFS runs periodically to verify the checksum of every block stored on the data node.
     The purpose of a Block Scanner is to detect any data corruption errors on Data node.
 
 [Table of Contents](#HADOOP)
 
-## What are the default port numbers on which  Nodes run in Hadoop?
-    Default port numbers of Name Node, Job Tracker and Task Tracker are as follows:
+## What are the default port numbers on which Nodes run in Hadoop?
+Default port numbers of Name Node, Job Tracker and Task Tracker are as follows:
     NameNode runs on port 50070
     Task Tracker runs on port 50060
     Job Tracker runs on port 50030
@@ -267,48 +267,48 @@ Over the time, there are various forms in which a Hadoop application is defined.
 [Table of Contents](#HADOOP)
 
 ## How will you disable a Block Scanner on HDFS DataNode?
-    In HDFS, there is a configuration dfs.datanode.scan.period.hours in hdfs- site.xml to set the number of hours interval at which Block Scanner should run.
+In HDFS, there is a configuration dfs.datanode.scan.period.hours in hdfs-site.xml to set the number of hours interval at which Block Scanner should run.
     We can set dfs.datanode.scan.period.hours=0 to disable the Block Scanner. It means it will not run on HDFS DataNode.
 
 [Table of Contents](#HADOOP)
 
 ## How will you get the distance between two nodes in Apache Hadoop?
-    In Apache Hadoop we can use NetworkTopology.getDistance() method to get the distance between two nodes.
+In Apache Hadoop we can use NetworkTopology.getDistance() method to get the distance between two nodes.
     Distance from a node to its parent is considered as 1.
 
 [Table of Contents](#HADOOP)
 
 ## Why do we use commodity hardware in Hadoop?
-    Hadoop does not require a very high-end server with large memory and processing power. Due to this we can use any inexpensive system with average RAM and processor. Such kind of system is called commodity hardware.
+Hadoop does not require a very high-end server with large memory and processing power. Due to this we can use any inexpensive system with average RAM and processor. Such kind of system is called commodity hardware.
     Since there is parallel processing in Hadoop MapReduce, it is convenient to distribute a task among multiple servers and then do the execution. It saves cost as well as it is much faster compared to other options. Another benefit of using commodity hardware in Hadoop is scalability. Commodity hardware is readily available in market. Whenever we need to scale up our operations in Hadoop cluster we can obtain more commodity hardware. In case of high-end machines, we have to raise purchase orders and get them built on demand.
 
 [Table of Contents](#HADOOP)
 
 ## How does inter cluster data copying works in Hadoop?
-    In Hadoop, there is a utility called DistCP (Distributed Copy) to perform large inter/intra-cluster copying of data. This utility is also based on MapReduce. It creates Map tasks for files given as input.
+In Hadoop, there is a utility called DistCP (Distributed Copy) to perform large inter/intra-cluster copying of data. This utility is also based on MapReduce. It creates Map tasks for files given as input.
     After every copy using DistCP, it is recommended to run crosschecks to confirm that there is no data corruption and copy is complete.
 
 [Table of Contents](#HADOOP)
 
 ## How can we update a file at an arbitrary location in HDFS?
-    This is a trick question. In HDFS, it is not allowed to update a file at an arbitrary location. All the files are written in append only mode. It means all writes are done at the end of a file.
+This is a trick question. In HDFS, it is not allowed to update a file at an arbitrary location. All the files are written in append only mode. It means all writes are done at the end of a file.
     So there is no possibility of updating the files at any random location.
 
 [Table of Contents](#HADOOP)
 
 ## What is Replication factor in HDFS?
-    Replication factor in HDFS is the number of copies of a file in file system. A Hadoop application can specify the number of replicas of a file it wants HDFS to maintain. This information is stored in NameNode. We can set the replication factor in following ways:
+Replication factor in HDFS is the number of copies of a file in file system. A Hadoop application can specify the number of replicas of a file it wants HDFS to maintain. This information is stored in NameNode. We can set the replication factor in following ways:
     We can use Hadoop fs shell, to specify the replication factor for a file. Command as follows:
-        $hadoop fs –setrep –w 5 /file_name
++ $hadoop fs –setrep –w 5 /file_name
     In above command, replication factor of file_name  file is set as 5.
     We can also use Hadoop fs shell, to specify the replication factor of all the files in a directory.
-        $hadoop fs –setrep –w 2 /dir_name
++ $hadoop fs –setrep –w 2 /dir_name
     In above command, replication factor of all the files under directory dir_name is set as 2.
 
 [Table of Contents](#HADOOP)
 
 ## What is the difference between NAS and DAS in Hadoop cluster?
-    NAS stands for Network Attached Storage and DAS stands for Direct Attached Storage.
+NAS stands for Network Attached Storage and DAS stands for Direct Attached Storage.
     In NAS, compute and storage layers are separated. Storage is distributed over different servers on a network.
     In DAS, storage is attached to the node where computation takes place.
     Apache Hadoop is based on the principle of moving processing near the location of data. So it needs storage disk to be local to computation.
@@ -318,38 +318,39 @@ Over the time, there are various forms in which a Hadoop application is defined.
 [Table of Contents](#HADOOP)
 
 ## What are the two messages that NameNode receives from DataNode?
-    NameNode receives following two messages from every DataNode:
-        Heartbeat: This message signals that DataNode is still alive. Periodic receipt of Heartbeat is vey important for NameNode to decide whether to use a DataNode or not.
-        Block Report: This is a list of all the data blocks hosted on a DataNode. This report is also very useful for functioning of NameNode. With this report, NameNode gets information about what data is stored on a specific DataNode.
+NameNode receives following two messages from every DataNode:
++  Heartbeat: This message signals that DataNode is still alive. Periodic receipt of Heartbeat is vey important for NameNode to decide whether to use a DataNode or not.
++  Block Report: This is a list of all the data blocks hosted on a DataNode. This report is also very useful for functioning of NameNode. With this report, NameNode gets information about what data is stored on a specific DataNode.
 
 [Table of Contents](#HADOOP)
 
 ## How does indexing work in Hadoop?
-    Indexing in Hadoop has two different levels.
+Indexing in Hadoop has two different levels.
     Index based on File URI: In this case data is indexed based on different files. When we search for data, index will return the files that contain the data.
     Index based on InputSplit: In this case, data is indexed based on locations where input split is located.
 
 [Table of Contents](#HADOOP)
 
 ## What data is stored in a HDFS NameNode?
-    NameNode is the central node of an HDFS system. It does not store any actual data on which MapReduce operations have to be done. But it has all the metadata about the data stored in HDFS DataNodes.
+NameNode is the central node of an HDFS system. It does not store any actual data on which MapReduce operations have to be done. But it has all the metadata about the data stored in HDFS DataNodes.
     NameNode has the directory tree of all the files in HDFS filesystem. Using this meta data it manages all the data stored in different DataNodes.
 
 [Table of Contents](#HADOOP)
 
 ## What would happen if NameNode crashes in a HDFS cluster?
-    There is only one NameNode in a HDFS cluster. This node maintains metadata about DataNodes. Since there is only one NameNode, it is the single point of failure in a HDFS cluster. When NameNode crashes, system may become unavailable.
+There is only one NameNode in a HDFS cluster. This node maintains metadata about DataNodes. Since there is only one NameNode, it is the single point of failure in a HDFS cluster. When NameNode crashes, system may become unavailable.
     We can specify a secondary NameNode in HDFS cluster. The secondary
     NameNode takes the periodic checkpoints of the file system in HDFS. But it is not the backup of NameNode. We can use it to recreate the NameNode and restart it in case of a crash.
 
 [Table of Contents](#HADOOP)
 
 ## What are the main functions of Secondary NameNode?
-    Main functions of Secondary NameNode are as follows:
-        FsImage: It stores a copy of FsImage file and EditLog.
-        NameNode crash: In case NameNode crashes, we can use Secondary NameNode's FsImage to recreate the NameNode.
-        Checkpoint: Secondary NameNode runs Checkpoint to confirm that data is not corrupt in HDFS.
-    Update: It periodically applies the updates from EditLog to FsImage file. In this way FsImage file on Secondary NameNode is kept up to date. This helps in saving time during NameNode restart.
+Main functions of Secondary NameNode are as follows:
++ FsImage: It stores a copy of FsImage file and EditLog.
++ NameNode crash: In case NameNode crashes, we can use Secondary NameNode's FsImage to recreate the NameNode.
++ Checkpoint: Secondary NameNode runs Checkpoint to confirm that data is not corrupt in HDFS.
+
+Update: It periodically applies the updates from EditLog to FsImage file. In this way FsImage file on Secondary NameNode is kept up to date. This helps in saving time during NameNode restart.
 
 [Table of Contents](#HADOOP)
 
