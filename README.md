@@ -3,7 +3,7 @@
 [HADOOP](#HADOOP)
 
 ## HADOOP
-+ [What are the main components of a Hadoop Application?](hadoop.md#What-are-the-main-components-of-a-Hadoop-Application?)
++ [What are the main components of a Hadoop Application?](hadoop.md#What-are-the-main-components-of-a-Hadoop-Application)
 + [What is the core concept behind Apache Hadoop framework?](hadoop.md#What-is-the-core-concept-behind-Apache-Hadoop-framework?)
 + [What is Hadoop Streaming?](hadoop.md#What-is-Hadoop-Streaming?)
 + [What is the difference between Nodes in HDFS?](hadoop.md#What-is-the-difference-between-Nodes-in-HDFS?)
