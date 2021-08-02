@@ -204,7 +204,7 @@
 + [Can You Tell Me If We Can Create A Hadoop Cluster From Scratch?](#Can You Tell Me If We Can Create A Hadoop Cluster From Scratch?)
 + [Explain The Significance Of Ssh and What Is The Port On Which Port Does Ssh Work and Why Do We Need Password In Ssh Local Host?](#Explain The Significance Of Ssh and What Is The Port On Which Port Does Ssh Work and Why Do We Need Password In Ssh Local Host?)
 + [What Is Ssh and Explain In Detail About Ssh Communication Between Masters And The Slaves?](#What Is Ssh and Explain In Detail About Ssh Communication Between Masters And The Slaves?)
-+ [Can You Tell Is What Will Happen To A Namenode and When Job Tracker Is Not Up And Running?](#Can You Tell Is What Will Happen To A Namenode and When Job Tracker Is Not Up And Running?)
++ [Can You Tell Is What Will Happen To A Namenode and When Job Tracker Is Not Up And Running?](#Can-you-tell-is-what-will-happen-to-a-NameNode-and-when-Job-tracker-is-not up-and-running)
 
 
 
@@ -1452,7 +1452,7 @@ Secure Socket Shell or SSH is a password-less secure communication that provides
 
 [Table of Contents](#HADOOP)
 
-##  Can you tell is what will happen to a namenode and when job tracker is not up and running?
+##  Can you tell is what will happen to a NameNode and when Job tracker is not up and running?
 When the job tracker is down, it will not be in functional mode, all running jobs will be halted because it is a single point of failure. Your whole cluster will be down but still Namenode will be present. As such the cluster will still be accessible if Namenode is working, even if the job tracker is not up and running. But you cannot run your Hadoop job.
 
 [Table of Contents](#HADOOP)
