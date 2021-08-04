@@ -22,189 +22,189 @@
 + [What are the main functions of Secondary NameNode?](#What-are-the-main-functions-of-Secondary-NameNode)
 + [What happens if HDFS file is set with replication factor of 1 and DataNode crashes?](#What-happens-if-HDFS-file-is-set-with-replication-factor-of-1-and-DataNode-crashes)
 + [What is the meaning of Rack Awareness in Hadoop?](#What-is-the-meaning-of-Rack-Awareness-in-Hadoop)
-+ [How will you check if a file exists in HDFS?](#How will you check if a file exists in HDFS?)
-+ [Why do we use fsck command in HDFS?](#Why do we use fsck command in HDFS?)
-+ [What will happen when NameNode is down and a user submits a new job?](#What will happen when NameNode is down and a user submits a new job?)
-+ [What are the core methods of a Reducer in Hadoop?](#What are the core methods of a Reducer in Hadoop?)
-+ [What are the primary phases of a Reducer in Hadoop?](#What are the primary phases of a Reducer in Hadoop?)
-+ [What is the use of Context object in Hadoop?](#What is the use of Context object in Hadoop?)
-+ [How does partitioning work in Hadoop?](#How does partitioning work in Hadoop?)
-+ [What is a Combiner in Hadoop?](#What is a Combiner in Hadoop?)
-+ [What is the default replication factor in HDFS?](#What is the default replication factor in HDFS?)
-+ [How much storage is allocated by HDFS for storing a file of 25 MB size?](#How much storage is allocated by HDFS for storing a file of 25 MB size?)
-+ [Why does HDFS store data in Block structure?](#Why does HDFS store data in Block structure?)
-+ [How will you create a custom Partitioner in a Hadoop job?](#How will you create a custom Partitioner in a Hadoop job?)
-+ [What is a Checkpoint node in HDFS?](#What is a Checkpoint node in HDFS?)
-+ [What is a Backup Node in HDFS?](#What is a Backup Node in HDFS?)
-+ [What is the meaning of term Data Locality in Hadoop?](#What is the meaning of term Data Locality in Hadoop?)
-+ [What is a Balancer in HDFS?](#What is a Balancer in HDFS?)
-+ [What are the important points a NameNode considers before selecting the DataNode for placing a data block?](#What are the important points a NameNode considers before selecting the DataNode for placing a data block?)
-+ [How will you replace HDFS data volume before shutting down a DataNode?](#How will you replace HDFS data volume before shutting down a DataNode?)
-+ [What are the important configuration files in Hadoop?](#What are the important configuration files in Hadoop?)
-+ [How will you monitor memory used in a Hadoop cluster?](#How will you monitor memory used in a Hadoop cluster?)
-+ [Why do we need Serialization in Hadoop map reduce methods?](#Why do we need Serialization in Hadoop map reduce methods?)
-+ [What is the use of Distributed Cache in Hadoop?](#What is the use of Distributed Cache in Hadoop?)
-+ [How will you synchronize the changes made to a file in Distributed Cache in Hadoop?](#How will you synchronize the changes made to a file in Distributed Cache in Hadoop?)
-+ [Can You Elaborate About Mapreduce Job](#Can You Elaborate About Mapreduce Job)
-+ [Why Compute Nodes And The Storage Nodes Are The Same?](#Why Compute Nodes And The Storage Nodes Are The Same?)
-+ [What Is The Configuration Object Importance In Mapreduce?](#What Is The Configuration Object Importance In Mapreduce?)
-+ [Where Mapreduce Not Recommended?](#Where Mapreduce Not Recommended?)
-+ [What Is Namenode And It’s Responsibilities?](#What Is Namenode And It’s Responsibilities?)
-+ [What Is Jobtracker’s Responsibility?](#What Is Jobtracker’s Responsibility?)
-+ [What are the Jobtracker and Tasktracker?](#What are the Jobtracker and Tasktracker?)
-+ [What Is Job Scheduling Importance In Hadoop Mapreduce?](#What Is Job Scheduling Importance In Hadoop Mapreduce?)
-+ [When Used Reducer?](#When Used Reducer?)
-+ [Where The Shuffle And Sort Process Does?](#Where The Shuffle And Sort Process Does?)
-+ [Java Is Mandatory To Write Mapreduce Jobs?](#Java Is Mandatory To Write Mapreduce Jobs?)
-+ [What Methods Can Controle The Map And Reduce Function’s Output?](#What Methods Can Controle The Map And Reduce Function’s Output?)
-+ [What Is The Main Difference Between Mapper And Reducer?](#What Is The Main Difference Between Mapper And Reducer?)
-+ [Why Compute Nodes And The Storage Nodes Are Same?](#Why Compute Nodes And The Storage Nodes Are Same?)
-+ [What is difference between mapside join and reduce side join?](#What is difference between mapside join and reduce side join?)
-+ [What Happen If Number Of Reducer Is 0?](#What Happen If Number Of Reducer Is 0?)
-+ [When We Are Goes To Combiner? Why It Is Recommendable?](#When We Are Goes To Combiner?)
-+ [What Is The Main Difference Between Mapreduce Combiner And Reducer?](#What Is The Main Difference Between Mapreduce Combiner And Reducer?)
-+ [What Is Partition?](#What Is Partition?)
-+ [When We Goes To Partition?](#When We Goes To Partition?)
-+ [What Are The Important Steps When You Are Partitioning Table?](#What Are The Important Steps When You Are Partitioning Table?)
-+ [Can You Elaborate Mapreduce Job Architecture?](#Can You Elaborate Mapreduce Job Architecture?)
-+ [Why Task Tracker Launch Child Jvm?](#Why Task Tracker Launch Child Jvm?)
-+ [Why Jobclient and Job Tracker Submits Job Resources To File System?](#Why Jobclient and Job Tracker Submits Job Resources To File System?)
-+ [How Many Mappers And Reducers Can Run?](#How Many Mappers And Reducers Can Run?)
-+ [What Is Inputsplit?](#What Is Inputsplit?)
-+ [How To Configure The Split Value?](#How To Configure The Split Value?)
-+ [How Much Ram Required To Process 64mb Data?](#How Much Ram Required To Process 64mb Data?)
-+ [What Is Difference Between Block And Split?](#What Is Difference Between Block And Split?)
-+ [Why Hadoop Framework Reads A File Parallel Why Not Sequential?](#Why Hadoop Framework Reads A File Parallel Why Not Sequential?)
-+ [If I Am Change Block Size From 64 To 128?](#If I Am Change Block Size From 64 To 128?)
-+ [What Is Issplitable()?](#What Is Issplitable()?)
-+ [How Much Hadoop Allows Maximum Block Size And Minimum Block Size?](#How Much Hadoop Allows Maximum Block Size And Minimum Block Size?)
-+ [What Are The Job Resource Files?](#What Are The Job Resource Files?)
-+ [What’s The Mapreduce Job Consists?](#What’s The Mapreduce Job Consists?)
-+ [What Is The Data Locality?](#What Is The Data Locality?)
-+ [What Is Speculative Execution?](#What Is Speculative Execution?)
-+ [What Is Chain Mapper?](#What Is Chain Mapper?)
-+ [How To Do Value Level Comparison?](#How To Do Value Level Comparison?)
-+ [What Is Setup And Clean Up Methods?](#What Is Setup And Clean Up Methods?)
-+ [How Many Slots Allocate For Each Task?](#How Many Slots Allocate For Each Task?)
-+ [Why Tasktracker Launch Child Jvm To Do A Task? Why Not Use Existent Jvm?](#Why Tasktracker Launch Child Jvm To Do A Task?)
-+ [What Main Configuration Parameters Are Specified In Mapreduce?](#What Main Configuration Parameters Are Specified In Mapreduce?)
-+ [What Is Identity Mapper?](#What Is Identity Mapper?)
-+ [What Is Recordreader In A Map Reduce?](#What Is Recordreader In A Map Reduce?)
-+ [What Is Outputcommitter?](#What Is Outputcommitter?)
-+ [What Are The Parameters Of Mappers And Reducers?](#What Are The Parameters Of Mappers And Reducers?)
-+ [Explain Jobconf In Mapreduce?](#Explain Jobconf In Mapreduce?)
-+ [Explain Job Scheduling Through Jobtracker?](#Explain Job Scheduling Through Jobtracker?)
-+ [What Is Sequencefileinputformat?](#What Is Sequencefileinputformat?)
-+ [Explain How Input And Output Data Format Of The Hadoop Framework?](#Explain How Input And Output Data Format Of The Hadoop Framework?)
-+ [What Are The Restriction To The Key And Value Class ?](#What Are The Restriction To The Key And Value Class?)
-+ [Explain The Wordcount Implementation Via Hadoop Framework?](#Explain The Wordcount Implementation Via Hadoop Framework?)
-+ [How Mapper Is Instantiated In A Running Job?](#How Mapper Is Instantiated In A Running Job?)
-+ [Which Are The Methods In The Mapper Interface?](#Which Are The Methods In The Mapper Interface?)
-+ [What Happens If You Don't Override The Mapper Methods And Keep Them As It Is?](#What Happens If You Don't Override The Mapper Methods And Keep Them As It Is?)
-+ [What Is The Use Of Context Object?](#What Is The Use Of Context Object?)
-+ [How Can You Add The Arbitrary Key-value Pairs In Your Mapper?](#How Can You Add The Arbitrary Key-value Pairs In Your Mapper?)
-+ [How Does Mapper's Run() Method Works?](#How Does Mapper's Run Method Works?)
-+ [Which Object Can Be Used To Get The Progress Of A Particular Job?](#Which Object Can Be Used To Get The Progress Of A Particular Job?)
-+ [What Is Next Step After Mapper Or Maptask?](#What Is Next Step After Mapper Or Maptask?)
-+ [How Can We Control Particular Key Should Go In A Specific Reducer?](#How Can We Control Particular Key Should Go In A Specific Reducer?)
-+ [What Is The Use Of Combiner?](#What Is The Use Of Combiner?)
-+ [How Many Maps Are There In A Particular Job?](#How Many Maps Are There In A Particular Job?)
-+ [What Is The Reducer Used For?](#What Is The Reducer Used For?)
-+ [Explain The Core Methods Of The Reducer?](#Explain The Core Methods Of The Reducer?)
-+ [What Are The Primary Phases Of The Reducer?](#What Are The Primary Phases Of The Reducer?)
-+ [Explain The Shuffle?](#Explain The Shuffle?)
-+ [Explain The Reducer's Sort Phase?](#Explain The Reducer's Sort Phase?)
-+ [Explain The Reducer's Reduce Phase?](#Explain The Reducer's Reduce Phase?)
-+ [How Many Reducers Should Be Configured?](#How Many Reducers Should Be Configured?)
-+ [It Can Be Possible That A Job Has 0 Reducers?](#It Can Be Possible That A Job Has 0 Reducers?)
-+ [What Happens If Number Of Reducers Are 0?](#What Happens If Number Of Reducers Are 0?)
-+ [How Many Instances Of Jobtracker Can Run On A Hadoop Cluster?](#How Many Instances Of Jobtracker Can Run On A Hadoop Cluster?)
-+ [What Is The Jobtracker And What It Performs In A Hadoop Cluster?](#What Is The Jobtracker And What It Performs In A Hadoop Cluster?)
-+ [How A Task Is Scheduled By A Jobtracker?](#How A Task Is Scheduled By A Jobtracker?)
-+ [How Many Instances Of Tasktracker Run On A Hadoop Cluster?](#How Many Instances Of Tasktracker Run On A Hadoop Cluster?)
-+ [How Many Maximum Jvm Can Run On A Slave Node?](#How Many Maximum Jvm Can Run On A Slave Node?)
-+ [What Is Nas?](#What Is Nas?)
-+ [How Hdfs Differs With Nfs?](#How Hdfs Differs With Nfs?)
-+ [How Does A Namenode Handle The Failure Of The Data Nodes?](#How Does A Namenode Handle The Failure Of The Data Nodes?)
-+ [Can Reducer Talk With Each Other?](#What is Hadoop Streaming?)
-+ [Where The Mapper's Intermediate Data Will Be Stored?](#Where The Mapper's Intermediate Data Will Be Stored?)
-+ [What Is The Hadoop Mapreduce Api Contract For A Key And Value Class?](#What Is The Hadoop Mapreduce Api Contract For A Key And Value Class?)
-+ [What Is A Identitymapper And Identityreducer In Mapreduce?](#What Is A Identitymapper And Identityreducer In Mapreduce?)
-+ [What Is The Meaning Of Speculative Execution In Hadoop?](#What Is The Meaning Of Speculative Execution In Hadoop?)
-+ [How Hdfs Is Different From Traditional File Systems??](#How Hdfs Is Different From Traditional File Systems?)
-+ [What Is Hdfs Block Size and How Is It Different From Traditional File System Block Size?](#What Is Hdfs Block Size and How Is It Different From Traditional File System Block Size?)
-+ [What Is A Namenode and How Many Instances Of Namenode Run On A Hadoop Cluster?](#What Is A Namenode and How Many Instances Of Namenode Run On A Hadoop Cluster?)
-+ [How The Client Communicates With Hdfs?](#How The Client Communicates With Hdfs?)
-+ [How The Hdfs Blocks Are Replicated?](#How The Hdfs Blocks Are Replicated?)
-+ [Can You Give Some Examples Of Big Data?](#Can You Give Some Examples Of Big Data?)
-+ [What Is The Basic Difference Between Traditional Rdbms And Hadoop?](#What Is The Basic Difference Between Traditional Rdbms And Hadoop?)
-+ [What Is Structured And Unstructured Data?](#What Is Structured And Unstructured Data?)
-+ [Since The Data Is Replicated Thrice In Hdfs so Does It Mean That Any Calculation Done On One Node Will Also Be Replicated On The Other Two?](#Since The Data Is Replicated Thrice In Hdfs so Does It Mean That Any Calculation Done On One Node Will Also Be Replicated On The Other Two?)
-+ [What Is Throughput and How Does Hdfs Get A Good Throughput?](#What Is Throughput and How Does Hdfs Get A Good Throughput?)
-+ [What Is Streaming Access?](#What Is Streaming Access?)
-+ [What Is A Commodity Hardware so Does Commodity Hardware Include Ram?](#What Is A Commodity Hardware so Does Commodity Hardware Include Ram?)
-+ [Is Namenode Also A Commodity?](#Is Namenode Also A Commodity?)
-+ [What Is A Metadata?](#What Is A Metadata?)
-+ [What Is A Daemon?](#What Is A Daemon?)
-+ [What Is A Heartbeat In Hdfs?](#What Is A Heartbeat In Hdfs?)
-+ [How Indexing Is Done In Hdfs?](#How Indexing Is Done In Hdfs?)
-+ [If A Data Node Is Full How It's Identified?](#If A Data Node Is Full How It's Identified?)
-+ [If Datanodes Increase Then Do We Need To Upgrade Namenode?](#If Datanodes Increase Then Do We Need To Upgrade Namenode?)
-+ [Are Job Tracker And Task Trackers Present In Separate Machines?](#Are Job Tracker And Task Trackers Present In Separate Machines?)
-+ [On What Basis Namenode Will Decide Which Datanode To Write On?](#On What Basis Namenode Will Decide Which Datanode To Write On?)
-+ [Who Is A user In Hdfs?](#Who Is A user In Hdfs?)
-+ [Is Client The End User In Hdfs?](#Is Client The End User In Hdfs?)
-+ [What Is The Communication Channel Between Client And Namenode/datanode?](#What Is The Communication Channel Between Client And Namenode/datanode?)
-+ [What Is A Rack?](#What Is A Rack?)
-+ [On What Basis Data Will Be Stored On A Rack?](#On What Basis Data Will Be Stored On A Rack?)
-+ [Do We Need To Place 2nd And 3rd Data In Rack 2 Only?](#Do We Need To Place 2nd And 3rd Data In Rack 2 Only?)
-+ [What If Rack 2 And Datanode Fails?](#What If Rack 2 And Datanode Fails?)
-+ [What Is The Difference Between Gen1 And Gen2 Hadoop With Regards To The Namenode?](#What Is The Difference Between Gen1 And Gen2 Hadoop With Regards To The Namenode?)
-+ [Do We Require Two Servers For The Namenode And The Datanodes?](#Do We Require Two Servers For The Namenode And The Datanodes?)
-+ [Why Are The Number Of Splits Equal To The Number Of Maps?](#Why Are The Number Of Splits Equal To The Number Of Maps?)
-+ [Is A Job Split Into Maps?](#Is A Job Split Into Maps?)
-+ [Which Are The Two Types Of writes In Hdfs?](#Which Are The Two Types Of writes In Hdfs?)
-+ [Why reading Is Done In Parallel And writing Is Not In Hdfs?](#Why reading Is Done In Parallel And writing Is Not In Hdfs?)
-+ [Can Hadoop Be Compared To Nosql Database Like Cassandra?](#Can Hadoop Be Compared To Nosql Database Like Cassandra?)
-+ [How Jobtracker Schedules A Task?](#How Jobtracker Schedules A Task?)
-+ [What Is A Task Tracker In Hadoop and How Many Instances Of Tasktracker Run On A Hadoop Cluster?](#What Is A Task Tracker In Hadoop and How Many Instances Of Tasktracker Run On A Hadoop Cluster?)
-+ [What Is A Task Instance In Hadoop and Where Does It Run?](#What Is A Task Instance In Hadoop and Where Does It Run?)
-+ [What Is Configuration Of A Typical Slave Node On Hadoop Cluster and How Many Jvms Run On A Slave Node?](#What Is Configuration Of A Typical Slave Node On Hadoop Cluster and How Many Jvms Run On A Slave Node?)
-+ [How Namenode Handles Data Node Failures?](#How Namenode Handles Data Node Failures?)
-+ [Does Mapreduce Programming Model Provide A Way For Reducers To Communicate With Each Other and In A Mapreduce Job Can A Reducer Communicate With Another Reducer?](#Does Mapreduce Programming Model Provide A Way For Reducers To Communicate With Each Other and In A Mapreduce Job Can A Reducer Communicate With Another Reducer?)
-+ [Can I Set The Number Of Reducers To Zero?](#Can I Set The Number Of Reducers To Zero?)
-+ [Where Is The Mapper Output intermediate Kay-value Data Stored?](#Where Is The Mapper Output intermediate Kay-value Data Stored?)
-+ [If Reducers Do Not Start Before All Mappers Finish Then Why Does The Progress On Mapreduce Job Shows Something Like Map 50 percents Reduce 10 percents and Why Reducers Progress Percentage Is Displayed When Mapper Is Not Finished Yet?](#If Reducers Do Not Start Before All Mappers Finish Then Why Does The Progress On Mapreduce Job Shows Something Like Map 50 percents Reduce 10 percents and Why Reducers Progress Percentage Is Displayed When Mapper Is Not Finished Yet?)
-+ [Explain In Brief The Three Modes In Which Hadoop Can Be Run?](#Explain In Brief The Three Modes In Which Hadoop Can Be Run?)
-+ [Explain What Are The Features Of Standalone local Mode?](#Explain What Are The Features Of Standalone local Mode?)
-+ [What Are The Features Of Fully Distributed Mode?](#What Are The Features Of Fully Distributed Mode?)
-+ [Explain What Are The Main Features Of Pseudo Mode?](#Explain What Are The Main Features Of Pseudo Mode?)
-+ [What Are The Port Numbers Of Name Node and Job Tracker And Task Tracker?](#What Are The Port Numbers Of Name Node and Job Tracker And Task Tracker?)
-+ [Tell Us What Is A Spill Factor With Respect To The Ram?](#Tell Us What Is A Spill Factor With Respect To The Ram?)
-+ [Is Fs.mapr.working.for A Single Directory?](#Is Fs.mapr.working.for A Single Directory?)
-+ [Which Are The Three Main Hdfs-site.xml Properties?](#Which Are The Three Main Hdfs-site.xml Properties?)
-+ [How Can I Restart Namenode?](#How Can I Restart Namenode?)
-+ [How Can We Check Whether Namenode Is Working Or Not?](#How Can We Check Whether Namenode Is Working Or Not?)
-+ [At Times You Get A connection Refused Java Exception When You Run The File System Check Command Hadoop Fsck?](#At Times You Get A connection Refused Java Exception When You Run The File System Check Command Hadoop Fsck?)
-+ [What Is The Use Of The Command Mapred.job.tracker?](#What Is The Use Of The Command Mapred.job.tracker?)
-+ [What Does etc.init.d Do?](#What Does etc.init.d Do?)
-+ [How Can We Look For The Namenode In The Browser?](#How Can We Look For The Namenode In The Browser?)
-+ [What Do Masters And Slaves Consist Of?](#What Do Masters And Slaves Consist Of?)
-+ [What Is The Function Of Hadoop-env.sh and Where Is It Present?](#What Is The Function Of Hadoop-env.sh and Where Is It Present?)
-+ [Can We Have Multiple Entries In The Master Files?](#Can We Have Multiple Entries In The Master Files?)
-+ [In Hadoop_pid_dir and What Does Pid Stands For?](#In Hadoop_pid_dir and What Does Pid Stands For?)
-+ [What Does Hadoop-metrics and Properties File Do?](#What Does Hadoop-metrics and Properties File Do?)
-+ [What Are The Network Requirements For Hadoop?](#What Are The Network Requirements For Hadoop?)
-+ [Why Do We Need A Password-less Ssh In Fully Distributed Environment?](#Why Do We Need A Password-less Ssh In Fully Distributed Environment?)
-+ [What Will Happen If A Namenode Has No Data?](#What Will Happen If A Namenode Has No Data?)
-+ [What Happens To Job Tracker When Namenode Is Down?](#What Happens To Job Tracker When Namenode Is Down?)
-+ [Explain What Do You Mean By Formatting Of The Dfs?](#Explain What Do You Mean By Formatting Of The Dfs?)
-+ [We Use Unix Variants For Hadoop and Can We Use Microsoft Windows For The Same?](#We Use Unix Variants For Hadoop and Can We Use Microsoft Windows For The Same?)
-+ [Which One Decides The Input Split Hdfs Client Or Namenode?](#Which One Decides The Input Split Hdfs Client Or Namenode?)
-+ [Can You Tell Me If We Can Create A Hadoop Cluster From Scratch?](#Can You Tell Me If We Can Create A Hadoop Cluster From Scratch?)
-+ [Explain The Significance Of Ssh and What Is The Port On Which Port Does Ssh Work and Why Do We Need Password In Ssh Local Host?](#Explain The Significance Of Ssh and What Is The Port On Which Port Does Ssh Work and Why Do We Need Password In Ssh Local Host?)
-+ [What Is Ssh and Explain In Detail About Ssh Communication Between Masters And The Slaves?](#What Is Ssh and Explain In Detail About Ssh Communication Between Masters And The Slaves?)
-+ [Can You Tell Is What Will Happen To A Namenode and When Job Tracker Is Not Up And Running?](#Can-you-tell-is-what-will-happen-to-a-NameNode-and-when-Job-tracker-is-not up-and-running)
++ [How will you check if a file exists in HDFS?](#How-will-you-check-if-a-file-exists-in-HDFS)
++ [Why do we use fsck command in HDFS?](#Why-do-we-use-fsck-command-in-HDFS)
++ [What will happen when NameNode is down and a user submits a new job?](#What-will-happen-when-NameNode-is-down-and-a-user-submits-a-new-job)
++ [What are the core methods of a Reducer in Hadoop?](#What-are-the-core-methods-of-a-Reducer-in-Hadoop)
++ [What are the primary phases of a Reducer in Hadoop?](#What-are-the-primary-phases-of-a-Reducer-in-Hadoop)
++ [What is the use of Context object in Hadoop?](#What-is-the-use-of-Context-object-in-Hadoop)
++ [How does partitioning work in Hadoop?](#How-does-partitioning-work-in-Hadoop)
++ [What is a Combiner in Hadoop?](#What-is-a-Combiner-in-Hadoop)
++ [What is the default replication factor in HDFS?](#What-is-the-default-replication-factor-in-HDFS)
++ [How much storage is allocated by HDFS for storing a file of 25 MB size?](#How-much-storage-is-allocated-by-HDFS-for-storing-a-file-of-25-MB-size)
++ [Why does HDFS store data in Block structure?](#Why-does-HDFS-store-data-in-Block-structure)
++ [How will you create a custom Partitioner in a Hadoop job?](#How-will-you-create-a-custom-Partitioner-in-a-Hadoop-job)
++ [What is a Checkpoint node in HDFS?](#What-is-a-Checkpoint-node-in-HDFS)
++ [What is a Backup Node in HDFS?](#What-is-a-Backup-Node-in-HDFS)
++ [What is the meaning of term Data Locality in Hadoop?](#What-is-the-meaning-of-term-Data-Locality-in-Hadoop)
++ [What is a Balancer in HDFS?](#What-is-a-Balancer-in-HDFS)
++ [What are the important points a NameNode considers before selecting the DataNode for placing a data block?](#What-are-the-important-points-a-NameNode-considers-before-selecting-the-DataNode-for-placing-a-data-block)
++ [How will you replace HDFS data volume before shutting down a DataNode?](#How-will-you-replace-HDFS-data-volume-before-shutting-down-a-DataNode)
++ [What are the important configuration files in Hadoop?](#What-are-the-important-configuration-files-in-Hadoop)
++ [How will you monitor memory used in a Hadoop cluster?](#How-will-you-monitor-memory-used-in-a-Hadoop-cluster)
++ [Why do we need Serialization in Hadoop map reduce methods?](#Why-do-we-need-Serialization-in-Hadoop-map-reduce-methods)
++ [What is the use of Distributed Cache in Hadoop?](#What-is-the-use-of-Distributed-Cache-in-Hadoop)
++ [How will you synchronize the changes made to a file in Distributed Cache in Hadoop?](#How-will-you-synchronize-the-changes-made-to-a-file-in-Distributed-Cache-in-Hadoop)
++ [Can you elaborate about Mapreduce Job](#Can-you-elaborate-about-Mapreduce-job)
++ [Why compute nodes and the storage nodes are the same?](#Why-compute-nodes-and-the-storage-nodes-are-the-same)
++ [What is the configuration object importance in Mapreduce?](#What-is-the-configuration-object-importance-in-Mapreduce)
++ [Where Mapreduce not recommended?](#Where-Mapreduce-not-recommended?)
++ [What is Namenode and it’s responsibilities?](#What-is-Namenode-and-it’s-responsibilities)
++ [What is Jobtracker’s responsibility?](#What-is-Jobtracker’s-responsibility)
++ [What are the Jobtracker and Tasktracker?](#What-are-the-Jobtracker-and-Tasktracker)
++ [What is Job scheduling importance in Hadoop Mapreduce?](#What-is-Job-scheduling-importance-in-Hadoop-Mapreduce)
++ [When used Reducer?](#When-used-Reducer)
++ [Where the Shuffle and Sort process does?](#Where-the-Shuffle-and-Sort-process-does)
++ [Java is mandatory to write Mapreduce Jobs?](#Java-is-mandatory-to-write-Mapreduce-Jobs)
++ [What methods can controle the Map And Reduce function’s output?](#What-methods-can-controle-the-Map-And-Reduce-function’s-output)
++ [What is the main difference between Mapper And Reducer?](#What-is-the-main-difference-between-Mapper-And-Reducer)
++ [Why compute Nodes and the Storage Nodes are same?](#Why-compute-Nodes-and-the-Storage-Nodes-are-same?)
++ [What is difference between mapside join and reduce side join?](#What-is-difference-between-mapside-join-and-reduce-side-join)
++ [What happen if number of Reducer is 0?](#What-happen-if-number-of-Reducer-is-0)
++ [When we are goes to Combiner? Why it is Recommendable?](#When-we-are-goes-to-Combiner)
++ [What is the main difference between Mapreduce Combiner and Reducer?](#What-is-the-main-difference-between-Mapreduce-Combiner-and-Reducer)
++ [What Is Partition?](#What-is-partition)
++ [When we goes to Partition?](#When-we-goes-to-Partition)
++ [What are the important steps when you are partitioning table?](#What-are-the-important-steps-when-you-are-partitioning-table)
++ [Can you elaborate Mapreduce Job architecture?](#Can-you-elaborate-Mapreduce-Job-architecture)
++ [Why task Tracker launch child Jvm?](#Why-task-Tracker-launch-child-Jvm)
++ [Why JobClient and Job Tracker submits job resources to file system?](#Why-Jobclient-and-Job-Tracker-submits-job-resources-to-file-system)
++ [How many Mappers and Reducers can run?](#How-many-Mappers-and-Reducers-can-run)
++ [What is InputSplit?](#What-is-Inputsplit)
++ [How to configure the split value?](#How-to-configure-the-split-value)
++ [How much ram required to process 64mb data?](#How-much-ram-required-to-process-64mb-data)
++ [What is difference between block And split?](#What-is-difference-between-block-And-split)
++ [Why Hadoop Framework reads a file parallel why not sequential?](#Why-Hadoop-Framework-reads-a-file-parallel-why-not-sequential)
++ [If I am change block size from 64 to 128?](#If-I-am-change-block-size-from-64-to-128)
++ [What is IsSplitable()?](#What-is-Issplitable())
++ [How much Hadoop allows maximum block size and minimum block size?](#How-much-Hadoop-allows-maximum-block-size-and-minimum-block-size)
++ [What are the Job Resource files?](#What-are-the-Job-Resource-files)
++ [What’s the Mapreduce Job consists?](#What’s-the-Mapreduce-Job-consists)
++ [What is the data locality?](#What-is-the-data-locality)
++ [What is speculative execution?](#What-is-speculative-execution)
++ [What is chain Mapper?](#What-is-chain-Mapper)
++ [How to do value level comparison?](#How-to-do-value-level-comparison)
++ [What is setup and clean up methods?](#What-is-setup-and-clean-up-methods)
++ [How many slots allocate for each task?](#How-many-slots-allocate-for-each-task)
++ [Why TaskTracker launch child Jvm to do a task? Why not use Existent Jvm?](#Why-Tasktracker-launch-child-Jvm-to-do-a-task)
++ [What main configuration parameters are specified in Mapreduce?](#What-main-configuration-parameters-are-specified-in-Mapreduce)
++ [What is identity Mapper?](#What-is-identity-Mapper)
++ [What is RecordReader in a MapReduce?](#What-is-RecordReader-in-a-MapReduce)
++ [What is OutputCommitter?](#What-is-OutputCommitter)
++ [What are the parameters of Mappers and Reducers?](#What-are-the-parameters-of-Mappers-and-Reducers)
++ [Explain JobConf in Mapreduce?](#Explain-Jobconf-in-Mapreduce)
++ [Explain Job scheduling through Jobtracker?](#Explain-Job-scheduling-through-Jobtracker)
++ [What is SequenceFileInputFormat?](#What-is-SequenceFileInputFormat)
++ [Explain how input and output data format of the Hadoop Framework?](#Explain-how-input-and-output-data-format-of-the-Hadoop-Framework)
++ [What are the restriction to the Key and Value Class ?](#What-are-the-restriction-to-the-Key-and-Value-Class)
++ [Explain the wordcount implementation via Hadoop Framework?](#Explain-the-wordcount-implementation-via-Hadoop-Framework)
++ [How Mapper is instantiated in a running Job?](#How-Mapper-is-instantiated-in-a-running Job)
++ [Which are the methods in the Mapper Interface?](#Which-are-the-methods-in-the-Mapper-Interface)
++ [What happens if You don't Override the Mapper methods and keep them as it is?](#What-happens-if-You-don't-Override-the-Mapper-methods-and-keep-them-as-it-is)
++ [What is the use of context Object?](#What-is-the-use-of-context-Object)
++ [How can you Add the arbitrary Key-value pairs in your Mapper?](#How-can-you-Add-the-arbitrary-Key-value-pairs-in-your-Mapper)
++ [How Does Mapper's Run() Method Works?](#How-does-Mapper's-run-method-works)
++ [Which Object can be used to get the progress of a particular Job?](#Which-Object-can-be-used-to-get-the-progress-of-a-particular-Job)
++ [What is next step after Mapper Or Maptask?](#What-is-next-step-after-Mapper-Or-Maptask)
++ [How can we control particular Key should go in a specific Reducer?](#How-can-we-control-particular-Key-should-go-in-a-specific-Reducer)
++ [What is the use of Combiner?](#What-is-the-use-of-Combiner)
++ [How many Maps are there in a particular Job?](#How-many-Maps-are-there-in-a-particular-Job)
++ [What is the Reducer used for?](#What-is-the-Reducer-used-for)
++ [Explain the core methods of the Reducer?](#Explain-the-core-methods-of-the-Reducer)
++ [What are the primary phases of the Reducer?](#What-are-the-primary-phases-of-the-Reducer)
++ [Explain the Shuffle?](#Explain-the-Shuffle)
++ [Explain the Reducer's sort phase?](#Explain-the-Reducer's-sort-phase)
++ [Explain the Reducer's reduce phase?](#Explain-the-Reducer's-reduce-phase)
++ [How many Reducers should be configured?](#How-many-Reducers-should-be-configured)
++ [It can be possible that a Job has 0 Reducers?](#It-can-be-possible-that-a-Job-has-0-Reducers)
++ [What happens if number of Reducers are 0?](#What-happens-if-number-of-Reducers-are-0)
++ [How many instances of Jobtracker can run on a Hadoop Cluster?](#How-many-instances-of-Jobtracker-can-run-on-a-Hadoop-Cluster)
++ [What is the Jobtracker and what it performs in a Hadoop Cluster?](#What-is-the-Jobtracker-and-what-it-performs-in-a-Hadoop-Cluster)
++ [How a task is scheduled by a Jobtracker?](#How-a-task-is-scheduled-by-a-Jobtracker)
++ [How many instances of Tasktracker run on a Hadoop Cluster?](#How-many-instances-of-Tasktracker-run-on-a-Hadoop-Cluster)
++ [How many maximum Jvm can run on a Slave Node?](#How-many-maximum-Jvm-can-run-on-a-Slave-Node)
++ [What is Nas?](#What-is-Nas)
++ [How Hdfs differs with Nfs?](#How-Hdfs-differs-with-Nfs)
++ [How does a NameNode handle the failure of the Data Nodes?](#How-does-a-NameNode-handle-the-failure-of-the-Data-Nodes)
++ [Can Reducer talk with each other?](#Can-Reducer-talk-with-each-other)
++ [Where the Mapper's intermediate data will be stored?](#Where-the-Mapper's-intermediate-data-will-be-stored)
++ [What is the Hadoop Mapreduce api contract for a Key and Value Class?](#What-is-the-Hadoop-Mapreduce-api-contract-for-a-Key-and-Value-Class)
++ [What is a IdentityMapper and IdentityReducer in Mapreduce?](#What-is-a-IdentityMapper-and-IdentityReducer-in-Mapreduce)
++ [What is the meaning of Speculative Execution in Hadoop?](#What-is-the-meaning-of-Speculative-Execution-in-Hadoop)
++ [How Hdfs is different from traditional File Systems?](#How-Hdfs-is different-from-traditional-File-Systems)
++ [What is Hdfs block size and how is it different from Traditional File System block size?](#What-is-Hdfs-block-size-and-how-is-it-different-from-Traditional-File-System-block-size)
++ [What is a NameNode and how many instances of NameNode run on a Hadoop Cluster?](#What-is-a-NameNode-and-how-many-instances-of-NameNode-run-on-a-Hadoop Cluster)
++ [How the client communicates with Hdfs?](#How-the-client-communicates-with-Hdfs)
++ [How the Hdfs blocks are replicated?](#How-the-Hdfs-blocks-are-replicated)
++ [Can you give some examples of Big Data?](#Can-you-give-some-examples-of-Big-Data)
++ [What is the basic difference between traditional Rdbms and Hadoop?](#What-is-the-basic-difference-between-traditional-Rdbms-and-Hadoop)
++ [What is structured and unstructured Data?](#What-is-structured-and-unstructured-Data)
++ [Since the data is replicated thrice in Hdfs so does it mean that any calculation done on One Node will also be replicated on the other Two?](#Since-the-data-is-replicated-thrice-in-Hdfs-so-does-it-mean-that-any-calculation-done-on-One-Node-will-also-be-replicated-on-the-other-Two)
++ [What is throughput and how does Hdfs get a good throughput?](#What-is-throughput-and-how-does-Hdfs-get-a-good-throughput)
++ [What is streaming access?](#What-is-streaming-access)
++ [What is a Commodity Hardware so does Commodity Hardware include Ram?](#What-is-a-Commodity-Hardware-so-does-Commodity-Hardware-include-Ram)
++ [Is NameNode also a Commodity?](#Is-NameNode-also-a-Commodity)
++ [What is a Metadata?](#What-is-a-Metadata?)
++ [What is a Daemon?](#What-is-a-Daemon)
++ [What is a Heartbeat in Hdfs?](#What-is-a-Heartbeat-in-Hdfs)
++ [How indexing is done in Hdfs?](#How-indexing-is-done-in-Hdfs)
++ [If a Data Node is full how it's identified?](#If-a-Data-Node-is-full-how-it's-identified)
++ [If DataNodes increase then do we need to upgrade NameNode?](#If-DataNodes-increase-then-do-we-need-to-upgrade-NameNode)
++ [Are Job Tracker and Task Trackers present in separate machines?](#Are-Job-Tracker-and-Task-Trackers-present-in-separate-machines)
++ [On what basis NameNode will decide which DataNode to write on?](#On-what-basis-NameNode-will-decide-which-DataNode-to-write-on)
++ [Who is a user in Hdfs?](#Who-is-a-user-in-Hdfs)
++ [Is client the end user in Hdfs?](#Is-client-the-end-user-in-Hdfs)
++ [What is the Communication Channel between client and NameNode/DataNode?](#What-is-the-Communication-Channel-between-client-and-NameNode/DataNode)
++ [What is a Rack?](#What-is-a-Rack)
++ [On what basis Data will be stored on a Rack?](#On-what-basis-Data-will-be-stored-on-a-Rack)
++ [Do we need to place 2nd and 3rd Data in Rack 2 only?](#Do-we-need-to-place-2nd-and-3rd-Data-in-Rack-2-only)
++ [What if Rack 2 and DataNode fails?](#What-if-Rack-2-and-DataNode-fails)
++ [What is the difference between Gen1 and Gen2 Hadoop with regards to the NameNode?](#What-is-the-difference-between-Gen1-and-Gen2-Hadoop-with-regards-to-the-NameNode)
++ [Do we require two servers for the NameNode and the DataNodes?](#Do-we-require-two-servers-for-the-NameNode-and-the-DataNodes)
++ [Why are the number of splits equal to the number of Maps?](#Why-are-the-number-of-splits-equal-to-the-number-of-Maps)
++ [Is a Job split into maps?](#Is-a-Job-split-into-maps)
++ [Which are the two types of writes in Hdfs?](#Which-are-the-two-types-of-writes-In-Hdfs)
++ [Why reading is done in parallel and writing is not in Hdfs?](#Why-reading-is-done-in-parallel-and-writing-is-not-in-Hdfs)
++ [Can Hadoop be compared to Nosql Database like Cassandra?](#Can-Hadoop-be-compared-to-Nosql-Database-like-Cassandra)
++ [How JobTracker schedules a task?](#How-JobTracker-schedules-a-task)
++ [What is a Task Tracker in Hadoop and how many instances of Task Tracker run on a Hadoop Cluster?](#What-is-a-Task-Tracker-in-Hadoop-and-how-many-instances-of-Task-Tracker-run-on-a-Hadoop-Cluster)
++ [What is a task instance in Hadoop and where does it run?](#What-is-a-task-instance-in-Hadoop-and-where-does-it-run)
++ [What is configuration of a typical Slave Node on Hadoop Cluster and how many Jvms run on a Slave Node?](#What-is-configuration-of-a-typical-Slave-Node-on-Hadoop-Cluster-and-how-many-Jvms-run-on-a-Slave-Node)
++ [How NameNode handles DataNode failures?](#How-NameNode-handles-DataNode-failures)
++ [Does Mapreduce programming model provide a way for Reducers to communicate with each other and in a Mapreduce Job can a Reducer communicate with another Reducer?](#Does-Mapreduce-programming-model-provide-a-way-for-Reducers-to-communicate-with-each-other-and-in-a-Mapreduce-Job-can-a-Reducer-communicate-with-another-Reducer)
++ [Can I set the number of Reducers to Zero?](#Can-I-set-the-number-of-Reducers-to-Zero)
++ [Where is the Mapper Output intermediate Kay-value data stored?](#Where-is-the-Mapper-Output-intermediate-Kay-value-data-stored)
++ [If Reducers do not start before all Mappers finish then why does the progress on Mapreduce Job shows something like Map 50 percents Reduce 10 percents and why Reducers progress percentage is displayed when Mapper is not Finished yet?](#If-Reducers-do-not-start-before-all-Mappers-finish-then-why-does-the-progress-on-Mapreduce-Job-shows-something-like-Map-50-percents-Reduce-10-percents-and-why-Reducers-progress-percentage-is-displayed-when-Mapper-is-not-Finished-yet)
++ [Explain in brief the three Modes in which Hadoop can be run?](#Explain-in-brief-the-three-Modes-in-which-Hadoop-can-be-run)
++ [Explain what are the features of Standalone local Mode?](#Explain-what-are-the-features-of-Standalone-local-Mode)
++ [What are the features of fully distributed mode?](#What-are-the-features-of-fully-distributed-mode)
++ [Explain what are the main features Of pseudo mode?](#Explain-what-are-the-main-features-Of-pseudo-mode)
++ [What are the port numbers of NameNode and JobTracker and TaskTracker?](#What-are-the-port-numbers-of-NameNode-and-JobTracker-and-TaskTracker)
++ [Tell us what is a spill factor with respect to the ram?](#Tell-us-what-is-a-spill-factor-with-respect-to-the-ram)
++ [Is fs.mapr working for a single directory?](#Is-fs.mapr-working-for-a-single-directory)
++ [Which are the three main Hdfs-site.xml properties?](#Which-are-the-three-main-Hdfs-site.xml-properties)
++ [How can I restart NameNode?](#How-can-I-restart-Namenode)
++ [How can we check whether Namenode is working or not?](#How-can-we-check-whether-Namenode-is-working-or-not)
++ [At times you get a connection refused Java Exception when you run the file system check command Hadoop fsck?](#At-times-you-get-a-connection-refused-Java-Exception-when-you-run-the-file-system-check-command-Hadoop-fsck)
++ [What is the use of the command Mapred.job.tracker?](#What-is-the-use-of-the-command-Mapred.job.tracker)
++ [What does etc/init.d do?](#What-does-etc.init.d-do)
++ [How can we look for the Namenode in the browser?](#How-can-we-look-for-the-Namenode-in-the-browser)
++ [What do masters and slaves consist of?](#What-do-masters-and-slaves-consist-of)
++ [What is the function Of Hadoop-env.sh and where is it present?](#What-is-the-function-Of-Hadoop-env.sh-and-where-is-it-present)
++ [Can we have multiple entries in the master files?](#Can-we-have-multiple-entries-in-the-master-files)
++ [In Hadoop_pid_dir and what does pid stands for?](#In-Hadoop_pid_dir-and-what-does-pid-stands-for)
++ [What does Hadoop-metrics and properties file do?](#What-does-Hadoop-metrics-and-properties-file-do)
++ [What are the network requirements for hadoop?](#What-are-the-network-requirements-for-hadoop)
++ [Why do we need a password-less ssh in fully distributed environment?](#Why-do-we-need-a-passwordless-ssh-in-fully-distributed-environment)
++ [What will happen if a NameNode has no data?](#What-will-happen-if-a-NameNode-has-no-data)
++ [What happens to job tracker when NameNode is down?](#What-happens-to-job-tracker-when-NameNode-is-down)
++ [Explain what do you mean by formatting of the Dfs?](#Explain-what-do-you-mean-by-formatting-of-the-Dfs)
++ [We use Unix variants for hadoop and can we use Microsoft Windows for the same?](#We-use-Unix-variants-for-hadoop-and-can-we-use-Microsoft-Windows-for-the-same)
++ [Which one decides the input split hdfs client or NameNode?](#Which-one-decides-the-input-split-hdfs-client-or-NameNode)
++ [Can you tell me if we can create a hadoop cluster from scratch?](#Can-you-tell-me-if-we-can-create-a-hadoop-cluster-from-scratch)
++ [Explain the significance of ssh and what is the port on which port does ssh work and why do we need password in ssh local host?](#Explain-the-significance-of-ssh-and-what-is-the-port-on-which-port-does-ssh-work-and-why-do-we-need-password-in-ssh-local-host)
++ [What is ssh and explain in detail about ssh communication between masters and the slaves?](#What-is-ssh-and-explain-in-detail-about-ssh-communication-between-masters-and-the-slaves)
++ [Can You Tell Is What Will Happen To A NameNode and When Job Tracker Is Not Up And Running?](#Can-you-tell-is-what-will-happen-to-a-NameNode-and-when-Job-tracker-is-not-up-and-running)
 
 
 
@@ -894,7 +894,7 @@ The Context object allows the mapper to interact with the rest of the Hadoop sys
 
 [Table of Contents](#HADOOP)
 
-##  How can you Add the arbitrary Key-value pairs in your Mapper?
+##  How can you Add the arbitrary Key value pairs in your Mapper?
 You can set arbitrary (key, value) pairs of configuration data in your Job, e.g. with
     Job.getConfiguration().set("myKey", "myVal"), and then retrieve this data in your mapper with
     Context.getConfiguration().get("myKey"). This kind of functionality is typically done in the Mapper's setup() method.
@@ -1003,27 +1003,27 @@ JobTracker is a daemon service which submits and tracks the MapReduce tasks to t
 
 [Table of Contents](#HADOOP)
 
-##  How A Task Is Scheduled By A Jobtracker?
+##  How a task is scheduled by a Jobtracker?
 The TaskTrackers send out heartbeat messages to the JobTracker, usually every few minutes, to reassure the JobTracker that it is still alive. These messages also inform the JobTracker of the number of available slots, so the JobTracker can stay up to date with where in the cluster work can be delegated. When the JobTracker tries to find somewhere to schedule a task within the MapReduce operations, it first looks for an empty slot on the same server that hosts the DataNode containing the data, and if not, it looks for an empty slot on a machine in the same rack.
 
 [Table of Contents](#HADOOP)
 
-## How Many Instances Of Tasktracker Run On A Hadoop Cluster?
+## How many instances of Tasktracker run on a Hadoop Cluster?
 There is one Daemon Tasktracker process for each slave node in the Hadoop cluster.
 
 [Table of Contents](#HADOOP)
 
-##  How Many Maximum Jvm Can Run On A Slave Node?
+##  How many maximum Jvm can run on a Slave Node?
 One or Multiple instances of Task Instance can run on each slave node. Each task instance is run as a separate JVM process. The number of Task instances can be controlled by configuration. Typically a high end machine is configured to run more task instances.
 
 [Table of Contents](#HADOOP)
 
-##  What Is Nas?
+##  What is Nas?
 It is one kind of file system where data can reside on one centralized machine and all the cluster member will read write data from that shared database, which would not be as efficient as HDFS.
 
 [Table of Contents](#HADOOP)
 
-##  How Hdfs Differs With Nfs?
+##  How Hdfs differs with Nfs?
 Following are differences between HDFS and NAS
     In HDFS Data Blocks are distributed across local drives of all machines in a cluster. Whereas in NAS data is stored on dedicated hardware.
     HDFS is designed to work with MapReduce System, since computation is moved to data. NAS is not suitable for MapReduce since data is stored separately from the computations.
@@ -1031,7 +1031,7 @@ Following are differences between HDFS and NAS
 
 [Table of Contents](#HADOOP)
 
-##  How Does A Namenode Handle The Failure Of The Data Nodes?
+##  How does a NameNode handle the failure of the Data Nodes?
 HDFS has master/slave architecture. An HDFS cluster consists of a single
     NameNode, a master server that manages the file system namespace and regulates access to files by clients.
     In addition, there are a number of DataNodes, usually one per node in the cluster, which manage storage attached to the nodes that they run on. The NameNode and DataNode are pieces of software designed to run on commodity machines.
@@ -1039,35 +1039,35 @@ HDFS has master/slave architecture. An HDFS cluster consists of a single
 
 [Table of Contents](#HADOOP)
 
-##  Can Reducer Talk With Each Other?
+##  Can Reducer talk with each other?
 No, Reducer runs in isolation.
 
 [Table of Contents](#HADOOP)
 
-##  Where The Mapper's Intermediate Data Will Be Stored?
+##  Where the Mapper's intermediate data will be stored?
 The mapper output (intermediate data) is stored on the Local file system (NOT HDFS) of each individual mapper nodes. This is typically a temporary directory location which can be setup in config by the Hadoop administrator. The intermediate data is cleaned up after the Hadoop Job completes.
 
 [Table of Contents](#HADOOP)
 
-##  What Is The Hadoop Mapreduce Api Contract For A Key And Value Class?
+##  What is the Hadoop Mapreduce api contract for a Key and Value Class?
 The Key must implement the org.apache.hadoop.io.WritableComparable interface.
     The value must implement the org.apache.hadoop.io.Writable interface.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Identitymapper And Identityreducer In Mapreduce?
+##  What is a IdentityMapper and IdentityReducer in Mapreduce?
 + org.apache.hadoop.mapred.lib.IdentityMapper: Implements the identity function, mapping inputs directly to outputs. If MapReduce programmer does not set the Mapper Class using JobConf.setMapperClass then IdentityMapper.class is used as a default value.
 + org.apache.hadoop.mapred.lib.IdentityReducer : Performs no reduction, writing all input values directly to the output. If MapReduce programmer does not set the Reducer Class using JobConf.setReducerClass then IdentityReducer.class is used as a default value.
 
 [Table of Contents](#HADOOP)
 
-##  What Is The Meaning Of Speculative Execution In Hadoop?
+##  What is the meaning of Speculative Execution in Hadoop?
 Speculative execution is a way of coping with individual Machine performance. In large clusters where hundreds or thousands of machines are involved there may be machines which are not performing as fast as others.
     This may result in delays in a full job due to only one machine not performaing well. To avoid this, speculative execution in hadoop can run multiple copies of same map or reduce task on different slave nodes. The results from first node to finish are used.
 
 [Table of Contents](#HADOOP)
 
-## How Hdfs Is Different From Traditional File Systems?
+## How Hdfs is different from traditional File Systems?
 HDFS, the Hadoop Distributed File System, is responsible for storing huge data on the cluster. This is a distributed file system designed to run on commodity hardware.
     It has many similarities with existing distributed file systems. However, the differences from other distributed file systems are significant.
     HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware.
@@ -1076,12 +1076,12 @@ HDFS, the Hadoop Distributed File System, is responsible for storing huge data o
 
 [Table of Contents](#HADOOP)
 
-##  What Is Hdfs Block Size and How Is It Different From Traditional File System Block Size?
+##  What is Hdfs block size and how is it different from Traditional File System block size?
 In HDFS data is split into blocks and distributed across multiple nodes in the cluster. Each block is typically 64Mb or 128Mb in size. Each block is replicated multiple times. Default is to replicate each block three times. Replicas are stored on different nodes. HDFS utilizes the local file system to store each HDFS block as a separate file. HDFS Block size can not be compared with the traditional file system block size.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Namenode and How Many Instances Of Namenode Run On A Hadoop Cluster?
+##  What is a NameNode and how many instances of NameNode run on a Hadoop Cluster?
 The NameNode is the centerpiece of an HDFS file system. It keeps the directory tree of all files in the file system, and tracks where across the cluster the file data is kept. It does not store the data of these files itself.
     There is only One NameNode process run on any hadoop cluster. NameNode runs on its own JVM process. In a typical production cluster its run on a separate machine.
     The NameNode is a Single Point of Failure for the HDFS Cluster. When the NameNode goes down, the file system goes offline.
@@ -1089,153 +1089,153 @@ The NameNode is the centerpiece of an HDFS file system. It keeps the directory t
 
 [Table of Contents](#HADOOP)
 
-##  How The Client Communicates With Hdfs?
+##  How the client communicates with Hdfs?
 The Client communication to HDFS happens using Hadoop HDFS API. Client applications talk to the NameNode whenever they wish to locate a file, or when they want to add/copy/move/delete a file on HDFS. The NameNode responds the successful requests by returning a list of relevant DataNode servers where the data lives. Client applications can talk directly to a DataNode, once the NameNode has provided the location of the data.
 
 [Table of Contents](#HADOOP)
 
-##  How The Hdfs Blocks Are Replicated?
+##  How the Hdfs blocks are replicated?
 HDFS is designed to reliably store very large files across machines in a large cluster. It stores each file as a sequence of blocks; all blocks in a file except the last block are the same size. The blocks of a file are replicated for fault tolerance. The block size and replication factor are configurable per file. An application can specify the number of replicas of a file. The replication factor can be specified at file creation time and can be changed later. Files in HDFS are write-once and have strictly one writer at any time.
     The NameNode makes all decisions regarding replication of blocks. HDFS uses rack-aware replica placement policy. In default configuration there are total 3 copies of a datablock on HDFS, 2 copies are stored on datanodes on same rack and 3rd copy on a different rack.
 
 [Table of Contents](#HADOOP)
 
-##  Can You Give Some Examples Of Big Data?
+##  Can you give some examples of Big Data?
 There are many real life examples of Big Data! Facebook is generating 500+ terabytes of data per day, NYSE (New York Stock Exchange) generates about 1 terabyte of new trade data per day, a jet airline collects 10 terabytes of censor data for every 30 minutes of flying time. All these are day to day examples of Big Data!
 
 [Table of Contents](#HADOOP)
 
-##  What Is The Basic Difference Between Traditional Rdbms And Hadoop?
+##  What is the basic difference between traditional Rdbms and Hadoop?
 Traditional RDBMS is used for transactional systems to report and archive the data, whereas Hadoop is an approach to store huge amount of data in the distributed file system and process it. RDBMS will be useful when you want to seek one record from Big data, whereas, Hadoop will be useful when you want Big data in one shot and perform analysis on that later.
 
 [Table of Contents](#HADOOP)
 
-##  What Is Structured And Unstructured Data?
+##  What is structured and unstructured Data?
 Structured data is the data that is easily identifiable as it is organized in a structure. The most common form of structured data is a database where specific information is stored in tables, that is, rows and columns. Unstructured data refers to any data that cannot be identified easily. It could be in the form of images, videos, documents, email, logs and random text. It is not in the form of rows and columns.
 
 [Table of Contents](#HADOOP)
 
-##  Since The Data Is Replicated Thrice In Hdfs so Does It Mean That Any Calculation Done On One Node Will Also Be Replicated On The Other Two?
+##  Since the data is replicated thrice in Hdfs so does it mean that any calculation done on One Node will also be replicated on the other Two?
 Since there are 3 nodes, when we send the MapReduce programs, calculations will be done only on the original data. The master node will know which node exactly has that particular data. In case, if one of the nodes is not responding, it is assumed to be failed. Only then, the required calculation will be done on the second replica.
 
 [Table of Contents](#HADOOP)
 
-##  What Is Throughput and How Does Hdfs Get A Good Throughput?
+##  What is throughput and how does Hdfs get a good throughput?
 Throughput is the amount of work done in a unit time. It describes how fast the data is getting accessed from the system and it is usually used to measure performance of the system. In HDFS, when we want to perform a task or an action, then the work is divided and shared among different systems. So all the systems will be executing the tasks assigned to them independently and in parallel. So the work will be completed in a very short period of time. In this way, the HDFS gives good throughput. By reading data in parallel, we decrease the actual time to read data tremendously.
 
 [Table of Contents](#HADOOP)
 
-##  What Is Streaming Access?
+##  What is streaming access?
 As HDFS works on the principle of ‘Write Once, Read Many‘, the feature of streaming access is extremely important in HDFS. HDFS focuses not so much on storing the data but how to retrieve it at the fastest possible speed, especially while analyzing logs. In HDFS, reading the complete data is more important than the time taken to fetch a single record from the data.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Commodity Hardware so Does Commodity Hardware Include Ram?
+##  What is a Commodity Hardware so does Commodity Hardware include Ram?
 Commodity hardware is a non-expensive system which is not of high quality or high-availability. Hadoop can be installed in any average commodity hardware. We don’t need super computers or high-end hardware to work on Hadoop. Yes, Commodity hardware includes RAM because there will be some services which will be running on RAM.
 
 [Table of Contents](#HADOOP)
 
-##  Is Namenode Also A Commodity?
+##  Is NameNode also a Commodity?
 No. Namenode can never be a commodity hardware because the entire HDFS rely on it. It is the single point of failure in HDFS. Namenode has to be a high-availability machine.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Metadata?
+##  What is a Metadata?
 Metadata is the information about the data stored in data nodes such as location of the file, size of the file and so on.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Daemon?
+##  What is a Daemon?
 Daemon is a process or service that runs in background. In general, we use this word in UNIX environment. The equivalent of Daemon in Windows is “services” and in Dos is ” TSR”.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Heartbeat In Hdfs?
+##  What is a Heartbeat in Hdfs?
 A heartbeat is a signal indicating that it is alive. A datanode sends heartbeat to Namenode and task tracker will send its heart beat to job tracker. If the Namenode or job tracker does not receive heart beat then they will decide that there is some problem in datanode or task tracker is unable to perform the assigned task.
 
 [Table of Contents](#HADOOP)
 
-##  How Indexing Is Done In Hdfs?
+##  How indexing is done in Hdfs?
 Hadoop has its own way of indexing. Depending upon the block size, once the data is stored, HDFS will keep on storing the last part of the data which will say where the next part of the data will be. In fact, this is the base of HDFS.
 
 [Table of Contents](#HADOOP)
 
-##  If A Data Node Is Full How It's Identified?
+##  If a Data Node is full how it's identified?
 When data is stored in datanode, then the metadata of that data will be stored in the Namenode. So Namenode will identify if the data node is full.
 
 [Table of Contents](#HADOOP)
 
-##  If Datanodes Increase Then Do We Need To Upgrade Namenode?
+##  If DataNodes increase then do we need to upgrade NameNode?
 While installing the Hadoop system, Namenode is determined based on the size of the clusters. Most of the time, we do not need to upgrade the Namenode because it does not store the actual data, but just the metadata, so such a requirement rarely arise.
 
 [Table of Contents](#HADOOP)
 
-##  Are Job Tracker And Task Trackers Present In Separate Machines?
+##  Are Job Tracker and Task Trackers present in separate machines?
 Yes, job tracker and task tracker are present in different machines. The reason is job tracker is a single point of failure for the Hadoop MapReduce service. If it goes down, all running jobs are halted.
 
 [Table of Contents](#HADOOP)
 
-## On What Basis Namenode Will Decide Which Datanode To Write On?
+## On what basis NameNode will decide which DataNode to write on?
 As the Namenode has the metadata (information) related to all the data nodes, it knows which datanode is free.
 
 [Table of Contents](#HADOOP)
 
-##  Who Is A user In Hdfs?
+##  Who is a user in Hdfs?
 A user is like you or me, who has some query or who needs some kind of data.
 
 [Table of Contents](#HADOOP)
 
-##  Is Client The End User In Hdfs?
+##  Is client the end user in Hdfs?
 No, Client is an application which runs on your machine, which is used to interact with the Namenode (job tracker) or datanode (task tracker).
 
 [Table of Contents](#HADOOP)
 
-##  What Is The Communication Channel Between Client And Namenode/datanode?
+##  What is the Communication Channel between client and NameNode/DataNode?
 The mode of communication is SSH.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Rack?
+##  What is a Rack?
 Rack is a storage area with all the datanodes put together. These datanodes can be physically located at different places. Rack is a physical collection of datanodes which are stored at a single location. There can be multiple racks in a single location.
 
 [Table of Contents](#HADOOP)
 
-##  On What Basis Data Will Be Stored On A Rack?
+##  On what basis Data will be stored on a Rack?
 When the client is ready to load a file into the cluster, the content of the file will be divided into blocks. Now the client consults the Namenode and gets 3 datanodes for every block of the file which indicates where the block should be stored. While placing the datanodes, the key rule followed is “for every block of data, two copies will exist in one rack, third copy in a different rack“. This rule is known as “Replica Placement Policy“.
 
 [Table of Contents](#HADOOP)
 
-##  Do We Need To Place 2nd And 3rd Data In Rack 2 Only?
+##  Do we need to place 2nd and 3rd Data in Rack 2 only?
 Yes, this is to avoid datanode failure.
 
 [Table of Contents](#HADOOP)
 
-##  What If Rack 2 And Datanode Fails?
+##  What if Rack 2 and DataNode fails?
 If both rack2 and datanode present in rack 1 fails then there is no chance of getting data from it. In order to avoid such situations, we need to replicate that data more number of times instead of replicating only thrice. This can be done by changing the value in replication factor which is set to 3 by default.
 
 [Table of Contents](#HADOOP)
 
-##  What Is The Difference Between Gen1 And Gen2 Hadoop With Regards To The Namenode?
+##  What is the difference between Gen1 and Gen2 Hadoop with regards to the NameNode?
 In Gen 1 Hadoop, Namenode is the single point of failure. In Gen 2 Hadoop, we have what is known as Active and Passive Namenodes kind of a structure. If the active Namenode fails, passive Namenode takes over the charge.
 
 [Table of Contents](#HADOOP)
 
-##  Do We Require Two Servers For The Namenode And The Datanodes?
+##  Do we require two servers for the NameNode and the DataNodes?
 Yes, we need two different servers for the Namenode and the datanodes. This is because Namenode requires highly configurable system as it stores information about the location details of all the files stored in different datanodes and on the other hand, datanodes require low configuration system.
 
 [Table of Contents](#HADOOP)
 
-##  Why Are The Number Of Splits Equal To The Number Of Maps?
+##  Why are the number of splits equal to the number of Maps?
 The number of maps is equal to the number of input splits because we want the key and value pairs of all the input splits.
 
 [Table of Contents](#HADOOP)
 
-##  Is A Job Split Into Maps?
+##  Is a Job split into maps?
 No, a job is not split into maps. Spilt is created for the file. The file is placed on datanodes in blocks. For each split, a map is needed.
 
 [Table of Contents](#HADOOP)
 
-##  Which Are The Two Types Of writes In Hdfs?
+##  Which are the two types of writes In Hdfs?
 There are two types of writes in HDFS: 
 + Posted and non-posted write. Posted Write is when we write it and forget about it, without worrying about the acknowledgement.
         It is similar to our traditional Indian post.
@@ -1243,64 +1243,64 @@ There are two types of writes in HDFS:
 
 [Table of Contents](#HADOOP)
 
-##  Why reading Is Done In Parallel And writing Is Not In Hdfs?
+##  Why reading is done in parallel and writing is not in Hdfs?
 Reading is done in parallel because by doing so we can access the data fast. But we do not perform the write operation in parallel. The reason is that if we perform the write operation in parallel, then it might result in data inconsistency. For example, you have a file and two nodes are trying to write data into the file in parallel, then the first node does not know what the second node has written and vice-versa. So, this makes it confusing which data to be stored and accessed.
 
 [Table of Contents](#HADOOP)
 
-##  Can Hadoop Be Compared To Nosql Database Like Cassandra?
+##  Can Hadoop be compared to Nosql Database like Cassandra?
 Though NOSQL is the closet technology that can be compared to Hadoop, it has its own pros and cons. There is no DFS in NOSQL. Hadoop is not a database. It’s a file system (HDFS) and distributed programming framework (MapReduce).
 
 [Table of Contents](#HADOOP)
 
-##  How Jobtracker Schedules A Task?
+##  How JobTracker schedules a task?
 The TaskTrackers send out heartbeat messages to the JobTracker, usually every few minutes, to reassure the JobTracker that it is still alive. These message also inform the JobTracker of the number of available slots, so the JobTracker can stay up to date with where in the cluster work can be delegated. When the JobTracker tries to find somewhere to schedule a task within the MapReduce operations, it first looks for an empty slot on the same server that hosts the DataNode containing the data, and if not, it looks for an empty slot on a machine in the same rack.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Task Tracker In Hadoop and How Many Instances Of Tasktracker Run On A Hadoop Cluster?
+##  What is a Task Tracker in Hadoop and how many instances of Task Tracker run on a Hadoop Cluster?
 A TaskTracker is a slave node daemon in the cluster that accepts tasks (Map, Reduce and Shuffle operations) from a JobTracker. There is only One Task Tracker process run on any hadoop slave node. Task Tracker runs on its own JVM process. Every TaskTracker is configured with a set of slots, these indicate the number of tasks that it can accept. The TaskTracker starts a separate JVM processes to do the actual work (called as Task Instance) this is to ensure that process failure does not take down the task tracker. The TaskTracker monitors these task instances, capturing the output and exit codes. When the Task instances finish, successfully or not, the task tracker notifies the JobTracker. The TaskTrackers also send out heartbeat messages to the JobTracker, usually every few minutes, to reassure the JobTracker that it is still alive. These message also inform the JobTracker of the number of available slots, so the JobTracker can stay up to date with where in the cluster work can be delegated.
 
 [Table of Contents](#HADOOP)
 
-##  What Is A Task Instance In Hadoop and Where Does It Run?
+##  What is a task instance in Hadoop and where does it run?
 Task instances are the actual MapReduce jobs which are run on each slave node. The TaskTracker starts a separate JVM processes to do the actual work (called as Task Instance) this is to ensure that process failure does not take down the task tracker. Each Task Instance runs on its own JVM process. There can be multiple processes of task instance running on a slave node. This is based on the number of slots configured on task tracker. By default a new task instance JVM process is spawned for a task.
 
 [Table of Contents](#HADOOP)
 
-##  What Is Configuration Of A Typical Slave Node On Hadoop Cluster and How Many Jvms Run On A Slave Node?
+##  What is configuration of a typical Slave Node on Hadoop Cluster and how many Jvms run on a Slave Node?
 Single instance of a Task Tracker is run on each Slave node. Task tracker is run as a separate JVM process.
     Single instance of a DataNode daemon is run on each Slave node. DataNode daemon is run as a separate JVM process.
     One or Multiple instances of Task Instance is run on each slave node. Each task instance is run as a separate JVM process. The number of Task instances can be controlled by configuration. Typically a high end machine is configured to run more task instances.
 
 [Table of Contents](#HADOOP)
 
-##  How Namenode Handles Data Node Failures?
+##  How NameNode handles DataNode failures?
 NameNode periodically receives a Heartbeat and a Blockreport from each of the DataNodes in the cluster. Receipt of a Heartbeat implies that the DataNode is functioning properly. A Blockreport contains a list of all blocks on a DataNode. When NameNode notices that it has not recieved a hearbeat message from a data node after a certain amount of time, the data node is marked as dead. Since blocks will be under replicated the system begins replicating the blocks that were stored on the dead datanode. The NameNode Orchestrates the replication of data blocks from one datanode to another. The replication data transfer happens directly between datanodes and the data never passes through the namenode.
 
 [Table of Contents](#HADOOP)
 
-## Does Mapreduce Programming Model Provide A Way For Reducers To Communicate With Each Other and In A Mapreduce Job Can A Reducer Communicate With Another Reducer?
+## Does Mapreduce programming model provide a way for Reducers to communicate with each other and in a Mapreduce Job can a Reducer communicate with another Reducer?
 Nope, MapReduce programming model does not allow reducers to communicate with each other. Reducers run in isolation.
 
 [Table of Contents](#HADOOP)
 
-##  Can I Set The Number Of Reducers To Zero?
-Yes, Setting the number of reducers to zero is a valid configuration in Hadoop. When you set the reducers to zero no reducers will be executed, and the output of each mapper will be stored to a separate file on HDFS. [This is different from the condition when reducers are set to a number greater than zero and the Mappers output (intermediate data) is written to the Local file system(NOT HDFS) of each mappter slave node.]
+##  Can I set the number of Reducers to Zero?
+Yes, Setting the number of reducers to zero is a valid configuration in Hadoop. When you set the reducers to zero no reducers will be executed, and the output of each mapper will be stored to a separate file on HDFS.This is different from the condition when reducers are set to a number greater than zero and the Mappers output (intermediate data) is written to the Local file system(NOT HDFS) of each mappter slave node.
 
 [Table of Contents](#HADOOP)
 
-##  Where Is The Mapper Output intermediate Kay-value Data Stored?
+##  Where is the Mapper Output intermediate Kay value data stored?
 The mapper output (intermediate data) is stored on the Local file system (NOT HDFS) of each individual mapper nodes. This is typically a temporary directory location which can be setup in config by the hadoop administrator. The intermediate data is cleaned up after the Hadoop Job completes.
 
 [Table of Contents](#HADOOP)
 
-##  If Reducers Do Not Start Before All Mappers Finish Then Why Does The Progress On Mapreduce Job Shows Something Like Map 50 percents Reduce 10 percents and Why Reducers Progress Percentage Is Displayed When Mapper Is Not Finished Yet?
+##  If Reducers do not start before all Mappers finish then why does the progress on Mapreduce Job shows something like Map 50 percents Reduce 10 percents and why Reducers progress percentage is displayed when Mapper is not Finished yet?
 Reducers start copying intermediate key-value pairs from the mappers as soon as they are available. The progress calculation also takes in account the processing of data transfer which is done by reduce process, therefore the reduce progress starts showing up as soon as any intermediate key-value pair for a mapper is available to be transferred to reducer. Though the reducer progress is updated still the programmer defined reduce method is called only after all the mappers have finished.
 
 [Table of Contents](#HADOOP)
 
-## Explain In Brief The Three Modes In Which Hadoop Can Be Run?
+## Explain in brief the three Modes in which Hadoop can be run?
  The three modes in which Hadoop can be run are:
 + Standalone (local) mode - No Hadoop daemons running, everything runs on a single Java Virtual machine only.
 + Pseudo-distributed mode - Daemons run on the local machine, thereby simulating a cluster on a smaller scale.
@@ -1308,7 +1308,7 @@ Reducers start copying intermediate key-value pairs from the mappers as soon as 
 
 [Table of Contents](#HADOOP)
 
-## Explain What Are The Features Of Standalone local Mode?
+## Explain what are the features of Standalone local Mode?
 In stand-alone or local mode there are no Hadoop daemons running,  and everything runs on a single Java process. Hence, we don't get the benefit of distributing the code across a cluster of machines. Since, it has no DFS, it utilizes the local file system. This mode is suitable only for running MapReduce programs by developers during various stages of development. Its the best environment for learning and good for debugging purposes.
 
 [Table of Contents](#HADOOP)
@@ -1338,7 +1338,7 @@ Yes, fs.mapr.working.dir it is just one directory.
 
 [Table of Contents](#HADOOP)
 
-##  Which are the three main Hdfs-site.xml properties?
+##  Which are the three main Hdfs site.xml properties?
 The three main hdfs-site.xml properties are:
 + Dfs.name.dir which gives you the location on which metadata will be stored and where DFS is located – on disk or onto the remote.
 + Dfs.data.dir which gives you the location where the data is going to be stored.
@@ -1397,7 +1397,7 @@ PID stands for ‘Process ID’.
 
 [Table of Contents](#HADOOP)
 
-##  What does Hadoop-metrics and properties file do?
+##  What does Hadoop metrics and properties file do?
 Hadoop-metrics Properties is used for ‘Reporting‘purposes. It controls the reporting for hadoop. The default status is ‘not to report‘.
 
 [Table of Contents](#HADOOP)
@@ -1407,17 +1407,17 @@ The Hadoop core uses Shell (SSH) to launch the server processes on the slave nod
 
 [Table of Contents](#HADOOP)
 
-##  Why do we need a password-less ssh in fully distributed environment?
+##  Why do we need a passwordless ssh in fully distributed environment?
 We need a password-less SSH in a Fully-Distributed environment because when the cluster is LIVE and running in Fully Distributed environment, the communication is too frequent. The job tracker should be able to send a task to task tracker quickly.
 
 [Table of Contents](#HADOOP)
 
-##  What will happen if a namenode has no data?
+##  What will happen if a NameNode has no data?
 If a Namenode has no data it cannot be considered as a Namenode. In practical terms, Namenode needs to have some data.
 
 [Table of Contents](#HADOOP)
 
-##  What happens to job tracker when namenode is down?
+##  What happens to job tracker when NameNode is down?
 Namenode is the main point which keeps all the metadata, keep tracks of failure of datanode with the help of heart beats. As such when a namenode is down, your cluster will be completely down, because Namenode is the single point of failure in a Hadoop Installation.
 
 [Table of Contents](#HADOOP)
@@ -1427,12 +1427,12 @@ Like we do in Windows, DFS is formatted for proper structuring of data. It is no
 
 [Table of Contents](#HADOOP)
 
-##  We use Unix variants for hadoop and can we use microsoft windows for the same?
+##  We use Unix variants for hadoop and can we use Microsoft Windows for the same?
 In practicality, Ubuntu and Red Hat Linux are the best Operating Systems for Hadoop. On the other hand, Windows can be used but it is not used frequently for installing Hadoop as there are many support problems related to it. The frequency of crashes and the subsequent restarts makes it unattractive. As such, Windows is not recommended as a preferred environment for Hadoop Installation, though users can give it a try for learning purposes in the initial stage.
 
 [Table of Contents](#HADOOP)
 
-##  Which one decides the input split hdfs client or namenode?
+##  Which one decides the input split hdfs client or NameNode?
 The HDFS Client does not decide. It is already specified in one of the configurations through which input split is already configured.
 
 [Table of Contents](#HADOOP)
