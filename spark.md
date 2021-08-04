@@ -1,17 +1,17 @@
 What are the main features of Apache Spark?
 Main features of Apache Spark are as follows:
-Performance: The key feature of Apache Spark is its Performance. With Apache Spark we can run programs up to 100 times faster than Hadoop MapReduce in memory. On disk we can run it 10 times faster than Hadoop.
-Ease of Use: Spark supports Java, Python, R, Scala etc. languages. So it makes it much easier to develop applications for Apache Spark.
-Integrated Solution: In Spark we can create an integrated solution that combines the power of SQL, Streaming and data analytics.
-Run Everywhere: Apache Spark can run on many platforms. It can run on Hadoop, Mesos, in Cloud or standalone. It can also connect to many data sources like HDFS, Cassandra, HBase, S3 etc.
-Stream Processing: Apache Spark also supports real time stream processing. With real time streaming we can provide real time analytics solutions. This is very useful for real-time data.
++ Performance: The key feature of Apache Spark is its Performance. With Apache Spark we can run programs up to 100 times faster than Hadoop MapReduce in memory. On disk we can run it 10 times faster than Hadoop.
++ Ease of Use: Spark supports Java, Python, R, Scala etc. languages. So it makes it much easier to develop applications for Apache Spark.
++ Integrated Solution: In Spark we can create an integrated solution that combines the power of SQL, Streaming and data analytics.
+R+ un Everywhere: Apache Spark can run on many platforms. It can run on Hadoop, Mesos, in Cloud or standalone. It can also connect to many data sources like HDFS, Cassandra, HBase, S3 etc.
++ Stream Processing: Apache Spark also supports real time stream processing. With real time streaming we can provide real time analytics solutions. This is very useful for real-time data.
 
-103.	What is a Resilient Distribution Dataset in Apache Spark?
-        Resilient Distribution Dataset (RDD) is an abstraction of data in Apache Spark. It is a distributed and resilient collection of records spread over many partitions. RDD hides the data partitioning and distribution behind the scenes. Main	features of RDD 	are as follows:
-        Distributed: Data in a RDD is distributed across multiple nodes.
-        Resilient: RDD is a fault- tolerant dataset. In case of node failure, Spark can re- compute data.
-        Dataset: It is a collection of data similar to collections in Scala.
-        Immutable: Data in RDD cannot be modified after creation. But we can transform it using a Transformation.
+What is a Resilient Distribution Dataset in Apache Spark?
+Resilient Distribution Dataset (RDD) is an abstraction of data in Apache Spark. It is a distributed and resilient collection of records spread over many partitions. RDD hides the data partitioning and distribution behind the scenes. Main	features of RDD 	are as follows:
++ Distributed: Data in a RDD is distributed across multiple nodes.
++ Resilient: RDD is a fault- tolerant dataset. In case of node failure, Spark can re- compute data.
++ Dataset: It is a collection of data similar to collections in Scala.
++ Immutable: Data in RDD cannot be modified after creation. But we can transform it using a Transformation.
 
 What is a Transformation in Apache Spark?
 Transformation in Apache Spark is a function that can be applied to a RDD. Output of a Transformation is another RDD. Transformation in Spark is a lazy operation. It means it is not executed immediately. Once we call an action, transformation is executed. A Transformation does not change the input RDD. We can also create a pipeline of certain Transformations to create a Data flow.
@@ -23,40 +23,39 @@ Encryption: Apache Spark supports encryption by SSL. We can use HTTPS protocol f
 Authentication: We can perform authentication by a shared secret in Apache Spark. We can use spark.authenticate	to configure authentication in Spark.
 Event Logging: If we use Event Logging, then we can set the permissions on the directory where event logs are	stored.	These permissions can ensure access control for Event log.
 
-106.	How will you monitor Apache Spark?
-        We can use the Web UI provided by SparkContext to monitor Spark. We can access this Web UI at port 4040 to get the useful information. Some of the information that we can monitor is:
-        Scheduler tasks and stages RDD	Sizes	and	Memory usage Spark	Environment Information
-        Executors Information
-        Spark also provides a Metrics library. This library can be used to send Spark information to HTTP, JMX, CSV files etc.This is another option to collect Spark runtime information for monitoring another dashboard tool.
+How will you monitor Apache Spark?
+We can use the Web UI provided by SparkContext to monitor Spark. We can access this Web UI at port 4040 to get the useful information. Some of the information that we can monitor is:
++ Scheduler tasks and stages RDD	Sizes	and	Memory usage Spark	Environment Information
++ Executors Information
++ Spark also provides a Metrics library. This library can be used to send Spark information to HTTP, JMX, CSV files etc.This is another option to collect Spark runtime information for monitoring another dashboard tool.
 
-107.	What are the main libraries of Apache Spark?
-        Some	of the main libraries of Apache Spark are as follows:
-        MLib: This is Spark’s Machine Learning library. We can use it to create scalable machine learning system. We can use various machine learning algorithms as well as features like pipelining etc with this library.
-        GraphX: This library is used for computation of Graphs. It helps in creating a Graph abstraction of data and then use various Graph operators like- SubGraph, joinVertices etc.
-        Structured Streaming: This library is used for handling streams in Spark. It is a fault tolerant system built on top of Spark SQL Engine to process streams.
-        Spark SQL: This is another popular component that is used	for	processing	SQL queries on Spark platform.
-        SparkR: This is a package in Spark to use Spark from R language. We can use R data frames, dplyr etc from this package. We can also start SparkR from RStudio.
+What are the main libraries of Apache Spark?
+Main libraries of Apache Spark are as follows:
++ MLib: This is Spark’s Machine Learning library. We can use it to create scalable machine learning system. We can use various machine learning algorithms as well as features like pipelining etc with this library.
++ GraphX: This library is used for computation of Graphs. It helps in creating a Graph abstraction of data and then use various Graph operators like- SubGraph, joinVertices etc.
++ Structured Streaming: This library is used for handling streams in Spark. It is a fault tolerant system built on top of Spark SQL Engine to process streams.
++ Spark SQL: This is another popular component that is used	for	processing	SQL queries on Spark platform.
++ SparkR: This is a package in Spark to use Spark from R language. We can use R data frames, dplyr etc from this package. We can also start SparkR from RStudio.
 
-108.	What are the main functions of Spark Core in Apache Spark?
-        Spark Core is the central component of Apache Spark. It serves following functions:
-        Distributed Task Dispatching
-        Job Scheduling
-        I/O Functions
+What are the main functions of Spark Core in Apache Spark?
+Spark Core is the central component of Apache Spark. It serves following functions:
++ Distributed Task Dispatching
++ Job Scheduling
++ I/O Functions
 
-109.	How will you do memory tuning in Spark?
-        In case of memory tuning we have to take care of these points.
-
+How will you do memory tuning in Spark?
+In case of memory tuning we have to take care of these points.
 Amount of memory used by objects Cost of accessing objects Overhead	of Garbage Collection
 Apache Spark stores objects in memory for caching. So it becomes important to perform memory tuning in a Spark application. First we determine the memory usage by the application. To do this we first create a RDD and put it in cache. Now we can see the size of the RDD in storage page of Web UI. This will tell the amount of memory consumed by RDD. Based on the memory usage, we can estimate the amount of memory needed for our task. In case we need tuning, we can follow these practices to reduce memory usage:
 Use data structures like Array of objects or primitives instead of Linked list or HashMap. Fastutil library provides convenient collection classes for primitive types compatible with Java.
 We have to reduce the usage of nested data structures with a large number of small objects and pointes. E.g. Linked list has pointers within each node.
 It is a good practice to use numeric IDs instead of Strings for keys.
-We can also use JVM flag - XX:+UseCompressedOops to	make	pointers	be	four bytes instead of eight.
+We can also use JVM flag - XX:+UseCompressedOops to	make pointers be four bytes instead of eight.
 
-110.	What are the two ways to create RDD in Spark?
-        We can create RDD in Spark in following two ways:
-        Internal: We can parallelize an existing collection of data within our Spark Driver program and create a RDD out of it.
-        External: We can also create RDD by referencing a Dataset in an external data source like AWS S3, HDFS, HBASE etc.
+What are the two ways to create RDD in Spark?
+We can create RDD in Spark in following two ways:
++ Internal: We can parallelize an existing collection of data within our Spark Driver program and create a RDD out of it.
++ External: We can also create RDD by referencing a Dataset in an external data source like AWS S3, HDFS, HBASE etc.
 
 111.	What are the main operations that can be done on a RDD in Apache Spark?
         There are two main operations that can be performed on a RDD in Spark:
