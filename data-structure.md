@@ -308,146 +308,76 @@ Answer :
 
 Two. One queue is used for actual storing of data and another for storing priorities.
 
-C Interview Questions
-Question 34. What Is The Data Structures Used To Perform Recursion?
-
-Answer :
+What Is The Data Structures Used To Perform Recursion?
 
 Stack. Because of its LIFO (Last In First Out) property it remembers its ‘caller’ so knows whom to return when the function has to return. Recursion makes use of system stack for storing the return addresses of the function calls.
-
 Every recursive function has its equivalent iterative (non-recursive) function. Even when such equivalent iterative procedures are written, explicit stack is to be used.
 
-Question 35. What Are The Notations Used In Evaluation Of Arithmetic Expressions Using Prefix And Postfix Forms?
-
-Answer :
-
+What Are The Notations Used In Evaluation Of Arithmetic Expressions Using Prefix And Postfix Forms?
 Polish and Reverse Polish notations.
 
-Question 36. Convert The Expression ((a + B) * C - (d - E) ^ (f + G)) To Equivalent Prefix And Postfix Notations?
-
-Answer :
-
+Convert The Expression ((a + B) * C - (d - E) ^ (f + G)) To Equivalent Prefix And Postfix Notations?
 Prefix Notation:
-
-^ – * +ABC – DE + FG
-
++ ^ – * +ABC – DE + FG
 postfix Notation:
++ AB + C * DE – – FG + ^
 
-AB + C * DE – – FG + ^
-
-Database Administration Interview Questions
-Question 37. List Out Few Of The Application Of Tree Data-structure?
-
-Answer :
-
+List Out Few Of The Application Of Tree Data-structure?
 The manipulation of Arithmetic expression, Symbol Table construction & Syntax analysis.
 
-Question 38. List Out Few Of The Applications That Make Use Of Multilinked Structures?
-
-Answer :
-
+List Out Few Of The Applications That Make Use Of Multilinked Structures?
 Sparse matrix, Index generation.
 
-Question 39. What Is The Type Of The Algorithm Used In Solving The 8 Queens Problem?
-
-Answer :
-
+What Is The Type Of The Algorithm Used In Solving The 8 Queens Problem?
 Backtracking.
 
-Question 40. In An Avl Tree, At What Condition The Balancing Is To Be Done?
-
-Answer :
-
+In An Avl Tree, At What Condition The Balancing Is To Be Done?
 If the ‘pivotal value’ (or the ‘Height factor’) is greater than 1 or less than –1.
 
-CSS Advanced Interview Questions
-Question 41. There Are 8, 15, 13, 14 Nodes Were There In 4 Different Trees. Which Of Them Could Have Formed A Full Binary Tree?
-
-Answer :
-
+There Are 8, 15, 13, 14 Nodes Were There In 4 Different Trees. Which Of Them Could Have Formed A Full Binary Tree?
 In general: There are 2n-1 nodes in a full binary tree. By the method of elimination:
-
 Full binary trees contain odd number of nodes. So there cannot be full binary trees with 8 or 14 nodes, so rejected. With 13 nodes you can form a complete binary tree but not a full binary tree. So the correct answer is 15.
 
-Question 42. In Rdbms, What Is The Efficient Data Structure Used In The Internal Storage Representation?
-
-Answer :
-
+In Rdbms, What Is The Efficient Data Structure Used In The Internal Storage Representation?
 B+ tree. Because in B+ tree, all the data is stored only in leaf nodes, that makes searching easier. This corresponds to the records that shall be stored in leaf nodes.
 
-Maven Interview Questions
-Question 43. What Is A Spanning Tree?
-
-Answer :
-
+What Is A Spanning Tree?
 A spanning tree is a tree associated with a network. All the nodes of the graph appear on the tree once. A minimum spanning tree is a spanning tree organized so that the total edge weight between nodes is minimized.
 
-Question 44. Does The Minimal Spanning Tree Of A Graph Give The Shortest Distance Between Any 2 Specified Nodes?
-
-Answer :
-
+Does The Minimal Spanning Tree Of A Graph Give The Shortest Distance Between Any 2 Specified Nodes?
 No! Minimal spanning tree assures that the total weight of the tree is kept at its minimum. But it doesn’t mean that the distance between any two nodes involved in the minimal-spanning tree is minimum.
 
-Question 45. Difference Between Calloc And Malloc ?
-
-Answer :
-
+Difference Between Calloc And Malloc ?
 malloc: allocate n bytes.
 calloc: allocate m times n bytes initialized to 0.
 
-Question 46. What Are The Major Data Structures Used In The Following Areas : Rdbms, Network Data Model & Hierarchical Data Model?
-
-Answer :
-
+What Are The Major Data Structures Used In The Following Areas : Rdbms, Network Data Model & Hierarchical Data Model?
 RDBMS Array (i.e. Array of structures)
 Network data model Graph
 Hierarchical data model Trees.
-Question 47. Which File Contains The Definition Of Member Functions?
 
-Answer :
-
+Which File Contains The Definition Of Member Functions?
 Definitions of member functions for the Linked List class are contained in the LinkedList.cpp file.
 
-Question 48. How Is Any Data Structure Application Is Classified Among Files?
-
-Answer :
-
+How Is Any Data Structure Application Is Classified Among Files?
 A linked list application can be organized into a header file, source file and main application file. The first file is the header file that contains the definition of the NODE structure and the LinkedList class definition. The second file is a source code file containing the implementation of member functions of the LinkedList class. The last file is the application file that contains code that creates and uses the LinkedList class.
 
-Question 49. What Member Function Places A New Node At The End Of The Linked List?
-
-Answer :
-
+What Member Function Places A New Node At The End Of The Linked List?
 The appendNode() member function places a new node at the end of the linked list. The appendNode() requires an integer representing the current data of the node.
 
-Question 50. What Is Linked List ?
-
-Answer :
-
+What Is Linked List ?
 Linked List is one of the fundamental data structures. It consists of a sequence of ? nodes, each containing arbitrary data fields and one or two (”links”) pointing to the next and/or previous nodes. A linked list is a self-referential datatype because it contains a pointer or link to another data of the same type. Linked lists permit insertion and removal of nodes at any point in the list in constant time, but do not allow random access.
 
-Question 51. What Does Each Entry In The Link List Called?
-
-Answer :
-
+What Does Each Entry In The Link List Called?
 Each entry in a linked list is called a node. Think of a node as an entry that has three sub entries. One sub entry contains the data, which may be one attribute or many attributes. Another points to the previous node, and the last points to the next node. When you enter a new item on a linked list, you allocate the new node and then set the pointers to previous and next nodes.
 
-Question 52. How Is The Front Of The Queue Calculated ?
-
-Answer :
-
+How Is The Front Of The Queue Calculated ?
 The front of the queue is calculated by front = (front+1) % size.
 
-Question 53. Why Is The Isempty() Member Method Called?
-
-Answer :
-
+Why Is The Isempty() Member Method Called?
 The isEmpty() member method is called within the dequeue process to determine if there is an item in the queue to be removed i.e. isEmpty() is called to decide whether the queue has at least one element. This method is called by the dequeue() method before returning the front element.
 
-Question 54. Which Process Places Data At The Back Of The Queue?
-
-Answer :
-
+Which Process Places Data At The Back Of The Queue?
 Enqueue is the process that places data at the back of the queue.
 
 Question 55. What Is The Relationship Between A Queue And Its Underlying Array?

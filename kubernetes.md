@@ -9,6 +9,8 @@ Note: If you wish to perform maintenance on a single pod following two commands 
 
 kubectl get nodes: to list all the nodes
 kubectl drain <node name>: drain a particular node
+
+
 2. How do we control the resource usage of POD?
    With the use of limit and request resource usage of a POD can be controlled.
 
@@ -78,20 +80,22 @@ Load Balancer
 In Kubernetes, as shown in the above figure all the incoming traffic lands to a single IP address on the load balancer which is a way to expose your service to outside the internet which routes the incoming traffic to a particular pod (via service) using an algorithm known as round-robin. Even if any pod goes down load balances are notified so that the traffic is not routed to that particular unavailable node. Thus load balancers in Kubernetes are responsible for distributing a set of tasks (incoming traffic) to the pods
 
 7. What are the various things that can be done to increase Kubernetes security?
-   By default, POD can communicate with any other POD, we can set up network policies to limit this communication between the PODs.
-
+By default, POD can communicate with any other POD, we can set up network policies to limit this communication between the PODs.
 RBAC (Role-based access control) to narrow down the permissions.
 Use namespaces to establish security boundaries.
 Set the admission control policies to avoid running the privileged containers.
 Turn on audit logging.
-8. How to monitor the Kubernetes cluster?
-   Prometheus is used for Kubernetes monitoring. The Prometheus ecosystem consists of multiple components.
 
+
+8. How to monitor the Kubernetes cluster?
+Prometheus is used for Kubernetes monitoring. The Prometheus ecosystem consists of multiple components.
 Mainly Prometheus server which scrapes and stores time-series data.
 Client libraries for instrumenting application code.
 Push gateway for supporting short-lived jobs.
 Special-purpose exporters for services like StatsD, HAProxy, Graphite, etc.
 An alert manager to handle alerts on various support tools.
+
+
 9. How to get the central logs from POD?
    This architecture depends upon the application and many other factors. Following are the common logging patterns
 
@@ -100,11 +104,11 @@ Streaming sidecar container.
 Sidecar container with the logging agent.
 Export logs directly from the application.
 In the setup, journalbeat and filebeat are running as daemonset. Logs collected by these are dumped to the kafka topic which is eventually dumped to the ELK stack.
-
 The same can be achieved using EFK stack and fluentd-bit.
 
-Intermediate Interview Questions
-10. How to turn the service defined below in the spec into an external one?
+
+How to turn the service defined below in the spec into an external one?
+
     spec:
     selector:
     app: some-app
@@ -116,15 +120,17 @@ Intermediate Interview Questions
 
 Adding type: LoadBalancer and nodePort as follows:
 
-spec:
-selector:
-app: some-app
-type: LoadBalancer
-ports:
-- protocol: UDP
-  port: 8080
-  targetPort: 8080
-  nodePort: 32412
+    spec:
+    selector:
+    app: some-app
+    type: LoadBalancer
+    ports:
+    - protocol: UDP
+    port: 8080
+    targetPort: 8080
+    nodePort: 32412
+
+
 11. Complete the following configurationspec file to make it Ingress
     metadata:
     name: someapp-ingress
@@ -133,18 +139,19 @@ ports:
 
 One of the several ways to answer this question.
 
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-name: someapp-ingress
-spec:
-rules:
-- host: my.host
-  http:
-  paths:
-    - backend:
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+        name: someapp-ingress
+    spec:
+    rules:
+        - host: my.host
+    http:
+    paths:
+      - backend:
       serviceName: someapp-internal-service
       servicePort: 8080
+
 12. How to configure TLS with Ingress?
     Add tls and secretName entries.
 
@@ -157,7 +164,6 @@ tls:
     While using the default namespace alone, it becomes hard over time to get an overview of all the applications you can manage in your cluster. Namespaces make it easier to organize the applications into groups that make sense, like a namespace of all the monitoring applications and a namespace for all the security applications, etc.
 
 Namespaces can also be useful for managing Blue/Green environments where each namespace can include a different version of an app and also share resources that are in other namespaces (namespaces like logging, monitoring, etc.).
-
 Another use case for namespaces is one cluster with multiple teams. When multiple teams use the same cluster, they might end up stepping on each other's toes. For example, if they end up creating an app with the same name it means one of the teams overrides the app of the other team because there can't be two apps in Kubernetes with the same name (in the same namespace).
 
 14. In the following file which service and in which namespace is referred?
