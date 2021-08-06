@@ -1,11 +1,11 @@
 # Interview questions for Data Engineer
 
-+ [Apache Hadoop](#Apache Hadoop)
-+ [Apache Flume](#Apache Flume)
-+ [Apache NiFi](#Apache NiFi)
-+ [Apache Avro](#Apache Avro)
-+ [Apache Kafka](#Apache Kafka)
-+ [Apache Impala](#Apache Impala)
++ [Apache Hadoop](#Apache-Hadoop)
++ [Apache Flume](#Apache-Flume)
++ [Apache NiFi](#Apache-NiFi)
++ [Apache Avro](#Apache-Avro)
++ [Apache Kafka](#Apache-Kafka)
++ [Apache Impala](#Apache-Impala)
 
 
 
@@ -215,7 +215,7 @@
 + [What is ssh and explain in detail about ssh communication between masters and the slaves?](hadoop.md#What-is-ssh-and-explain-in-detail-about-ssh-communication-between-masters-and-the-slaves)
 + [Can You Tell Is What Will Happen To A NameNode and When Job Tracker Is Not Up And Running?](hadoop.md#Can-you-tell-is-what-will-happen-to-a-NameNode-and-when-Job-tracker-is-not-up-and-running)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
 ## Apache Flume
 + [What is Flume?](flume.md#What-is-Flume)
@@ -245,7 +245,7 @@
 + [What are the similarities and differences between Apache Flume and Apache Kafka?](flume.md#What-are-the-similarities-and-differences-between-Apache-Flume-and-Apache-Kafka)
 + [Explain Reliability and Failure Handling in Apache Flume?](flume.md#Explain-Reliability-and-Failure-Handling-in-Apache-Flume)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
 ## Apache NiFi
 + [What is Apache Nifi?](nifi.md#What-is-Apache-Nifi)
@@ -264,7 +264,7 @@
 + [What is a Nifi custom properties registry?](nifi.md#What-is-a-Nifi-custom-properties-registry)
 + [Does Nifi works as a Master Slave architecture?](nifi.md#Does-Nifi-works-as-a-Master-Slave-architecture)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
 ## Apache Avro
 + [What is Apache Avro?](avro.md#What-is-Apache-Avro)
@@ -292,7 +292,7 @@
 + [What is the advantage of Hadoop Over Java Serialization?](avro.md#What-is-the-advantage-of-Hadoop-Over-Java-Serialization)
 + [What are the disadvantages of Hadoop Serialization?](avro.md#What-are-the-disadvantages-of-Hadoop-Serialization)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
 ## Apache Kafka
 + [Mention what is Apache Kafka?](kafka.md#Mention-what-is-Apache-Kafka)
@@ -317,7 +317,7 @@
 + [In the Producer when does Queuefullexception occur?](kafka.md#In-the-Producer-when-does-Queuefullexception-occur)
 + [Explain the role of the Kafka Producer Api.](kafka.md#Explain-the-role-of-the-Kafka-Producer-Api)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
 ## Apache Impala
 + [How do I try Impala out?](impala.md#How-do-I-try-Impala-out)
@@ -366,5 +366,5 @@
 + [Can I Do Insert ... Select * Into a partitioned table?](impala.md#Can-I-Do-Insert-Select-Into-a-partitioned-table)
 + [What kinds of Impala Queries or data are best suited for Hbase?](impala.md#What-kinds-of-Impala-Queries-or-data-are-best-suited-for-Hbase)
 
-[Table of Contents](#Interview questions for Data Engineer)
+[Table of Contents](#Interview-questions-for-Data-Engineer)
 
