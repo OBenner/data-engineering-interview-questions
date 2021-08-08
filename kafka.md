@@ -18,7 +18,7 @@
 + [Mention what is the difference between Apache Kafka and Apache Storm?](#Mention-what-is-the-difference-between-Apache-Kafka-and-Apache-Storm)
 + [List the various components in Kafka?](#List-the-various-components-in-Kafka)
 + [Explain the role of the Offset?](#Explain-the-role-of-the-Offset)
-+ [Explain the concept of Leader and Follower?](#Explain the concept of Leader and Follower?)
++ [Explain the concept of Leader and Follower?](#Explain-the-concept-of-Leader-and-Follower)
 + [How do you define a Partitioning Key?](#How-do-you-define-a-Partitioning-Key)
 + [In the Producer when does Queuefullexception occur?](#In-the-Producer-when-does-Queuefullexception-occur)
 + [Explain the role of the Kafka Producer Api.](#Explain-the-role-of-the-Kafka-Producer-Api)
