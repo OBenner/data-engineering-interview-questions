@@ -1,3 +1,6 @@
+[Interview questions](README.md)
+
+# Data Structures
 https://www.interviewbit.com/data-structure-interview-questions/
 
 
@@ -17,142 +20,76 @@ Answer :
 
 It must rich enough in structure to reflect the actual relationship of data in real world. The structure should be simple enough for efficient processing of data.
 
-RDBMS Interview Questions
-Question 3. What Does Abstract Data Type Mean?
 
-Answer :
-
+What Does Abstract Data Type Mean?
 Data type is a collection of values and a set of operations on these values. Abstract data type refer to the mathematical concept that define the data type.
-
 It is a useful tool for specifying the logical properties of a data type.
-
 ADT consists of two parts
-
 1) Values definition
 2) Operation definition
-
 Example:-The value definition for the ADT RATIONAL states that RATIONAL value consists of two integers, second doesn’t equal to zero.
-
 The operator definition for ADT RATIONAL includes the operation of creation (make rational) addition, multiplication and test for equality.
 
-Question 4. What Is The Difference Between A Stack And An Array?
-
-Answer :
-
+What Is The Difference Between A Stack And An Array?
 STACK:
-
 i) Stack is a ordered collection of items.
 ii) Stack is a dynamic object whose size is constantly changing as items are pushed and popped.
 iii) Stack may contain different data types.
 iv) Stack is declared as a structure containing an array to hold the element of the stack, and an integer to indicate the current stack top within the array.
-
 ARRAY:
-
 i) Array is an ordered collection of items.
 ii) Array is a static object i.e. no of item is fixed and is assigned by the declaration of the array.
 iii) It contains same data types.
 iv) Array can be home of a stack i.e. array can be declared large enough for maximum size of the stack.
 
-Adv Java Tutorial
-Question 5. What Do You Mean By Recursive Definition?
-
-Answer :
-
+What Do You Mean By Recursive Definition?
 The definition which defines an object in terms of simpler cases of itself is called recursive definition.
 
-DBMS Interview Questions
-Question 6. What Is Sequential Search?
-
-Answer :
-
+What Is Sequential Search?
 In sequential search each item in the array is compared with the item being searched until a match occurs. It is applicable to a table organized either as an array or as a linked list.
 
-Question 7. What Actions Are Performed When A Function Is Called?
-
-Answer :
-
+What Actions Are Performed When A Function Is Called?
 When a function is called
-
 i) arguments are passed.
 ii) local variables are allocated and initialized.
 ii) transferring control to the function.
 
-Core Java Tutorial Adv Java Interview Questions
-Question 8. What Actions Are Performed When A Function Returns?
-
-Answer :
-
+What Actions Are Performed When A Function Returns?
 i) Return address is retrieved.
 ii) Function’s data area is freed.
 iii) Branch is taken to the return address.
 
-Question 9. What Is A Linked List?
-
-Answer :
-
+What Is A Linked List?
 A linked list is a linear collection of data elements, called nodes, where the linear order is given by pointers. Each node has two parts first part contain the information of the element second part contains the address of the next node in the list.
 
-Core Java Interview Questions
-Question 10. What Are The Advantages Of Linked List Over Array (static Data Structure)?
-
-Answer :
-
+What Are The Advantages Of Linked List Over Array (static Data Structure)?
 The disadvantages of array are:
-
 i) unlike linked list it is expensive to insert and delete elements in the array.
 ii) One can’t double or triple the size of array as it occupies block of memory space.
-
 In linked list
-
 i) each element in list contains a field, called a link or pointer which contains the address of the next element.
 ii) Successive element’s need not occupy adjacent space in memory.
 
-C Tutorial
-Question 11. We Apply Binary Search Algorithm To A Sorted Linked List, Why?
-
-Answer :
-
+We Apply Binary Search Algorithm To A Sorted Linked List Why?
 No we cannot apply binary search algorithm to a sorted linked list, since there is no way of indexing the middle element in the list. This is the drawback in using linked list as a data structure.
 
-C Interview Questions
-Question 12. What Do You Mean By Free Pool?
-
-Answer :
-
+What Do You Mean By Free Pool?
 Pool is a list consisting of unused memory cells which has its own pointer.
 
-RDBMS Interview Questions
-Question 13. What Do You Mean By Garbage Collection?
-
-Answer :
-
+What Do You Mean By Garbage Collection?
 It is a technique in which the operating system periodically collects all the deleted space onto the free storage list.
-
 It takes place when there is minimum amount of space left in storage list or when CPU is ideal.
-
 The alternate method to this is to immediately reinsert the space into free storage list which is time consuming.
 
-CSS Advanced Tutorial
-Question 14. What Do You Mean By Overflow And Underflow?
-
-Answer :
-
+What Do You Mean By Overflow And Underflow?
 When new data is to be inserted into the data structure but there is no available space i.e. free storage list is empty this situation is called overflow.
-
 When we want to delete data from a data structure that is empty this situation is called underflow.
 
-Question 15. What Are The Disadvantages Array Implementations Of Linked List?
-
-Answer :
-
+What Are The Disadvantages Array Implementations Of Linked List?
 i) The no of nodes needed can’t be predicted when the program is written.
 ii) The no of nodes declared must remain allocated throughout its execution.
 
-Database Administration Interview Questions
-Question 16. What Is A Queue?
-
-Answer :
-
+What Is A Queue?
 A queue is an ordered collection of items from which items may be deleted at one end (front end) and items inserted at the other end (rear end).
 
 It obeys FIFO rule there is no limit to the number of elements a queue contains.
