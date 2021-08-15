@@ -37,7 +37,6 @@
 + [What is the Rank Function in Tableau?](#What-is-the-Rank-Function-in-Tableau)
 + [What is the difference between Tableau and other similar tools like QlikView or IBM Cognos?](#What-is-the-difference-between-Tableau-and-other-similar-tools-like-QlikView-or-IBM-Cognos)
 
-https://www.interviewbit.com/tableau-interview-questions/
 [Table of Contents](#Tableau)
 
 ## What is data visualization in Tableau?

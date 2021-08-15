@@ -1,5 +1,4 @@
 [Interview questions](README.md)
-
 # Apache Cassandra
 + [Explain what is Cassandra?](#Explain-what-is-Cassandra)
 + [List the benefits of using Cassandra?](#List-the-benefits-of-using-Cassandra)

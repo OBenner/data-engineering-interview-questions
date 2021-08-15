@@ -1,5 +1,4 @@
 [Interview questions](README.md)
-
 # Apache Airflow
 + [What is Airflow?](#What-is-Airflow)
 + [What issues does Airflow resolve?](#What-issues-does-Airflow-resolve)

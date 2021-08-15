@@ -1,5 +1,4 @@
 [Interview questions](README.md)
-
 # AWS
 + [What is EC2?](#What-is-EC2)
 + [What is SnowBall?](#What-is-SnowBall)

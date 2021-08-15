@@ -1,8 +1,5 @@
 [Interview questions](README.md)
-
 # Data Structures
-https://www.interviewbit.com/data-structure-interview-questions/
-
 + [What is data structure?](#What-is-data-structure)
 + [What are the goals of data structure?](#What-are-the-goals-of-data-structure)
 + [What does abstract data type mean?](#What-does-abstract-data-type-mean)
