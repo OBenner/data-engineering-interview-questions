@@ -100,7 +100,7 @@ Pros:
 + Celery is responsible for managing the workers. Celery creates a new one in the case of a failure.
 Cons:
 + Celery requires RabbitMQ/Redis for task queuing, which is redundant with what Airflow already supports.
-+ The setup is also complicated due to the above mentioned dependencies.
++ The setup is also complicated due to the above-mentioned dependencies.
 
 [Table of Contents](#Apache-Airflow)
 

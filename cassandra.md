@@ -421,7 +421,7 @@ The main design goal of Cassandra was to handle big data workloads across multip
 ## How many types of NoSQL databases and give some examples.
 There are mainly 4 types of NoSQL databases:
 + Document store types ( MongoDB and CouchDB)
-+ Key-Value store types ( Redis and Volgemort)
++ Key-Value store types ( Redis and Voldemort)
 + Column store types ( Cassandra)
 + Graph store types ( Neo4j and Giraph)
 
@@ -472,7 +472,7 @@ Consistency in Cassandra specifies how to synchronize and up to date a row of Ca
 ## How does Cassandra perform write function?
 Cassandra performs the write function by applying two commits:
 First commit is applied on disk and then second commit to an in-memory structure known as memtable.
-When the both commits are applied successfully, the write is achieved.
+When the both commits are applied successfully, to write is achieved.
 Writes are written in the table structure as SSTable (sorted string table).
 
 [Table of Contents](#Apache Cassandra)

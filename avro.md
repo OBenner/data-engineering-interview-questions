@@ -54,7 +54,7 @@ Those people who want to learn the basics of Big Data Analytics by using Hadoop 
 [Table of Contents](#Apache-Avro)
 
 ## What are prerequisites to learn Avro?
-Those who want to learn Avro must know Hadoop’s architecture and APIs, before learning Avro. Also must know Java with experience in writing basic applications before going for Avro.
+Those who want to learn Avro must know Hadoop’s architecture and APIs, before learning Avro. Also, must know Java with experience in writing basic applications before going for Avro.
 
 [Table of Contents](#Apache-Avro)
 
@@ -132,7 +132,7 @@ Pros of Avro are:
 
 ## Explain some disadvantages of Avro.
 Cons of Avro are:
-+ It is must to use .NET 4.5, in the case of C# Avro, to make the best use of it.
++ It must use .NET 4.5, in the case of C# Avro, to make the best use of it.
 + Potentially slower serialization.
 + In order to read/write data, need a schema.
 
@@ -206,6 +206,6 @@ As with the help of the Writable objects, Hadoop Writable-based serialization is
 [Table of Contents](#Apache-Avro)
 
 ## What are the disadvantages of Hadoop Serialization?
-The only disadvantage of Hadoop Serialization is that the Writable and Sequence Files have only a Java API. Hence to solve this issue, Avro comes in picture.
+The only disadvantage of Hadoop Serialization is that the Writable and Sequence Files have only a Java API. Hence, to solve this issue, Avro comes in picture.
 
 [Table of Contents](#Apache-Avro)

@@ -187,7 +187,7 @@ Messages are placed on the deadletter sub-queue by the messaging system in the f
 [Table of Contents](#Azure)
 
 ## What are Instance Sizes of Azure?
-Windows Azure will handle the load balancing for all of the instances that are created. The VM sizes are as follows:
+Windows Azure will handle the load balancing for all the instances that are created. The VM sizes are as follows:
 Compute Instance Size CPU Memory Instance Storage I/O Performance
 ► Extra Small 1.0 Ghz 768 MB 20 GB Low
 ► Small 1.6 GHz 1.75 GB 225 GB Moderate

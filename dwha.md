@@ -910,7 +910,7 @@ ETL is abbreviation of extract, transform, and load. ETL is software that enable
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Is Oltp Database is design optimal for Data Warehouse?
-No. OLTP database tables are normalized and it will add additional time to queries to return results. Additionally OLTP database is smaller and it does not contain longer period (many years) data, which needs to be analyzed. A OLTP system is basically ER model and not Dimensional Model. If a complex query is executed on a OLTP system, it may cause a heavy overhead on the OLTP server that will affect the normal business processes.
+No. OLTP database tables are normalized, and it will add additional time to query to return results. Additionally, OLTP database is smaller, and it does not contain longer period (many years) data, which needs to be analyzed. A OLTP system is basically ER model and not Dimensional Model. If a complex query is executed on a OLTP system, it may cause a heavy overhead on the OLTP server that will affect the normal business processes.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -920,7 +920,7 @@ Foreign keys of facts tables are primary keys of Dimension tables. It is clear t
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What are Lookup Tables?
-A lookup table is the table placed on the target table based upon the primary key of the target, it just updates the table by allowing only modified (new or updated) records based on thelookup condition.
+A lookup table is the table placed on the target table based upon the primary key of the target, it just updates the table by allowing only modified (new or updated) records based on lookup condition.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -950,7 +950,7 @@ Level of granularity means level of detail that you put into the fact table in a
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What are Non additive facts?
-Non-additive facts are facts that cannot be summed up for any of the dimensions present in the fact table. However they are not considered as useless. If there is changes in dimensions the same facts can be useful.
+Non-additive facts are facts that cannot be summed up for any of the dimensions present in the fact table. However, they are not considered as useless. If there is changes in dimensions the same facts can be useful.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -970,7 +970,7 @@ Hyper cube or multidimensional cube forms the core of OLAP system. This consists
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Explain about Molap?
-Classic form of OLAP is known as MOLAP and it is often called as OLAP. Simple database structures such as time period, product, location, etc are used. Functioning of each and every dimension or data structure is defined by one or more hierarchies.
+Classic form of OLAP is known as MOLAP and it is often called as OLAP. Simple database structures such as time period, product, location, etc. are used. Functioning of each and every dimension or data structure is defined by one or more hierarchies.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -985,7 +985,7 @@ OLAP can process complex queries and give the output in less than 0.1 seconds, f
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Explain about the View Selection problem?
-Often calculating all the data is not possible by aggregations for this reason some of the complex data problems are solved. In order to determine which data should be solved and calculated, developers use View selection application. This solution is often used to reduce calculation problem.
+Often calculating all the data is not possible by aggregations for this reason some complex data problems are solved. In order to determine which data should be solved and calculated, developers use View selection application. This solution is often used to reduce calculation problem.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1055,7 +1055,7 @@ While ER model lists and defines the constructs required to build a data model, 
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Why is Data Modeling important?
-Data modeling is probably the most labor intensive and time consuming part of the development process. Why bother especially if you are pressed for time? A common.
+Data modeling is probably the most labor-intensive and time-consuming part of the development process. Why bother especially if you are pressed for time? A common.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1066,7 +1066,7 @@ To my knowledge, SQLServer does not support bitmap indexes. Only Oracle supports
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What are Semi additive and Factless Facts?
-Semi-Additive: Semi-additive facts are facts that can be summed up for some of the dimensions in the fact table, but not the others. For example:
+Semi-Additive: Semi-additive facts are facts that can be summed up for some dimensions in the fact table, but not the others. For example:
 Current_Balance and Profit_Margin are the facts. Current_Balance is a semi-additive fact, as it makes sense to add them up for all accounts (what's the total current balance for all accounts in the bank?), but it does not make sense to add them up through time (adding up all current balances for a given account for each day of the month does not give us any useful information A factless fact table captures the many-to-many relationships between dimensions, but contains no numeric or textual facts. They are often used to record events or coverage information.
 Common examples of factless fact tables include:
 
@@ -1078,7 +1078,7 @@ Common examples of factless fact tables include:
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Is it correct develop a Data Mart using an Ods?
-Yes it is correct to develop a Data Mart using an ODS.becoz ODS which is used to?store transaction data and few Days (less historical data) this is what datamart is required so it is coct to develop datamart using ODS .
+Yes it is correct to develop a Data Mart using an ODS.becoz ODS which is used to?store transaction data and few Days (less historical data) this is what datamart is required, so it is coct to develop datamart using ODS .
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1141,7 +1141,7 @@ RDBMS Schema
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What is a general purpose Scheduling Tool?
-The basic purpose of the scheduling tool in a DW Application is to stream line the flow of data from Source To Target at specific time or based on some condition.
+The basic purpose of the scheduling tool in a DW Application is to streamline the flow of data from Source To Target at specific time or based on some condition.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1234,7 +1234,7 @@ For each of the group, first it does call the initialise function once, followed
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What are Primary Keys and Foreign Keys?
-In RDBMS the relationship between the two tables is represented as Primary key and foreign key relationship. Wheras the primary key table is the parent table and foreignkey table is the child table.The criteria for both the tables is there should be a matching column.
+In RDBMS the relationship between the two tables is represented as Primary key and foreign key relationship. Whereas the primary key table is the parent table and foreignkey table is the child table.The criteria for both the tables is there should be a matching column.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1291,7 +1291,7 @@ We have securities in business objects
 Like
 1.Windows authentication
 2.RDBMS securities
-3.supervisor level securities, ie User name/ password.
+3.supervisor level securities, ie Username/ password.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1330,7 +1330,7 @@ e.g.: flag statuses: 0/1
 
 ## What is Chained Data Replication?
 In Chain Data Replication, the non-official data set distributed among many disks provides for load balancing among the servers within the data warehouse.
-Blocks of data are spread across clusters and each cluster can contain a complete set of replicated data. Every data block in every cluster is a unique permutation of the data in other clusters.
+Blocks of data are spread across clusters and each cluster can contain a complete set of replicated data. All data block in every cluster is a unique permutation of the data in other clusters.
 When a disk fails then all the calls made to the data in that disk are redirected to the other disks when the data has been replicated.
 At times replicas and disks are added online without having to move around the data in the existing copy or affect the arm movement of the disk.
 In load balancing, Chain Data Replication has multiple servers within the data warehouse share data request processing since data already have replicas in each server disk.
@@ -1352,7 +1352,7 @@ Big Organizations have a lot of diversified sources of data.There might be a dat
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Give me any example of Semi and Non Additive Measures?
-Semi-Additive: Semi-additive facts are facts that can be summed up for some of the dimensions in the fact table, but not the others. Non-Additive: Non-additive facts are facts that cannot be summed up for any of the dimensions present in the fact table. Current Balance and Profit Margin are the facts.Current Balance is a semi-additive fact, as it makes sense to add them up for all accounts (what's the total current balance for all accounts in the bank?), but it does not make sense to add them up through time (adding up all current balances for a given account for each day of the month does not give us any useful information). Profit Margin is a non-additive fact, for it does not make sense to add them up for the account level or the day level.
+Semi-Additive: Semi-additive facts are facts that can be summed up for some dimensions in the fact table, but not the others. Non-Additive: Non-additive facts are facts that cannot be summed up for any of the dimensions present in the fact table. Current Balance and Profit Margin are the facts.Current Balance is a semi-additive fact, as it makes sense to add them up for all accounts (what's the total current balance for all accounts in the bank?), but it does not make sense to add them up through time (adding up all current balances for a given account for each day of the month does not give us any useful information). Profit Margin is a non-additive fact, for it does not make sense to add them up for the account level or the day level.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
@@ -1397,12 +1397,12 @@ it's change the rows into columns and columns into rows
 Normalization:To remove the redundancy and inconsistency.
 
 What Is The Use Of Incremental Aggregation? Explain Me In Brief With An Example.
-It's a session option. when the informatica server performs incremental aggr. it passes new source data through the mapping and uses historical chache data to perform new aggregation caluculations incrementaly. for performance we will use it.
+It's a session option. when the informatica server performs incremental aggr. it passes new source data through the mapping and uses historical cache data to perform new aggregation caluculations incrementaly. for performance we will use it.
 
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## What is Business Intelligence?
-Business Intelligence is a process for increasing the competitive advantage of a business by intelligent use of available data in decision making.
+Business Intelligence is a process for increasing the competitive advantage of a business by intelligent use of available data in decision-making.
 The five key stages of Business Intelligence:
 ► Data Sourcing
 ► Data Analysis
@@ -1597,7 +1597,7 @@ Surrogate key assignments
 [Table of Contents](#Data-Warehousing-Architecture)
 
 ## Compare Etl and Manual Development.
-ETL - The process of extracting data from multiple sources.(ex. flat files, XML, COBOL, SAP etc) is more simpler with the help of tools.
+ETL - The process of extracting data from multiple sources.(ex. flat files, XML, COBOL, SAP etc) is simpler with the help of tools.
 Manual - Loading the data other than flat files and oracle table need more effort.
 ETL - High and clear visibility of logic.
 Manual - complex and not so user friendly visibility of logic.
