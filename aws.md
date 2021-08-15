@@ -317,7 +317,7 @@ DynamoDB is a NoSQL database service that provides an inevitable and faster perf
 
 ## List of the benefits of using Amazon Dynamodb?
 Amazon DynamoDB is the NoSQL service that provides a number of benefits to the users.
-Some of the benefits of AWS DynamoDB are:
+Some benefits of AWS DynamoDB are:
 + Being a self-managed service, DynamoDB doesn’t require the experts for setup, installation, cluster etc.
 + It provides inevitable and faster performance.
 + It is highly scalable, available, and durable.
@@ -364,7 +364,7 @@ Setting up and managing a data warehouse involves a lot of money as the data in 
 [Table of Contents](#AWS)
 
 ## What is Amazon Redshift and why is it popular among other Cloud Data Warehouses?
-Amazon RedShift is a fast and scalable data warehouse which is easy to use and is cost effective to manage all the organization’s data. The database is ranged from gigabytes to 100’s of petabyte of cloud data storage. A person does not need knowledge of any programming language to use this feature, just upload the cluster and tools which are already known to the user he can start using RedShift.
+Amazon RedShift is a fast and scalable data warehouse which is easy to use and is cost-effective to manage all the organization’s data. The database is ranged from gigabytes to 100’s of petabyte of cloud data storage. A person does not need knowledge of any programming language to use this feature, just upload the cluster and tools which are already known to the user he can start using RedShift.
 AWS RedShift is popular due to the following reasons:
 + AWS RedShift is very easy to use: In the console of AWS RedShift, you will find an option of creating a cluster. Just click on that and leave the rest on the machine programming of RedShift. Just fill the correct details as asked and launch the cluster. Now the cluster is ready to be used as RedShift automated most of the task like managing, monitoring and scaling.
 + Scaling of Warehouse is very easy: You just have to resize the cluster size by increasing the number of compute nodes.
@@ -450,6 +450,6 @@ I’ll use DynamoDB for collecting and processing e-commerce data for real-time 
 [Table of Contents](#AWS)
 
 ## What will happen to the Db Snapshots and Backups if any user deletes Db Instance?
-When a dB instance is deleted, the user receives an option of making a final dB snapshot. If you will do that it will restore your information from that snapshot. AWS RDS keeps all these dB snapshots together that are created by the user along with the all other manually created dB snapshots when the dB instance is deleted. At the same time, automated backups are deleted while manually created dB snapshots are preserved.
+When a dB instance is deleted, the user receives an option of making a final dB snapshot. If you do that it will restore your information from that snapshot. AWS RDS keeps all these dB snapshots together that are created by the user along with the all other manually created dB snapshots when the dB instance is deleted. At the same time, automated backups are deleted while manually created dB snapshots are preserved.
 
 [Table of Contents](#AWS)
