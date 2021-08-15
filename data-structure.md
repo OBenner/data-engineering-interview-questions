@@ -389,7 +389,7 @@ Adv Java Interview Questions
 
 [Table of Contents](#Data-Structures)
 
-## Is it necessary to sort a file before searching a particular item ?
+## Is it necessary to sort a file before searching a particular item?
 If less work is involved in searching a element than to sort and then extract, then we dont go for sort.
 If frequent use of the file is required for the purpose of retrieving specific element, it is more efficient to sort the file.
 Thus it depends on situation.
