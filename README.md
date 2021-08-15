@@ -1620,7 +1620,6 @@
 + [But what if you really want to store the timestamp data, such as the publication date of the article?](sql.md#But-what-if-you-really-want-to-store-the-timestamp-data,-such-as-the-publication-date-of-the-article)
 + [Explain data type timestamp default current_timestamp on update current_timestamp?](sql.md#Explain-data-type-timestamp-default-current_timestamp-on-update-current_timestamp)
 + [What does timestamp on update current_timestamp data type do?](sql.md#What-does-timestamp-on-update-current_timestamp-data-type-do)
-+ [Explain timestamp default 2006:09:02 17:38:44? on update current_timestamp?](sql.md#Explain-timestamp-default-2006:09:02-17:38:44?-on-update-current_timestamp)
 + [If i created a column with data type varchar(3), what would i expect to see in mysql table?](sql.md#If-i-created-a-column-with-data-type-varchar(3),-what-would-i-expect-to-see-in-mysql-table)
 + [General information about mysql.](sql.md#General-information-about-mysql)
 + [Why use mysql?](sql.md#Why-use-mysql)

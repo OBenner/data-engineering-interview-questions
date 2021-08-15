@@ -144,7 +144,6 @@
 + [But what if you really want to store the timestamp data, such as the publication date of the article?](#But-what-if-you-really-want-to-store-the-timestamp-data,-such-as-the-publication-date-of-the-article)
 + [Explain data type timestamp default current_timestamp on update current_timestamp?](#Explain-data-type-timestamp-default-current_timestamp-on-update-current_timestamp)
 + [What does timestamp on update current_timestamp data type do?](#What-does-timestamp-on-update-current_timestamp-data-type-do)
-+ [Explain timestamp default 2006:09:02 17:38:44? on update current_timestamp?](#Explain-timestamp-default-2006:09:02-17:38:44?-on-update-current_timestamp)
 + [If i created a column with data type varchar(3), what would i expect to see in mysql table?](#If-i-created-a-column-with-data-type-varchar(3),-what-would-i-expect-to-see-in-mysql-table)
 + [General information about mysql.](#General-information-about-mysql)
 + [Why use mysql?](#Why-use-mysql)
@@ -1523,11 +1522,6 @@ The column exhibits the same behavior as a single timestamp column in a table wi
 
 ## What does timestamp on update current_timestamp data type do?
 On initialization places a zero in that column, on future updates puts the current value of the timestamp in.
-
-[Table of Contents](#SQL)
-
-## Explain timestamp default 2006:09:02 17:38:44? on update current_timestamp?
-A default value is used on initialization, a current timestamp is inserted on update of the row.
 
 [Table of Contents](#SQL)
 
