@@ -1,6 +1,30 @@
 [Interview questions](README.md)
 # Kubernetes
-
++ [How to do maintenance activity on the K8 node?](#How-to-do-maintenance-activity-on-the-K8-node)
++ [How do we control the resource usage of POD?](#How-do-we-control-the-resource-usage-of-POD)
++ [What are the various K8's services running on nodes and describe the role of each service?](#What-are-the-various-K8's-services-running-on-nodes-and-describe-the-role-of-each-service)
++ [What is PDB (Pod Disruption Budget)?](#What-is-PDB-(Pod-Disruption-Budget))
++ [WhatвЂ™s the init container and when it can be used?](#WhatвЂ™s-the-init-container-and-when-it-can-be-used)
++ [What is the role of Load Balance in Kubernetes?](#What-is-the-role-of-Load-Balance-in-Kubernetes)
++ [What are the various things that can be done to increase Kubernetes security?](#What-are-the-various-things-that-can-be-done-to-increase-Kubernetes-security)
++ [How to monitor the Kubernetes cluster?](#How-to-monitor-the-Kubernetes-cluster)
++ [How to get the central logs from POD?](#How-to-get-the-central-logs-from-POD)
++ [How to turn the service defined below in the spec into an external one?](#How-to-turn-the-service-defined-below-in-the-spec-into-an-external-one)
++ [How to configure TLS with Ingress?](#How-to-configure-TLS-with-Ingress)
++ [Why use namespaces? What is the problem with using the default namespace?](#Why-use-namespaces?-What-is-the-problem-with-using-the-default-namespace)
++ [In the following file which service and in which namespace is referred?](#In-the-following-file-which-service-and-in-which-namespace-is-referred)
++ [What is an Operator?](#What-is-an-Operator)
++ [Why do we need Operators?](#Why-do-we-need-Operators)
++ [What is GKE?](#What-is-GKE)
++ [What is Ingress Default Backend?](#What-is-Ingress-Default-Backend)
++ [How to run Kubernetes locally?](#How-to-run-Kubernetes-locally)
++ [What is Kubernetes Load Balancing?](#What-is-Kubernetes-Load-Balancing)
++ [What the following in the Deployment configuration file mean?](#What-the-following-in-the-Deployment-configuration-file-mean)
++ [What is the difference between Docker Swarm and Kubernetes?](#What-is-the-difference-between-Docker-Swarm-and-Kubernetes)
++ [How to troubleshoot if the POD is not getting scheduled?](#How-to-troubleshoot-if-the-POD-is-not-getting-scheduled)
++ [How to run a POD on a particular node?](#How-to-run-a-POD-on-a-particular-node)
++ [What are the different ways to provide external network connectivity to K8?](#What-are-the-different-ways-to-provide-external-network-connectivity-to-K8)
++ [How can we forward the port 8080 container -> 8080 service -> 8080 ingress -> 80 browser and how it can be done?](#How-can-we-forward-the-port-8080-container-to-8080-service-to-8080-ingress-to-80-browser-and-how-it-can-be-done)
 [Table of Contents](#Kubernetes)
 
 ## How to do maintenance activity on the K8 node?
@@ -272,7 +296,7 @@ $ kubectl proxy --port=8080 $ http://localhost:8080/api/v1/proxy/namespaces//ser
 
 [Table of Contents](#Kubernetes)
 
-## How can we forward the port 8080 container -> 8080 service -> 8080 ingress -> 80 browser and how it can be done?
+## How can we forward the port 8080 container to 8080 service to 8080 ingress to 80 browser and how it can be done?
 The ingress is exposing port 80 externally for the browser to access, and connecting to a service that listens on 8080. The ingress will listen on port 80 by default. An "ingress controller" is a pod that receives external traffic and handles the ingress and is configured by an ingress resource For this you need to configure the ingress selector and if no 'ingress controller selector' is mentioned then no ingress controller will manage the ingress.
 
 Simple ingress Config will look like
