@@ -1,17 +1,17 @@
 ## More than 2000+ questions for preparing a Data Engineer interview.
 
-+ [Full list of questions](./content#full-list-of-questions)
++ [Full list of questions](./content/full-list-of-questions)
 
 # Interview questions for Data Engineer
 
-+ [Apache Airflow](./content#Apache-Airflow)
-+ [Apache Avro](./content#Apache-Avro)
-+ [Apache Cassandra](./content#Apache-Cassandra)
-+ [Apache Flume](./content#Apache-Flume)
-+ [Apache Hadoop](./content#Apache-Hadoop)
-+ [Apache Hive](./content#Apache-Hive)
-+ [Apache Impala](./content#Apache-Impala)
-+ [Apache Kafka](./content#Apache-Kafka)
++ [Apache Airflow](./content/Apache-Airflow)
++ [Apache Avro](./content/Apache-Avro)
++ [Apache Cassandra](./content/Apache-Cassandra)
++ [Apache Flume](./content/Apache-Flume)
++ [Apache Hadoop](./content/Apache-Hadoop)
++ [Apache Hive](./content/Apache-Hive)
++ [Apache Impala](./content/Apache-Impala)
++ [Apache Kafka](./content/Apache-Kafka)
 + [Apache NiFi](./content#Apache-NiFi)
 + [Apache Spark](./content#Apache-Spark)
 + [Apache Flink](./content#Apache-Flink)
