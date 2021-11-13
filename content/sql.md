@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 # SQL
 + [Write sql query to get the second highest salary among all employees?](#Write-sql-query-to-get-the-second-highest-salary-among-all-employees)
 + [There are multiple ways to get the second highest salary among all employees.](#There-are-multiple-ways-to-get-the-second-highest-salary-among-all-employees)
