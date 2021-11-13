@@ -1,28 +1,28 @@
 ## More than 2000+ questions for preparing a Data Engineer interview.
 
-+ [Full list of questions](./content/full-list-of-questions)
++ [Full list of questions](./content/full.md)
 
 # Interview questions for Data Engineer
 
-+ [Apache Airflow](./content/Apache-Airflow)
-+ [Apache Avro](./content/Apache-Avro)
-+ [Apache Cassandra](./content/Apache-Cassandra)
-+ [Apache Flume](./content/Apache-Flume)
-+ [Apache Hadoop](./content/Apache-Hadoop)
-+ [Apache Hive](./content/Apache-Hive)
-+ [Apache Impala](./content/Apache-Impala)
-+ [Apache Kafka](./content/Apache-Kafka)
-+ [Apache NiFi](./content#Apache-NiFi)
-+ [Apache Spark](./content#Apache-Spark)
-+ [Apache Flink](./content#Apache-Flink)
-+ [Apache Hbase](./content#Apache-Hbase)
-+ [Amazon Web Services](./content#Amazon-Web-Services)
-+ [DWH Architectures](./content#DWH-Architectures)
-+ [Microsoft Azure](./content#Microsoft-Azure)
-+ [Tableau](./content#Tableau)
-+ [Kubernetes](./content#Kubernetes)
-+ [SQL](./content#SQL)
-+ [Data Structures](./content#Data-Structures)
++ [Apache Airflow](./content/airflow.md)
++ [Apache Avro](./content/avro.md)
++ [Apache Cassandra](./content/cassandra.md)
++ [Apache Flume](./content/flume.md)
++ [Apache Hadoop](./content/hadoop.md)
++ [Apache Hive](./content/hive.md)
++ [Apache Impala](./content/impala.md)
++ [Apache Kafka](./content/kafka.md)
++ [Apache NiFi](./content/nifi.md)
++ [Apache Spark](./content/spark.md)
++ [Apache Flink](./content/flink.md)
++ [Apache Hbase](./content/hbase.md)
++ [Amazon Web Services](./content/aws.md)
++ [DWH Architectures](./content/dwha.md)
++ [Microsoft Azure](./content/azure.md)
++ [Tableau](./content/tableau.md)
++ [Kubernetes](./content/kubernetes.md)
++ [SQL](./content/sql.md)
++ [Data Structures](./content/data-structure.md)
 
 
 <h2> Contribution </h2>
