@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 
 
 # FLUME

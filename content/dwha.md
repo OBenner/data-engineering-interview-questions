@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 # Data Warehousing Architecture
 + [What is the Main Difference between View and Materialized View?](#What-is-the-Main-Difference-between-View-and-Materialized-Vie)
 + [What is Junk Dimension?](#What-is-Junk-Dimensio)

@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 # Apache Avro
 + [What is Apache Avro?](#What-is-Apache-Avro)
 + [State some Key Points about Apache Avro?](#State-some-Key-Points-about-Apache-Avro)

@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 # Apache Impala
 + [How do I try Impala out?](#How-do-I-try-Impala-out)
 + [Does Cloudera offer a Vm for demonstrating Impala?](#Does-Cloudera-offer-a-Vm-for-demonstrating-Impala)

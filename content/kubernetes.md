@@ -1,4 +1,4 @@
-[Interview questions](README.md)
+[Interview questions](full.md)
 # Kubernetes
 + [How to do maintenance activity on the K8 node?](#How-to-do-maintenance-activity-on-the-K8-node)
 + [How do we control the resource usage of POD?](#How-do-we-control-the-resource-usage-of-POD)
