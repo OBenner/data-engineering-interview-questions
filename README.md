@@ -51,103 +51,35 @@
     <th><a href="https://github.com/dharmeshkakadia/awesome-hive">Awesome Hive</a></th>
   </tr>
   <tr>
-    <th></th>
-    <th><a href="https://aws.amazon.com/dynamodb/"><img style="vertical-align:middle" src="img/icon/dynamodb.ico" alt="Amazon DynamoDB"></a></th>
-    <th><a href="./content/airflow.md">Amazon DynamoDB</a></th>
+    <th colspan="2"><a href="https://aws.amazon.com/dynamodb/"><img style="vertical-align:middle" src="img/icon/dynamodb.ico" alt="Amazon DynamoDB"></a></th>
+    <th><a href="./content/dynamodb.md">Amazon DynamoDB</a></th>
     <th>Amazon DynamoDB is a fully managed proprietary NoSQL database service.</th>
     <th><a href="https://github.com/alexdebrie/awesome-dynamodb">Awesome DynamoDB</a>
         <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
   </tr>
   <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/redshift.ico" alt="Amazon Redshift"></a></th>
-    <th><a href="./content/airflow.md">Amazon Redshift</a></th>
+    <th colspan="2"><a href="./content/redshift.md"><img style="vertical-align:middle" src="img/icon/redshift.ico" alt="Amazon Redshift"></a></th>
+    <th><a href="./content/redshift.md">Amazon Redshift</a></th>
     <th>Amazon Redshift is a data warehouse product.</th>
     <th><a href="https://github.com/awslabs/amazon-redshift-utils">Amazon Redshift Utilities</a>
         <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
 
   </tr>
   <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/rds.ico" alt="Amazon RDS"></a></th>
-    <th><a href="./content/airflow.md">Amazon RDS</a></th>
-    <th>Amazon Relational Database Service is a distributed relational database service.</th>
-    <th><a href="TODO">TODO</a>
-        <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Amazon ElastiCache"></a></th>
-    <th><a href="./content/airflow.md">Amazon ElastiCache</a></th>
-    <th>Amazon ElastiCache is a fully managed in-memory data store and cache service.</th>
-    <th><a href="TODO">TODO</a>
-        <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/awstime.ico" alt="Amazon Timestream"></a></th>
-    <th><a href="./content/airflow.md">Amazon Timestream</a></th>
-    <th>Amazon Timestream is a fast, scalable, and serverless time series database service for IoT.</th>
-    <th><a href="TODO">TODO</a>
-        <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/neptune.ico" alt="Amazon Neptune"></a></th>
-    <th><a href="./content/airflow.md">Amazon Neptune</a></th>
-    <th>Amazon Neptune is a managed graph database.</th>
-    <th><a href="TODO">TODO</a>
-        <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/cosmosdb.ico" alt="Azure Cosmos DB"></a></th>
-    <th><a href="./content/airflow.md">Azure Cosmos DB</a></th>
-    <th>Azure Cosmos DB is Microsoft's proprietary globally distributed, multi-model database service.</th>
-    <th><a href="TODO">TODO</a>
-        <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Azure SQL"></a></th>
-    <th><a href="./content/airflow.md">Azure SQL</a></th>
-    <th>Azure SQL Managed Instance is the intelligent, scalable cloud database service.</th>
-    <th><a href="TODO">Awesome TODO</a></th>
-  </tr>
-
-
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/gcpsql.ico" alt="Cloud SQL GCP"></a></th>
-    <th><a href="./content/airflow.md">Cloud SQL GCP</a></th>
-    <th>Cloud SQL is a fully managed service that makes it easy to set up, manage, and administer relational databases: PostgreSQL, MySQL, and SQL Server.</th>
-    <th><a href="TODO">Awesome TODO</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/spanner.ico" alt="MongoDB"></a></th>
-    <th><a href="./content/airflow.md">Cloud Spanner GCP</a></th>
-    <th>Cloud Spanner is fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability.</th>
-    <th><a href="TODO">Awesome TODO</a></th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/bigquery.ico" alt="BigQuery"></a></th>
-    <th><a href="./content/airflow.md">BigQuery GCP</a></th>
+    <th colspan="2"><a href="./content/bigquery.md"><img style="vertical-align:middle" src="img/icon/bigquery.ico" alt="BigQuery"></a></th>
+    <th><a href="./content/bigquery.md">BigQuery GCP</a></th>
     <th>BigQuery is a fully-managed, serverless data warehouse.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/bigtable.ico" alt="Bigtable"></a></th>
-    <th><a href="./content/airflow.md">Bigtable GCP</a></th>
+    <th colspan="2"><a href="./content/bigtable.md"><img style="vertical-align:middle" src="img/icon/bigtable.ico" alt="Bigtable"></a></th>
+    <th><a href="./content/bigtable.md">Bigtable GCP</a></th>
     <th>Bigtable is a fully managed wide-column and key-value NoSQL database service.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/firebase.ico" alt="Firestore"></a></th>
-    <th><a href="./content/airflow.md">Firestore GCP</a></th>
+    <th colspan="2"><a href="./content/firestore.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Firestore"></a></th>
+    <th><a href="./content/firestore.md">Firestore GCP</a></th>
     <th>Firestore is a NoSQL document database built for automatic scaling, high performance, and ease of application development.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
@@ -173,10 +105,10 @@
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Delta"></a></th>
-    <th><a href="https://parquet.apache.org/"><img style="vertical-align:middle" src="img/icon/delta.ico" alt="Parquet"></a></th>
-    <th><a href="./content/delta.md">Apache Parquet</a></th>
-    <th>delta.</th>
+    <th><a href="https://github.com/delta-io"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Delta"></a></th>
+    <th><a href="https://delta.io/"><img style="vertical-align:middle" src="img/icon/deltalake.ico" alt="Delta"></a></th>
+    <th><a href="./content/delta.md">Delta</a></th>
+    <th>Delta Lake is a storage framework that enables building a Lakehouse architecture with compute engines</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
  <th colspan="5"><a></a></th>
@@ -184,133 +116,126 @@
     <th colspan="5">Big Data Frameworks</th>
   </tr>
   <tr>
-    <th><a href="https://github.com/apache/avro"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/airflow"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
+    <th><a href="https://airflow.apache.org/"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
     <th><a href="./content/airflow.md">Apache Airflow</a></th>
     <th>Apache Airflow is a workflow management platform for data engineering pipelines.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
 
   <tr>
-    <th><a href="https://github.com/apache/avro"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
-    <th><a href="./content/flume.md"><img style="vertical-align:middle" src="img/icon/.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/flume"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Flume"></a></th>
+    <th><a href="https://flume.apache.org/"><img style="vertical-align:middle" src="img/icon/flume.ico" alt="Flume"></a></th>
     <th><a href="./content/flume.md">Apache Flume</a></th>
     <th>Apache Flume is a distributed, reliable, and available software for efficiently collecting, aggregating, and moving large amounts of log data.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th><a href="https://github.com/apache/avro"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
-    <th><a href="./content/hadoop.md"><img style="vertical-align:middle" src="img/icon/hadoop.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/hadoop"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Hadoop"></a></th>
+    <th><a href="https://hadoop.apache.org/"><img style="vertical-align:middle" src="img/icon/hadoop.ico" alt="Hadoop"></a></th>
     <th><a href="./content/hadoop.md">Apache Hadoop</a></th>
     <th>Apache Hadoop is a collection of open-source software utilities that facilitates using a network of many computers to solve problems involving massive amounts of data and computation.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
 
   <tr>
-    <th><a href="https://github.com/apache/avro"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
-    <th><a href="./content/impala.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
-    <th><a href="./content/impala.md">Apache Impala</a></th>
+    <th><a href="https://github.com/apache/impala"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Impala"></a></th>
+    <th><a href="./content/impala.md"><img style="vertical-align:middle" src="img/icon/impala.ico" alt="Impala"></a></th>
+    <th><a href="https://impala.apache.org/">Apache Impala</a></th>
     <th>Apache Impala is a parallel processing SQL query engine for data stored in a computer cluster running Apache Hadoop.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th><a href="https://github.com/apache/kafka"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Airflow"></a></th>
-    <th><a href="./content/kafka.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/kafka"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Kafka"></a></th>
+    <th><a href="https://kafka.apache.org/"><img style="vertical-align:middle" src="img/icon/kafka.ico" alt="Kafka"></a></th>
     <th><a href="./content/kafka.md">Apache Kafka</a></th>
     <th>Apache Kafka is a distributed event store and stream-processing platform.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/nifi.md"><img style="vertical-align:middle" src="img/icon/nifi.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/nifi"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="NiFi"></a></th>
+    <th><a href="https://nifi.apache.org/"><img style="vertical-align:middle" src="img/icon/nifi.ico" alt="NiFi"></a></th>
     <th><a href="./content/nifi.md">Apache NiFi</a></th>
     <th>Apache NiFi is a software project designed to automate the flow of data between software systems.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/spark.md"><img style="vertical-align:middle" src="img/icon/spark.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/spark"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Spark"></a></th>
+    <th><a href="https://spark.apache.org/"><img style="vertical-align:middle" src="img/icon/spark.ico" alt="Spark"></a></th>
     <th><a href="./content/spark.md">Apache Spark</a></th>
     <th>Apache Spark is unified analytics engine for large-scale data processing.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/flink.md"><img style="vertical-align:middle" src="img/icon/flink.ico" alt="Airflow"></a></th>
+    <th><a href="https://github.com/apache/flink"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Flink"></a></th>
+    <th><a href="https://flink.apache.org/"><img style="vertical-align:middle" src="img/icon/flink.ico" alt="Flink"></a></th>
     <th><a href="./content/flink.md">Apache Flink</a></th>
     <th>Apache Flink is unified stream-processing and batch-processing framework.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
-
+    <tr>
+    <th><a href="https://github.com/kubernetes/kubernetes"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Kubernetes"></a></th>
+    <th><a href="https://kubernetes.io/"><img style="vertical-align:middle" src="img/icon/kuber.ico" alt="Kubernetes"></a></th>
+    <th><a href="./content/kubernetes.md">Kubernetes</a></th>
+    <th>  Kubernetes is a system for managing containerized applications across multiple hosts.</th>
+    <th><a href="TODO">Awesome TODO</a></th>
+  </tr>
 
   <tr>
     <th colspan="5">Cloud providers</th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/aws.md"><img style="vertical-align:middle" src="img/icon/aws.ico" alt="AWS"></a></th>
+    <th><a href="https://github.com/aws"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="AWS"></a></th>
+    <th><a href="https://aws.amazon.com/"><img style="vertical-align:middle" src="img/icon/aws.ico" alt="AWS"></a></th>
     <th><a href="./content/aws.md">Amazon Web Services</a></th>
-    <th><a></a></th>
+    <th>Amazon web service is an online platform that provides scalable and cost-effective cloud computing solutions.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/azure.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Azure"></a></th>
+    <th><a href="https://github.com/Azure"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Azure"></a></th>
+    <th><a href="https://azure.microsoft.com/"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Azure"></a></th>
     <th><a href="./content/azure.md">Microsoft Azure</a></th>
-    <th><a></a></th>
+    <th>Microsoft Azure is Microsoft's public cloud computing platform.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th><a href="https://github.com/apache/parquet"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Parquet"></a></th>
-    <th><a href="./content/gcp.md"><img style="vertical-align:middle" src="img/icon/gcp.ico" alt="GCP"></a></th>
+    <th><a href="https://github.com/GoogleCloudPlatform"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="GCP"></a></th>
+    <th><a href="https://cloud.google.com/"><img style="vertical-align:middle" src="img/icon/gcp.ico" alt="GCP"></a></th>
     <th><a href="./content/gcp.md">Google Cloud Platform</a></th>
-    <th><a></a></th>
+    <th>Google Cloud Platform is a suite of cloud computing services.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th colspan="5"><a></a></th>
-  </tr>
-  <tr>
-    <th colspan="5">Theory</th>
+    <th colspan="5"><b>Theory</b></th>
   </tr>
     <tr>
-    <th></th>
-    <th><a href="./content/dwha.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/dwha.md"><img style="vertical-align:middle" src="img/icon/dwha.ico" alt="Airflow"></a></th>
     <th><a href="./content/dwha.md">DWH Architectures</a></th>
-    <th><a></a></th>
+    <th>A data warehouse architecture is a method of defining the overall architecture of data communication processing and presentation that exist for end-clients computing within the enterprise.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th></th>
-    <th><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/datastruct.ico" alt="Airflow"></a></th>
     <th><a href="./content/data-structure.md">Data Structures</a></th>
-    <th><a></a></th>
+    <th>A data structure is a specialized format for organizing, processing, retrieving and storing data. </th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
     <tr>
-    <th></th>
-    <th><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/sql.ico" alt="Airflow"></a></th>
     <th><a href="./content/sql.md">SQL</a></th>
-    <th><a></a></th>
+    <th>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
   <tr>
-    <th colspan="5"><a></a></th>
+    <th colspan="5">Data visualization tools</th>
   </tr>
     <tr>
-    <th></th>
-    <th><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/tableau.ico" alt="Airflow"></a></th>
     <th><a href="./content/tableau.md">Tableau</a></th>
-    <th><a></a></th>
+    <th>Tableau is a powerful data visualization tool used in the Business Intelligence.</th>
     <th><a href="TODO">Awesome TODO</a></th>
   </tr>
-    <tr>
-    <th></th>
-    <th><a href="./content/airflow.md"><img style="vertical-align:middle" src="img/icon/kuber.ico" alt="Kubernetes"></a></th>
-    <th><a href="./content/kubernetes.md">Kubernetes</a></th>
-    <th><a></a></th>
-    <th><a href="TODO">Awesome TODO</a></th>
-  </tr>
+
 </table>
 </div>
 <div>
