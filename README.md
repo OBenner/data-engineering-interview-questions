@@ -183,7 +183,7 @@
   </tr>
     <tr>
     <th><a href="https://github.com/Azure"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Azure"></a></th>
-    <th><a href="https://azure.microsoft.com/"><img style="vertical-align:middle" src="img/icon/airflow.ico" alt="Azure"></a></th>
+    <th><a href="https://azure.microsoft.com/"><img style="vertical-align:middle" src="img/icon/azure.ico" alt="Azure"></a></th>
     <th><a href="./content/azure.md">Microsoft Azure</a></th>
     <th>Microsoft Azure is Microsoft's public cloud computing platform.</th>
     <th><a href="https://github.com/kristofferandreasen/awesome-azure">Awesome Azure</a></th>
@@ -200,7 +200,7 @@
     <th colspan="5"><b>Theory</b></th>
   </tr>
     <tr>
-    <th colspan="2"><a href="./content/dwha.md"><img style="vertical-align:middle" src="img/icon/dwha.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/dwha.md"><img style="vertical-align:middle" src="img/icon/dwha.ico" alt="DWHA"></a></th>
     <th><a href="./content/dwha.md">DWH Architectures</a></th>
     <th>A data warehouse architecture is a method of defining the overall architecture of data communication processing and presentation that exist for end-clients computing within the enterprise.</th>
     <th><a href="https://github.com/numetriclabz/awesome-db">Awesome databases</a></th>
@@ -212,7 +212,7 @@
     <th><a href="TODO">TODO</a></th>
   </tr>
     <tr>
-    <th colspan="2"><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/sql.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/sql.ico" alt="SQL"></a></th>
     <th><a href="./content/sql.md">SQL</a></th>
     <th>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).</th>
     <th><a href="https://github.com/danhuss/awesome-sql">Awesome SQL</a></th>
@@ -222,7 +222,7 @@
     <th colspan="5">Data visualization tools</th>
   </tr>
     <tr>
-    <th colspan="2"><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/tableau.ico" alt="Airflow"></a></th>
+    <th colspan="2"><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/tableau.ico" alt="Tableau"></a></th>
     <th><a href="./content/tableau.md">Tableau</a></th>
     <th>Tableau is a powerful data visualization tool used in the Business Intelligence.</th>
     <th><a href="TODO">TODO</a></th>
