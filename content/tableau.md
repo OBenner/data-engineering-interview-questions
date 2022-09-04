@@ -1,3 +1,6 @@
+## [Main title](../README.md)
+### [Interview questions](full.md)
+
 # Tableau
 + [What is data visualization in Tableau?](#What-is-data-visualization-in-Tableau)
 + [What is the difference between various BI tools and Tableau?](#What-is-the-difference-between-various-BI-tools-and-Tableau)

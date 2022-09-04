@@ -1,3 +1,5 @@
+## [Main title](../README.md)
+### [Interview questions](full.md)
 # Azure
 + [What are the three Main Components of Windows Azure Platform?](#What-are-the-three-Main-Components-of-Windows-Azure-Platform)
 + [What are the Service Model in Cloud Computing?](#What-are-the-Service-Model-in-Cloud-Computing)

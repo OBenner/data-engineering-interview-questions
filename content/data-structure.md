@@ -1,4 +1,6 @@
-[Interview questions](full.md)
+## [Main title](../README.md)
+### [Interview questions](full.md)
+
 # Data Structures
 + [What is data structure?](#What-is-data-structure)
 + [What are the goals of data structure?](#What-are-the-goals-of-data-structure)
