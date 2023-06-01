@@ -234,13 +234,14 @@ Hadoop distribution provides a Java utility called Hadoop Streaming. It is packa
 [Table of Contents](#HADOOP)
 
 ## What is the difference between Nodes in HDFS?
-The differences between NameNode, BackupNode and Checkpoint NameNode are as follows:
-+ NameNode: NameNode is at the heart of the HDFS file system that manages the metadata i.e. the data of the files is not stored on the NameNode but rather it has the directory tree of all the files present in the HDFS file system on a Hadoop cluster. NameNode uses two files for the namespace:
-    + fsimage file: This file keeps track of the latest checkpoint of the namespace.
-    + edits file: This is a log of changes made to the namespace since checkpoint.
-+ Checkpoint Node:	Checkpoint Node keeps track of the latest checkpoint in a directory that has same structure as that of NameNode’s directory.
-            Checkpoint node creates checkpoints for the namespace at regular intervals by downloading the edits and fsimage file from the NameNode and merging it locally. The new image is then again updated back to the active NameNode.
-+ BackupNode: This node also provides check pointing functionality like that of the Checkpoint node but it also maintains its up-to-date in-memory copy of the file system namespace that is in sync with the active NameNode.
+
+In Hadoop Distributed File System (HDFS), the term "node" typically refers to two different types of nodes: NameNode and DataNode. These nodes play distinct roles in the HDFS architecture.
+
+1. NameNode: The NameNode is the central component of the HDFS cluster and serves as the metadata repository for the file system. It stores information about the file system's namespace, such as the directory structure, file permissions, and file-to-block mapping. The NameNode keeps track of where data blocks are located on the DataNodes. It does not store the actual data of files but maintains the metadata.
+
+2. DataNode: DataNodes are the worker nodes in the HDFS cluster. They store the actual data of files and are responsible for reading and writing data blocks. Each DataNode manages its own local storage and communicates with the NameNode to report the status of its blocks and perform block replication based on instructions from the NameNode.
+
+- In summary, the NameNode is responsible for managing the metadata of the file system, while the DataNodes store the actual data blocks. The NameNode is a single point of failure, and its failure can result in the unavailability of the entire file system. DataNodes, on the other hand, can be scaled horizontally by adding more nodes to increase storage capacity and data throughput.
 
 [Table of Contents](#HADOOP)
 
