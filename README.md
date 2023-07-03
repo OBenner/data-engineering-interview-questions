@@ -1,4 +1,3 @@
-
 <h1 align="center">More than 2000+ questions for preparing a Data Engineer interview.</h1>
 <h2 align="center"><a href="./content/full.md">Full list of questions</a></h2>
 <h1 align="center">Interview questions for Data Engineer</h1>
@@ -219,7 +218,7 @@
   </tr>
 <th colspan="5"><a></a></th>
   <tr>
-    <th colspan="5">Data visualization tools</th>
+    <th colspan="5">Data visualization tools/BI</th>
   </tr>
     <tr>
     <th colspan="2"><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/tableau.ico" alt="Tableau"></a></th>
@@ -227,6 +226,19 @@
     <th>Tableau is a powerful data visualization tool used in the Business Intelligence.</th>
     <th><a href="TODO">TODO</a></th>
   </tr>
+    <th colspan="2"><a href="./content/looker.md"><img style="vertical-align:middle" src="img/icon/looker.ico" alt="Looker"></a></th>
+    <th><a href="./content/looker.md">Looker</a></th>
+    <th>Looker is an enterprise platform for BI, data applications, and embedded analytics that helps you explore and share insights in real time.</th>
+    <th><a href="TODO">TODO</a></th>
+  </tr>
+ <tr>
+    <th><a href="https://github.com/apache/superset"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Kafka"></a></th>
+    <th colspan="2"><a href="https://superset.apache.org/"><img style="vertical-align:middle" src="img/icon/superset.ico" alt="Apache Superset"></a></th>
+    <th><a href="./content/superset.md">Apache Superset</a></th>
+    <th>Superset is a modern data exploration and data visualization platform</th>
+    <th><a href="TODO">TODO</a></th>
+  </tr>
+
 
 </table>
 </div>
