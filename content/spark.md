@@ -442,7 +442,7 @@ Some popular deployment modes of Apache Spark are as follows:
 [Table of Contents](#Apache-Spark)
 
 ## What is lazy evaluation in Apache Spark?
-Apache Spark uses lazy evaluation as a performance optimization technique. In Laze evaluation as transformation is not applied immediately to a RDD. Spark records the transformations that have to be applied to a RDD. Once an Action is called, Spark executes all the transformations. Since Spark does not perform immediate execution based on transformation, it is	called lazy evaluation.
+Apache Spark uses lazy evaluation as a performance optimization technique. In lazy evaluation as transformation is not applied immediately to a RDD. Spark records the transformations that have to be applied to a RDD. Once an Action is called, Spark executes all the transformations. Since Spark does not perform immediate execution based on transformation, it is	called lazy evaluation.
 
 ## What are the core components of a distributed application in Apache Spark?
 Core components of a distributed application in Apache Spark are as follows:
