@@ -308,13 +308,15 @@ Spark Core is the central component of Apache Spark. It serves following functio
 [Table of Contents](#Apache-Spark)
 
 ## How will you do memory tuning in Spark?
+
 In case of memory tuning we have to take care of these points.
-Amount of memory used by objects Cost of accessing objects Overhead	of Garbage Collection
-Apache Spark stores objects in memory for caching. So it becomes important to perform memory tuning in a Spark application. First we determine the memory usage by the application. To do this we first create a RDD and put it in cache. Now we can see the size of the RDD in storage page of Web UI. This will tell the amount of memory consumed by RDD. Based on the memory usage, we can estimate the amount of memory needed for our task. In case we need tuning, we can follow these practices to reduce memory usage:
-Use data structures like Array of objects or primitives instead of Linked list or HashMap. Fastutil library provides convenient collection classes for primitive types compatible with Java.
-We have to reduce the usage of nested data structures with a large number of small objects and pointes. E.g. Linked list has pointers within each node.
-It is a good practice to use numeric IDs instead of Strings for keys.
-We can also use JVM flag - XX:+UseCompressedOops to	make pointers be four bytes instead of eight.
+
+- Amount of memory used by objects Cost of accessing objects Overhead	of Garbage Collection.
+- Apache Spark stores objects in memory for caching. So it becomes important to perform memory tuning in a Spark application. First we determine the memory usage by the application. To do this we first create a RDD and put it in cache. Now we can see the size of the RDD in storage page of Web UI. This will tell the amount of memory consumed by RDD. Based on the memory usage, we can estimate the amount of memory needed for our task. In case we need tuning, we can follow these practices to reduce memory usage:
+- Use data structures like Array of objects or primitives instead of Linked list or HashMap. Fastutil library provides convenient collection classes for primitive types compatible with Java.
+- We have to reduce the usage of nested data structures with a large number of small objects and pointes. E.g. Linked list has pointers within each node.
+- It is a good practice to use numeric IDs instead of Strings for keys.
+- We can also use JVM flag `-XX:+UseCompressedOops` to	make pointers be four bytes instead of eight.
 
 [Table of Contents](#Apache-Spark)
 
