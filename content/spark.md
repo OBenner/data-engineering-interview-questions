@@ -60,7 +60,6 @@
 + [What is Yarn?](#What-is-Yarn)
 + [Do you need to install Spark on all nodes of Yarn cluster? Why?](#Do-you-need-to-install-Spark-on-all-nodes-of-Yarn-cluster?-Why)
 + [Is it possible to run Apache Spark on Apache Mesos?](#Is-it-possible-to-run-Apache-Spark-on-Apache-Mesos)
-+ [What is lineage graph?](#What-is-lineage-graph)
 + [Define Partitions in Apache Spark](#Define-Partitions-in-Apache-Spar)
 + [What is a DStream?](#What-is-a-DStream)
 + [What is a Catalyst framework?](#What-is-a-Catalyst-framework)
@@ -187,7 +186,6 @@
 + [Why is Blinkdb used?](#Why-is-Blinkdb-used)
 + [How can you compare Hadoop and Spark in terms of ease of use?](#How-can-you-compare-Hadoop-and-Spark-in-terms-of-ease-of-use)
 + [What are the common mistakes developers make when running Spark Applications?](#What-are-the-common-mistakes-developers-make-when-running-Spark-Applications)
-+ [What is the Advantage of a Parquet File?](#What-is-the-Advantage-of-a-Parquet-File)
 + [What are the various Data Sources available in Sparksql?](#What-are-the-various-Data-Sources-available-in-Sparksql)
 + [What are the Key Features of Apache Spark that you like?](#What-are-the-Key-Features-of-Apache-Spark-that-you-like)
 + [What do you understand by Pair Rdd?](#What-do-you-understand-by-Pair-Rdd)
@@ -308,13 +306,15 @@ Spark Core is the central component of Apache Spark. It serves following functio
 [Table of Contents](#Apache-Spark)
 
 ## How will you do memory tuning in Spark?
+
 In case of memory tuning we have to take care of these points.
-Amount of memory used by objects Cost of accessing objects Overhead	of Garbage Collection
-Apache Spark stores objects in memory for caching. So it becomes important to perform memory tuning in a Spark application. First we determine the memory usage by the application. To do this we first create a RDD and put it in cache. Now we can see the size of the RDD in storage page of Web UI. This will tell the amount of memory consumed by RDD. Based on the memory usage, we can estimate the amount of memory needed for our task. In case we need tuning, we can follow these practices to reduce memory usage:
-Use data structures like Array of objects or primitives instead of Linked list or HashMap. Fastutil library provides convenient collection classes for primitive types compatible with Java.
-We have to reduce the usage of nested data structures with a large number of small objects and pointes. E.g. Linked list has pointers within each node.
-It is a good practice to use numeric IDs instead of Strings for keys.
-We can also use JVM flag - XX:+UseCompressedOops to	make pointers be four bytes instead of eight.
+
+- Amount of memory used by objects Cost of accessing objects Overhead	of Garbage Collection.
+- Apache Spark stores objects in memory for caching. So it becomes important to perform memory tuning in a Spark application. First we determine the memory usage by the application. To do this we first create a RDD and put it in cache. Now we can see the size of the RDD in storage page of Web UI. This will tell the amount of memory consumed by RDD. Based on the memory usage, we can estimate the amount of memory needed for our task. In case we need tuning, we can follow these practices to reduce memory usage:
+- Use data structures like Array of objects or primitives instead of Linked list or HashMap. Fastutil library provides convenient collection classes for primitive types compatible with Java.
+- We have to reduce the usage of nested data structures with a large number of small objects and pointes. E.g. Linked list has pointers within each node.
+- It is a good practice to use numeric IDs instead of Strings for keys.
+- We can also use JVM flag `-XX:+UseCompressedOops` to	make pointers be four bytes instead of eight.
 
 [Table of Contents](#Apache-Spark)
 
@@ -442,7 +442,7 @@ Some popular deployment modes of Apache Spark are as follows:
 [Table of Contents](#Apache-Spark)
 
 ## What is lazy evaluation in Apache Spark?
-Apache Spark uses lazy evaluation as a performance optimization technique. In Laze evaluation as transformation is not applied immediately to a RDD. Spark records the transformations that have to be applied to a RDD. Once an Action is called, Spark executes all the transformations. Since Spark does not perform immediate execution based on transformation, it is	called lazy evaluation.
+Apache Spark uses lazy evaluation as a performance optimization technique. In lazy evaluation as transformation is not applied immediately to a RDD. Spark records the transformations that have to be applied to a RDD. Once an Action is called, Spark executes all the transformations. Since Spark does not perform immediate execution based on transformation, it is	called lazy evaluation.
 
 ## What are the core components of a distributed application in Apache Spark?
 Core components of a distributed application in Apache Spark are as follows:
@@ -648,11 +648,6 @@ No, because Spark runs on top of Yarn.
 
 ## Is it possible to run Apache Spark on Apache Mesos?
 Yes.
-
-[Table of Contents](#Apache-Spark)
-
-## What is lineage graph?
-The RDDs in Spark, depend on one or more other RDDs. The representation of dependencies in between RDDs is known as the lineage graph.
 
 [Table of Contents](#Apache-Spark)
 
@@ -1638,14 +1633,6 @@ Developers need to be careful with this, as Spark makes use of memory for proces
 
 [Table of Contents](#Apache-Spark)
 
-## What is the Advantage of a Parquet File?
-Parquet file is a columnar format file that helps:
-Limit I/O operations
-Consumes less space
-Fetches only required columns.
-
-[Table of Contents](#Apache-Spark)
-
 ## What are the various Data Sources available in Sparksql?
 Parquet file
 JSON Datasets
@@ -1666,19 +1653,21 @@ Special operations can be performed on RDDs in Spark using key/value pairs and s
 [Table of Contents](#Apache-Spark)
 
 ## Explain about different Types of Transformations on Dstreams?
-Stateless Transformations:- Processing of the batch does not depend on the output of the previous batch.
-Examples: map (), reduceByKey (), filter ().
-Stateful Transformations:- Processing of the batch depends on the intermediary results of the previous batch.
-Examples: Transformations that depend on sliding windows.
+- Stateless Transformations:
+  - Processing of the batch does not depend on the output of the previous batch.
+  - Examples: map(), reduceByKey(), filter().
+- Stateful Transformations:
+  - Processing of the batch depends on the intermediary results of the previous batch.
+  - Examples: Transformations that depend on sliding windows.
 
 [Table of Contents](#Apache-Spark)
 
 ## Explain about popular use cases of Apache Spark?
 Apache Spark is mainly used for:
-Iterative machine learning.
-Interactive data analytics and processing.
-Stream processing
-Sensor data processing
+- Iterative machine learning.
+- Interactive data analytics and processing.
+- Stream processing
+- Sensor data processing
 
 [Table of Contents](#Apache-Spark)
 
