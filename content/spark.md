@@ -186,7 +186,6 @@
 + [Why is Blinkdb used?](#Why-is-Blinkdb-used)
 + [How can you compare Hadoop and Spark in terms of ease of use?](#How-can-you-compare-Hadoop-and-Spark-in-terms-of-ease-of-use)
 + [What are the common mistakes developers make when running Spark Applications?](#What-are-the-common-mistakes-developers-make-when-running-Spark-Applications)
-+ [What is the Advantage of a Parquet File?](#What-is-the-Advantage-of-a-Parquet-File)
 + [What are the various Data Sources available in Sparksql?](#What-are-the-various-Data-Sources-available-in-Sparksql)
 + [What are the Key Features of Apache Spark that you like?](#What-are-the-Key-Features-of-Apache-Spark-that-you-like)
 + [What do you understand by Pair Rdd?](#What-do-you-understand-by-Pair-Rdd)
@@ -1631,14 +1630,6 @@ Developers often make the mistake of:-
 Hitting the web service several times by using multiple clusters.
 Run everything on the local node instead of distributing it.
 Developers need to be careful with this, as Spark makes use of memory for processing.
-
-[Table of Contents](#Apache-Spark)
-
-## What is the Advantage of a Parquet File?
-Parquet file is a columnar format file that helps:
-Limit I/O operations
-Consumes less space
-Fetches only required columns.
 
 [Table of Contents](#Apache-Spark)
 
