@@ -1653,19 +1653,21 @@ Special operations can be performed on RDDs in Spark using key/value pairs and s
 [Table of Contents](#Apache-Spark)
 
 ## Explain about different Types of Transformations on Dstreams?
-Stateless Transformations:- Processing of the batch does not depend on the output of the previous batch.
-Examples: map (), reduceByKey (), filter ().
-Stateful Transformations:- Processing of the batch depends on the intermediary results of the previous batch.
-Examples: Transformations that depend on sliding windows.
+- Stateless Transformations:
+  - Processing of the batch does not depend on the output of the previous batch.
+  - Examples: map(), reduceByKey(), filter().
+- Stateful Transformations:
+  - Processing of the batch depends on the intermediary results of the previous batch.
+  - Examples: Transformations that depend on sliding windows.
 
 [Table of Contents](#Apache-Spark)
 
 ## Explain about popular use cases of Apache Spark?
 Apache Spark is mainly used for:
-Iterative machine learning.
-Interactive data analytics and processing.
-Stream processing
-Sensor data processing
+- Iterative machine learning.
+- Interactive data analytics and processing.
+- Stream processing
+- Sensor data processing
 
 [Table of Contents](#Apache-Spark)
 
