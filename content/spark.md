@@ -60,7 +60,6 @@
 + [What is Yarn?](#What-is-Yarn)
 + [Do you need to install Spark on all nodes of Yarn cluster? Why?](#Do-you-need-to-install-Spark-on-all-nodes-of-Yarn-cluster?-Why)
 + [Is it possible to run Apache Spark on Apache Mesos?](#Is-it-possible-to-run-Apache-Spark-on-Apache-Mesos)
-+ [What is lineage graph?](#What-is-lineage-graph)
 + [Define Partitions in Apache Spark](#Define-Partitions-in-Apache-Spar)
 + [What is a DStream?](#What-is-a-DStream)
 + [What is a Catalyst framework?](#What-is-a-Catalyst-framework)
@@ -650,11 +649,6 @@ No, because Spark runs on top of Yarn.
 
 ## Is it possible to run Apache Spark on Apache Mesos?
 Yes.
-
-[Table of Contents](#Apache-Spark)
-
-## What is lineage graph?
-The RDDs in Spark, depend on one or more other RDDs. The representation of dependencies in between RDDs is known as the lineage graph.
 
 [Table of Contents](#Apache-Spark)
 
