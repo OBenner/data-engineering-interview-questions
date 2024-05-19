@@ -666,6 +666,8 @@ Static variable is not created on function stack but is created in the initializ
 ## What is a Source Qualifier?
 When you add a relational or a flat file source definition to a mapping, you need to connect it to a Source Qualifier transformation. The Source Qualifier represents the rows that the Informatica Server reads when it executes a session.
 
+[Table of Contents](#Data-Warehousing-Architecture)
+
 ## What are the Steps to Build the Data Warehouse?
 Gathering business requirements>>Identifying Sources>>Identifying Facts>>Defining Dimensions>>Define Attributes>>Redefine Dimensions / Attributes>>Organize Attribute Hierarchy>>Define Relationship>>Assign Unique Identifiers.
 
@@ -1986,6 +1988,8 @@ Addition, deletion and modification.
 
 ## What are Unary Operations in Relational Algebra?
 PROJECTION and SELECTION.
+
+[Table of Contents](#Data-Warehousing-Architecture)
 
 ## Are resulting Relations of Product and Join Operation the same?
 No.
