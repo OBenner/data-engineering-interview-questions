@@ -205,3 +205,230 @@ These are some considerations you need to take for your indexing strategy:
   Selectivity is the ability of a query to narrow results using the index. Selectivity allows MongoDB to use the index for a larger portion of the work associated with fulfilling the query.
 
 [Table of Contents](#mongo)
+
+## How does MongoDB ensure data consistency and reliability?
+
+MongoDB ensures data consistency and reliability through several mechanisms:
+
+- Write Concern: Allows you to specify the level of acknowledgment required from MongoDB for write operations.
+- Replica Sets: Provides data redundancy and high availability.
+- Journaling: Ensures data durability by writing operations to a journal before applying them to the data files.
+- Data Validation: Allows you to enforce document structure.
+
+[Table of Contents](#mongo)
+
+## What are MongoDB's backup and restore options?
+
+MongoDB offers several backup and restore options:
+
+- mongodump and mongorestore: Command-line tools for creating binary exports of database contents and restoring them.
+- Filesystem snapshots: For creating point-in-time snapshots of data.
+- MongoDB Atlas Backup: Continuous backups and point-in-time recovery for cloud-hosted databases.
+- MongoDB Ops Manager: For on-premises deployments, offering backup automation and point-in-time recovery.
+
+## How does MongoDB handle concurrency?
+
+MongoDB handles concurrency through:
+
+- Document-level locking: Allows multiple clients to read and write different documents simultaneously.
+- WiredTiger storage engine: Provides document-level concurrency control and compression.
+- Multi-version Concurrency Control (MVCC): Allows readers to see a consistent view of data without blocking writers.
+
+[Table of Contents](#mongo)
+
+## What security features does MongoDB offer?
+
+Once again we have many options for security as well, like:
+
+- Authentication: Supports various authentication mechanisms (SCRAM, x.509 certificates, LDAP, Kerberos).
+- Authorization: Role-Based Access Control (RBAC) for fine-grained access control.
+- Encryption: Supports encryption at rest and in transit (TLS/SSL).
+- Auditing: Allows tracking of system and user activities.
+- Network isolation: Supports IP whitelisting and VPC peering.
+
+[Table of Contents](#mongo)
+
+## How does MongoDB manage schema design and changes?
+
+MongoDB uses a flexible, document-based model for schema design:
+
+- Schemaless: Collections don't enforce document structure by default.
+- Dynamic Schema: Documents in a collection can have different fields.
+- Schema Validation: Optional rules can be set to enforce document structure.
+- Indexing: Supports various index types to optimize query performance.
+
+For schema changes:
+
+- Adding fields: Simply update documents with new fields.
+- Removing fields: Delete fields from documents or use $unset in updates.
+- Changing field types: Update documents with new data types.
+- Large-scale changes: Can be done programmatically or using tools like Mongoose for Node.js.
+
+[Table of Contents](#mongo)
+
+## What are the limitations or disadvantages of MongoDB?
+
+Some limitations and disadvantages of MongoDB include:
+
+- Limited JOIN functionality compared to relational databases.
+- Document size limit of 16MB.
+- Lack of built-in data integrity constraints (like foreign key constraints).
+- Higher storage space requirements due to data duplication in denormalized models.
+- Steeper learning curve for those accustomed to relational databases.
+- Less mature ecosystem compared to some traditional RDBMSs.
+
+[Table of Contents](#mongo)
+
+## How do you perform migrations from RDBMS to MongoDB?
+
+Migrating from RDBMS to MongoDB typically involves these steps:
+
+1. Analyze the relational schema and design a document model.
+2. Map relational tables to MongoDB collections.
+3. Convert relational data to JSON format.
+4. Use tools like mongoimport or write custom scripts to import data.
+5. Verify data integrity after migration.
+6. Update application code to work with MongoDB instead of SQL.
+7. Test thoroughly to ensure functionality and performance.
+
+Tools that can assist in this process include:
+
+- MongoDB Compass for visualizing and manipulating data.
+- Official MongoDB connectors for various programming languages.
+- Third-party ETL (Extract, Transform, Load) tools.
+
+[Table of Contents](#mongo)
+
+## What is MongoDB Atlas and what benefits does it provide?
+
+MongoDB Atlas is the cloud-hosted database-as-a-service (DBaaS) platform for MongoDB. Benefits include:
+
+- Automated deployment and scaling of MongoDB clusters.
+- Multi-cloud and multi-region deployment options.
+- Built-in security features (network isolation, encryption, access controls).
+- Automated backups and point-in-time recovery.
+- Performance monitoring and optimization tools.
+- Easy integration with other cloud services.
+- Reduced operational overhead for database management.
+- Automatic updates and patches for the database software.
+
+[Table of Contents](#mongo)
+
+## How can you monitor and optimize MongoDB performance?
+
+Monitoring and optimizing MongoDB performance involves several strategies:
+
+##### Monitoring:
+
+- Use MongoDB's built-in tools like mongotop and mongostat
+- Leverage MongoDB Compass for visual performance insights
+- Implement MongoDB Atlas monitoring for cloud deployments
+- Use third-party monitoring tools like Prometheus with MongoDB exporter
+
+##### Optimization:
+
+- Analyze and optimize slow queries using explain() method
+- Create appropriate indexes based on query patterns
+- Use proper schema design to minimize data duplication
+- Configure appropriate write concern and read preferences
+- Optimize server and storage configurations
+- Use appropriate shard keys for distributed systems
+
+[Table of Contents](#mongo)
+
+## What is a replica set in MongoDB and how does it work?
+
+A replica set in MongoDB is a group of mongod processes that maintain the same data set. It provides:
+
+- High Availability: If the primary node fails, an election occurs to choose a new primary from the secondary nodes.
+- Data Redundancy: Data is replicated across multiple nodes.
+- Read Scaling: Secondary nodes can handle read operations.
+
+How it works:
+
+- One primary node accepts all write operations
+- Multiple secondary nodes replicate data from the primary
+- Optionally, arbiter nodes can participate in elections but don't hold data
+- Automatic failover occurs if the primary becomes unavailable
+
+[Table of Contents](#mongo)
+
+## How do you handle data integrity in MongoDB?
+
+While MongoDB doesn't have built-in referential integrity like relational databases, you can maintain data integrity through:
+
+- Schema Validation: Define JSON Schema to enforce document structure
+- Application-Level Checks: Implement integrity checks in your application code
+- Atomic Operations: Use multi-document transactions for operations that must succeed or fail as a unit
+- Unique Indexes: Ensure uniqueness of certain fields
+- Data Validation: Use $jsonSchema operator to define validation rules
+ - Consistent Data Modeling: Design schemas to minimize the need for complex integrity constraints
+
+[Table of Contents](#mongo)
+
+## how does MongoDB fit into CAP theorm it?
+
+The CAP theorem states that a distributed system can only provide two of three guarantees: Consistency, Availability, and Partition tolerance. MongoDB's position in the CAP theorem can be described as:
+
+**Partition Tolerance**: MongoDB is designed to handle network partitions in distributed deployments.
+**Consistency vs. Availability**: MongoDB allows you to tune the balance between consistency and availability:
+
+With default settings, MongoDB leans towards **CP** (Consistency and Partition Tolerance)
+By adjusting write concern and read preferences, you can shift towards **AP** (Availability and Partition Tolerance)
+
+In practice:
+
+- For strong consistency, use majority write concern and read preference
+- For higher availability at the cost of potential inconsistency, use lower write concerns or read from secondaries
+
+[Table of Contents](#mongo)
+
+## How do you handle large data volumes in MongoDB?
+
+MongoDB offers several strategies for handling large data volumes:
+
+- Sharding: Distribute data across multiple machines to handle large datasets and high throughput operations.
+- Indexing: Create appropriate indexes to improve query performance on large collections.
+- Aggregation Pipeline: Use for efficient data processing and analysis on large datasets.
+- GridFS: Store and retrieve large files efficiently.
+- Data Compression: WiredTiger storage engine provides data compression to reduce storage requirements.
+- Capped Collections: Use for high-volume data that doesn't require long-term storage.
+- Time Series Collections: Optimize storage and querying for time series data.
+
+
+[Table of Contents](#mongo)
+
+## What are the best practices for designing a MongoDB schema?
+
+Key best practices for MongoDB schema design include:
+
+- Embed related data in a single document when possible for faster reads.
+- Use references when data is used in multiple places or for very large datasets.
+- Design schema based on application query patterns.
+- Avoid deeply nested documents (keep nesting to 2-3 levels for better performance).
+- Use appropriate data types for fields.
+- Create indexes to support common queries.
+- Consider document growth when designing schemas.
+- Use schema versioning for easier updates and migrations.
+- Normalize data only when necessary (e.g., for data consistency across multiple collections).
+- Use array fields for one-to-many relationships within reasonable limits.
+
+[Table of Contents](#mongo)
+
+
+## How does MongoDB handle geographic data and geospatial queries?
+
+MongoDB provides robust support for geographic data and geospatial queries:
+
+- Geospatial Indexes: Support for 2d and 2dsphere indexes for efficient geospatial queries.
+- GeoJSON Objects: Store location data using standard GeoJSON format.
+- Geospatial Queries: Support for various types of geospatial queries:
+  - Proximity: Find documents near a point.
+  - Intersection: Find geometries that intersect with a specified geometry.
+  - Within: Find geometries contained within a specified geometry.
+- Aggregation Pipeline: Geospatial stages like $geoNear for complex geo-based analytics.
+- Coordinate Systems: Support for both legacy coordinate pairs and GeoJSON objects.
+- Geospatial Operators: $near, $geoWithin, $geoIntersects, etc., for flexible querying.
+- Spherical Geometry: 2dsphere index supports queries on an Earth-like sphere.
+
+[Table of Contents](#mongo)
