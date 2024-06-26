@@ -18,6 +18,21 @@
 + [What is an Aggregation Pipeline in MongoDB?](#What-is-an-Aggregation-Pipeline-in-mongodb)
 + [Where should I use an index in MongoDB?](#Where-should-I-use-an-index-in-mongodb)
 + [How would you choose an indexing strategy in MongoDB and what are some common considerations we need to care about?](#How-would-you-choose-a-indexing-strategy-in-mongo-and-what-are-some-common-considerations-we-need-to-care-about)
++ [How does MongoDB ensure data consistency and reliability?](#How-does-MongoDB-ensure-data-consistency-and-reliability)
++ [What are MongoDB's backup and restore options?](#What-are-MongoDB's-backup-and-restore-options)
++ [How does MongoDB handle concurrency?](#How-does-MongoDB-handle-concurrency)
++ [What security features does MongoDB offer?](#What-security-features-does-MongoDB-offer)
++ [How does MongoDB manage schema design and changes?](#How-does-MongoDB-manage-schema-design-and-changes)
++ [What are the limitations or disadvantages of MongoDB?](#What-are-the-limitations-or-disadvantages-of-MongoDB)
++ [How do you perform migrations from RDBMS to MongoDB?](#How-do-you-perform-migrations-from-RDBMS-to-MongoDB)
++ [What is MongoDB Atlas and what benefits does it provide?](#What-is-MongoDB-Atlas-and-what-benefits-does-it-provide)
++ [How can you monitor and optimize MongoDB performance?](#How-can-you-monitor-and-optimize-MongoDB-performance)
++ [What is a replica set in MongoDB and how does it work?](#What-is-a-replica-set-in-MongoDB-and-how-does-it-work)
++ [How do you handle data integrity in MongoDB?](#How-do-you-handle-data-integrity-in-MongoDB)
++ [How does MongoDB fit into CAP theorem?](#How-does-MongoDB-fit-into-CAP-theorem)
++ [How do you handle large data volumes in MongoDB?](#How-do-you-handle-large-data-volumes-in-MongoDB)
++ [What are the best practices for designing a MongoDB schema?](#What-are-the-best-practices-for-designing-a-MongoDB-schema)
++ [How does MongoDB handle geographic data and geospatial queries?](#How-does-MongoDB-handle-geographic-data-and-geospatial-queries)
 
 
 
