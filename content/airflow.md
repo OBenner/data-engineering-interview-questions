@@ -142,8 +142,6 @@ The schedule interval specifies how often each workflow is scheduled to run. '* 
 
 The expression `schedule_interval='30 8 * * 1-5'` is a **cron expression** used in Airflow (and Unix-like systems) to define a specific schedule for running tasks. Here's a detailed breakdown:
 
----
-
 ## Cron Expression Structure
 
 A cron expression is composed of 5 fields separated by spaces:
@@ -155,8 +153,6 @@ A cron expression is composed of 5 fields separated by spaces:
 | **Day of Month** | 3     | `1-31`                 | The day of the month            |
 | **Month**     | 4        | `1-12` or `JAN-DEC`    | The month                       |
 | **Day of Week** | 5      | `0-6` or `SUN-SAT`     | The day of the week (0 = Sunday)|
-
----
 
 ## Detailed Explanation of `30 8 * * 1-5`
 
@@ -180,16 +176,12 @@ A cron expression is composed of 5 fields separated by spaces:
    - The range `1-5` means the task will run on **Monday to Friday**.
    - Example: It skips weekends (Saturday and Sunday).
 
----
-
 ## When Will This Schedule Trigger?
 
 This cron expression means:
 - **Time**: 8:30 AM.
 - **Days**: Monday through Friday.
 - **Frequency**: Daily (only on weekdays).
-
----
 
 ## Examples of Trigger Dates
 Assuming the current date is January 2025:
@@ -204,7 +196,6 @@ You might use this schedule for tasks that should only run during business hours
 - Sending daily reports to a team.
 - Updating a database with data from the previous day.
 - Running data pipelines during non-peak times.
-
 
 ## How do you make the module available to airflow if you're using Docker Compose?
 If we are using Docker Compose, then we will need to use a custom image with our own additional dependencies in order to make the module available to Airflow. Refer to the following Airflow Documentation for reasons why we need it and how to do it.
