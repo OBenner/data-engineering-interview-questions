@@ -43,6 +43,9 @@ It is important to remember that airflow operators can be run more than once whe
 
 ## Explain Airflow Architecture and its components?
 There are four major components to airflow.
+
+[Architecture : -> ](https://medium.com/@bageshwar.kumar/airflow-architecture-a-deep-dive-into-data-pipeline-orchestration-217dd2dbc1c3)
+
 + Webserver
     + This is the Airflow UI built on the Flask, which provides an overview of the overall health of various DAGs and helps visualise various components and states of every DAG. For the Airflow setup, the Web Server also allows you to manage users, roles, and different configurations.
 + Scheduler
@@ -134,6 +137,73 @@ You can use the start date to launch a task on a specific date.
 The schedule interval specifies how often each workflow is scheduled to run. '* * * * *' indicates that the tasks must run every minute.
 
 [Table of Contents](#Apache-Airflow)
+
+## Understanding Cron Expression in Airflow
+
+The expression `schedule_interval='30 8 * * 1-5'` is a **cron expression** used in Airflow (and Unix-like systems) to define a specific schedule for running tasks. Here's a detailed breakdown:
+
+---
+
+## Cron Expression Structure
+
+A cron expression is composed of 5 fields separated by spaces:
+
+| Field         | Position | Allowed Values          | Description                      |
+|---------------|----------|-------------------------|----------------------------------|
+| **Minute**    | 1        | `0-59`                 | The minute of the hour          |
+| **Hour**      | 2        | `0-23`                 | The hour of the day             |
+| **Day of Month** | 3     | `1-31`                 | The day of the month            |
+| **Month**     | 4        | `1-12` or `JAN-DEC`    | The month                       |
+| **Day of Week** | 5      | `0-6` or `SUN-SAT`     | The day of the week (0 = Sunday)|
+
+---
+
+## Detailed Explanation of `30 8 * * 1-5`
+
+1. **`30` (Minute)**:
+   - The task will run at the **30th minute** of the hour.
+   - Example: If the hour is `8`, the task will execute at `08:30`.
+
+2. **`8` (Hour)**:
+   - The task will run during the **8th hour of the day**.
+   - Example: It will execute at `08:30 AM`.
+
+3. **`*` (Day of Month)**:
+   - The asterisk (`*`) means "every day of the month."
+   - Example: It doesn't matter whether it's the 1st, 15th, or 30th.
+
+4. **`*` (Month)**:
+   - The asterisk (`*`) means "every month."
+   - Example: It will run in January, February, and so on.
+
+5. **`1-5` (Day of Week)**:
+   - The range `1-5` means the task will run on **Monday to Friday**.
+   - Example: It skips weekends (Saturday and Sunday).
+
+---
+
+## When Will This Schedule Trigger?
+
+This cron expression means:
+- **Time**: 8:30 AM.
+- **Days**: Monday through Friday.
+- **Frequency**: Daily (only on weekdays).
+
+---
+
+## Examples of Trigger Dates
+Assuming the current date is January 2025:
+- Monday, January 6, 2025, at 08:30 AM.
+- Tuesday, January 7, 2025, at 08:30 AM.
+- Wednesday, January 8, 2025, at 08:30 AM.
+- (And so on for all weekdays...)
+
+## Real-World Use Case
+
+You might use this schedule for tasks that should only run during business hours on workdays, such as:
+- Sending daily reports to a team.
+- Updating a database with data from the previous day.
+- Running data pipelines during non-peak times.
 
 
 ## How do you make the module available to airflow if you're using Docker Compose?
