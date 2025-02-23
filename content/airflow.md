@@ -80,7 +80,8 @@ CeleryExecutors has a fixed number of workers on standby to take on tasks when t
 Pros:
 + It's simple and straightforward to set up.
 + It's a good way to test DAGs while they're being developed.
-Pros:
+  
+Cons:
 It isn't scalable.
 It is not possible to perform many tasks at the same time.
 Unsuitable for use in production
@@ -91,6 +92,7 @@ Unsuitable for use in production
 Pros:
 + Able to perform multiple tasks.
 + Can be used to run DAGs during development.
+
 Cons:
 + The product isn't scalable.
 + There is only one point of failure.
@@ -102,6 +104,7 @@ Cons:
 Pros:
 + It allows for scalability.
 + Celery is responsible for managing the workers. Celery creates a new one in the case of a failure.
+
 Cons:
 + Celery requires RabbitMQ/Redis for task queuing, which is redundant with what Airflow already supports.
 + The setup is also complicated due to the above-mentioned dependencies.
@@ -110,10 +113,11 @@ Cons:
 
 ## What are the pros and cons of KubernetesExecutor?
 Pros:
-It combines the benefits of CeleryExecutor and LocalExecutor in terms of scalability and simplicity.
-Fine-grained control over task-allocation resources. At the task level, the amount of CPU/memory needed can be configured.
++ It combines the benefits of CeleryExecutor and LocalExecutor in terms of scalability and simplicity.
++ Fine-grained control over task-allocation resources. At the task level, the amount of CPU/memory needed can be configured.
+
 Cons:
-Airflow is newer to Kubernetes, and the documentation is complicated.
++ Airflow is newer to Kubernetes, and the documentation is complicated.
 
 [Table of Contents](#Apache-Airflow)
 
@@ -121,6 +125,8 @@ Airflow is newer to Kubernetes, and the documentation is complicated.
 Python files are used to define workflows.
 DAG (Directed Acyclic Graph)
 The DAG Python class in Airflow allows you to generate a Directed Acyclic Graph, which is a representation of the workflow.
+
+```python
 from Airflow.models import DAG
 from airflow.utils.dates import days_ago
 ​
@@ -133,7 +139,10 @@ dag_id='bash_operator_example',
 default_args=args,
 schedule_interval='* * * * *',
 )
+```
+
 You can use the start date to launch a task on a specific date.
+
 The schedule interval specifies how often each workflow is scheduled to run. '* * * * *' indicates that the tasks must run every minute.
 
 [Table of Contents](#Apache-Airflow)
@@ -142,7 +151,7 @@ The schedule interval specifies how often each workflow is scheduled to run. '* 
 
 The expression `schedule_interval='30 8 * * 1-5'` is a **cron expression** used in Airflow (and Unix-like systems) to define a specific schedule for running tasks. Here's a detailed breakdown:
 
-## Cron Expression Structure
+### Cron Expression Structure
 
 A cron expression is composed of 5 fields separated by spaces:
 
@@ -154,7 +163,7 @@ A cron expression is composed of 5 fields separated by spaces:
 | **Month**     | 4        | `1-12` or `JAN-DEC`    | The month                       |
 | **Day of Week** | 5      | `0-6` or `SUN-SAT`     | The day of the week (0 = Sunday)|
 
-## Detailed Explanation of `30 8 * * 1-5`
+### Detailed Explanation of `30 8 * * 1-5`
 
 1. **`30` (Minute)**:
    - The task will run at the **30th minute** of the hour.
@@ -176,14 +185,14 @@ A cron expression is composed of 5 fields separated by spaces:
    - The range `1-5` means the task will run on **Monday to Friday**.
    - Example: It skips weekends (Saturday and Sunday).
 
-## When Will This Schedule Trigger?
+#### When Will This Schedule Trigger?
 
 This cron expression means:
 - **Time**: 8:30 AM.
 - **Days**: Monday through Friday.
 - **Frequency**: Daily (only on weekdays).
 
-## Examples of Trigger Dates
+#### Examples of Trigger Dates
 Assuming the current date is January 2025:
 - Monday, January 6, 2025, at 08:30 AM.
 - Tuesday, January 7, 2025, at 08:30 AM.
