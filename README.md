@@ -107,6 +107,13 @@
     <th>Apache Iceberg is an open table format for huge analytic datasets.</th>
     <th><a href="https://iceberg.apache.org/docs/latest/">Iceberg docs</a></th>
   </tr>
+  <tr>
+    <th><a href="https://github.com/apache/hudi"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Hudi"></a></th>
+    <th><a href="https://hudi.apache.org/"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Hudi"></a></th>
+    <th><a href="./content/hudi.md">Apache Hudi</a></th>
+    <th>Apache Hudi brings upserts, deletes, and incremental processing to data lakes.</th>
+    <th><a href="https://hudi.apache.org/docs/overview/">Hudi docs</a></th>
+  </tr>
  <th colspan="5"><a></a></th>
   <tr>
     <th colspan="5">Big Data Frameworks</th>
@@ -251,6 +258,24 @@
     <th><a href="./content/data-governance.md">Data Governance</a></th>
     <th>Ownership, policies, privacy, and access controls for data platforms.</th>
     <th><a href="https://github.com/datahub-project/datahub">DataHub</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/cost-optimization.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Cost Optimization"></a></th>
+    <th><a href="./content/cost-optimization.md">Cost Optimization</a></th>
+    <th>Practical techniques to reduce compute and storage costs while meeting SLAs.</th>
+    <th><a href="https://spark.apache.org/docs/latest/tuning.html">Spark tuning</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/python.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Python"></a></th>
+    <th><a href="./content/python.md">Python for Data Engineering</a></th>
+    <th>Python fundamentals for reliable, scalable data pipelines and tooling.</th>
+    <th><a href="https://arrow.apache.org/docs/python/">PyArrow docs</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/system-design.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="System Design"></a></th>
+    <th><a href="./content/system-design.md">Data System Design</a></th>
+    <th>System design interview questions for batch/streaming data platforms.</th>
+    <th><a href="https://martinfowler.com/articles/data-monolith-to-mesh.html">Data mesh overview</a></th>
   </tr>
     <tr>
     <th colspan="2"><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/datastruct.ico" alt="Airflow"></a></th>

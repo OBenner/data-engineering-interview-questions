@@ -33,6 +33,10 @@
 + [Data Quality](#Data-Quality)
 + [Data Observability](#Data-Observability)
 + [Data Governance](#Data-Governance)
++ [Apache Hudi](#Apache-Hudi)
++ [Cost Optimization](#Cost-Optimization)
++ [Python for Data Engineering](#Python-for-Data-Engineering)
++ [Data System Design](#Data-System-Design)
 
 ## Apache Hadoop
 + [What are the main components of a Hadoop Application?](hadoop.md#What-are-the-main-components-of-a-Hadoop-Application)
@@ -366,6 +370,69 @@
 + [How do you implement auditability for data access?](data-governance.md#How-do-you-implement-auditability-for-data-access)
 + [How do you handle GDPR “right to be forgotten” in a lakehouse/warehouse?](data-governance.md#How-do-you-handle-GDPR-“right-to-be-forgotten”-in-a-lakehouse/warehouse)
 + [What are data retention policies and how do you enforce them?](data-governance.md#What-are-data-retention-policies-and-how-do-you-enforce-them)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Apache Hudi
++ [What is Apache Hudi?](hudi.md#What-is-Apache-Hudi)
++ [What problems does Hudi solve in a data lake?](hudi.md#What-problems-does-Hudi-solve-in-a-data-lake)
++ [What is the difference between Copy-on-Write (COW) and Merge-on-Read (MOR)?](hudi.md#What-is-the-difference-between-Copy-on-Write-(COW)-and-Merge-on-Read-(MOR))
++ [How do you choose between COW and MOR?](hudi.md#How-do-you-choose-between-COW-and-MOR)
++ [What is a record key, partition path, and precombine field?](hudi.md#What-is-a-record-key-partition-path-and-precombine-field)
++ [How does Hudi support upserts?](hudi.md#How-does-Hudi-support-upserts)
++ [What is compaction in Hudi?](hudi.md#What-is-compaction-in-Hudi)
++ [What is clustering in Hudi and when do you need it?](hudi.md#What-is-clustering-in-Hudi-and-when-do-you-need-it)
++ [Why does the small files problem happen and how do you mitigate it in Hudi?](hudi.md#Why-does-the-small-files-problem-happen-and-how-do-you-mitigate-it-in-Hudi)
++ [How do you handle CDC with Hudi?](hudi.md#How-do-you-handle-CDC-with-Hudi)
++ [What are common operational metrics for Hudi tables?](hudi.md#What-are-common-operational-metrics-for-Hudi-tables)
++ [When would you choose Hudi vs Iceberg vs Delta?](hudi.md#When-would-you-choose-Hudi-vs-Iceberg-vs-Delta)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Cost Optimization
++ [Why is cost optimization a core data engineering skill?](cost-optimization.md#Why-is-cost-optimization-a-core-data-engineering-skill)
++ [What are the main cost drivers in data platforms?](cost-optimization.md#What-are-the-main-cost-drivers-in-data-platforms)
++ [How does partitioning affect cost and performance?](cost-optimization.md#How-does-partitioning-affect-cost-and-performance)
++ [What is the small files problem and why does it increase cost?](cost-optimization.md#What-is-the-small-files-problem-and-why-does-it-increase-cost)
++ [How do you choose a target file size for Parquet tables?](cost-optimization.md#How-do-you-choose-a-target-file-size-for-Parquet-tables)
++ [How do you detect and fix data skew in distributed processing?](cost-optimization.md#How-do-you-detect-and-fix-data-skew-in-distributed-processing)
++ [What is shuffle and how do you reduce it in Spark?](cost-optimization.md#What-is-shuffle-and-how-do-you-reduce-it-in-Spark)
++ [When should you pre-aggregate or materialize tables?](cost-optimization.md#When-should-you-pre-aggregate-or-materialize-tables)
++ [How do you prevent runaway queries and protect shared clusters?](cost-optimization.md#How-do-you-prevent-runaway-queries-and-protect-shared-clusters)
++ [How do you optimize joins in large-scale analytics?](cost-optimization.md#How-do-you-optimize-joins-in-large-scale-analytics)
++ [How do you plan and estimate the cost of a backfill?](cost-optimization.md#How-do-you-plan-and-estimate-the-cost-of-a-backfill)
++ [What metrics would you track for FinOps in data engineering?](cost-optimization.md#What-metrics-would-you-track-for-FinOps-in-data-engineering)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Python for Data Engineering
++ [Why is Python widely used in data engineering?](python.md#Why-is-Python-widely-used-in-data-engineering)
++ [How do iterators and generators help with large data processing?](python.md#How-do-iterators-and-generators-help-with-large-data-processing)
++ [What is the difference between threads, multiprocessing, and async IO in Python?](python.md#What-is-the-difference-between-threads-multiprocessing-and-async-IO-in-Python)
++ [What is the GIL and why does it matter?](python.md#What-is-the-GIL-and-why-does-it-matter)
++ [How do you read and write Parquet efficiently in Python?](python.md#How-do-you-read-and-write-Parquet-efficiently-in-Python)
++ [How do you process large CSV files without running out of memory?](python.md#How-do-you-process-large-CSV-files-without-running-out-of-memory)
++ [How do you implement retries with exponential backoff?](python.md#How-do-you-implement-retries-with-exponential-backoff)
++ [What logging practices are important for data pipelines?](python.md#What-logging-practices-are-important-for-data-pipelines)
++ [How do you structure a Python project for data pipelines?](python.md#How-do-you-structure-a-Python-project-for-data-pipelines)
++ [How do you manage dependencies and reproducible environments?](python.md#How-do-you-manage-dependencies-and-reproducible-environments)
++ [How do you test data transformations in Python?](python.md#How-do-you-test-data-transformations-in-Python)
++ [How do you profile and optimize slow Python code?](python.md#How-do-you-profile-and-optimize-slow-Python-code)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Data System Design
++ [How would you design an end-to-end batch analytics pipeline?](system-design.md#How-would-you-design-an-end-to-end-batch-analytics-pipeline)
++ [How would you design a near-real-time ingestion pipeline?](system-design.md#How-would-you-design-a-near-real-time-ingestion-pipeline)
++ [How do you ensure idempotency in data pipelines?](system-design.md#How-do-you-ensure-idempotency-in-data-pipelines)
++ [How do you handle late arriving events and backfills?](system-design.md#How-do-you-handle-late-arriving-events-and-backfills)
++ [How do you choose between batch and streaming?](system-design.md#How-do-you-choose-between-batch-and-streaming)
++ [How do you model raw/silver/gold layers (bronze/silver/gold)?](system-design.md#How-do-you-model-raw/silver/gold-layers-(bronze/silver/gold))
++ [How do you design a data platform for multiple teams (multi-tenancy)?](system-design.md#How-do-you-design-a-data-platform-for-multiple-teams-(multi-tenancy))
++ [How do you design for schema evolution?](system-design.md#How-do-you-design-for-schema-evolution)
++ [What are the main reliability patterns for pipelines?](system-design.md#What-are-the-main-reliability-patterns-for-pipelines)
++ [How do you design observability for a data platform?](system-design.md#How-do-you-design-observability-for-a-data-platform)
++ [How do you manage cost while meeting SLAs?](system-design.md#How-do-you-manage-cost-while-meeting-SLAs)
 
 [Table of Contents](#Interview-questions-for-Data-Engineer)
 
