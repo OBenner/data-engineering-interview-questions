@@ -29,6 +29,10 @@
 + [dbt](#dbt)
 + [Apache Iceberg](#Apache-Iceberg)
 + [Change Data Capture (CDC)](#Change-Data-Capture-(CDC))
++ [Data Modeling](#Data-Modeling)
++ [Data Quality](#Data-Quality)
++ [Data Observability](#Data-Observability)
++ [Data Governance](#Data-Governance)
 
 ## Apache Hadoop
 + [What are the main components of a Hadoop Application?](hadoop.md#What-are-the-main-components-of-a-Hadoop-Application)
@@ -292,6 +296,76 @@
 + [How do you monitor CDC lag and where can lag come from?](cdc.md#How-do-you-monitor-CDC-lag-and-where-can-lag-come-from)
 + [How do you design a safe backfill/reprocessing strategy for CDC?](cdc.md#How-do-you-design-a-safe-backfill/reprocessing-strategy-for-CDC)
 + [What are the most common failure modes in CDC pipelines?](cdc.md#What-are-the-most-common-failure-modes-in-CDC-pipelines)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Data Modeling
++ [What is data modeling in analytics and why does it matter?](data-modeling.md#What-is-data-modeling-in-analytics-and-why-does-it-matter)
++ [What is grain and why is it the first question to answer?](data-modeling.md#What-is-grain-and-why-is-it-the-first-question-to-answer)
++ [What is the difference between fact and dimension tables?](data-modeling.md#What-is-the-difference-between-fact-and-dimension-tables)
++ [What is a star schema and what are its benefits?](data-modeling.md#What-is-a-star-schema-and-what-are-its-benefits)
++ [Star schema vs snowflake schema: what are the trade-offs?](data-modeling.md#Star-schema-vs-snowflake-schema:-what-are-the-trade-offs)
++ [What are the main types of fact tables?](data-modeling.md#What-are-the-main-types-of-fact-tables)
++ [What is a surrogate key and when should you use it?](data-modeling.md#What-is-a-surrogate-key-and-when-should-you-use-it)
++ [What is a conformed dimension?](data-modeling.md#What-is-a-conformed-dimension)
++ [What is SCD (Slowly Changing Dimension)?](data-modeling.md#What-is-SCD-(Slowly-Changing-Dimension))
++ [How do you implement SCD Type 2?](data-modeling.md#How-do-you-implement-SCD-Type-2)
++ [What is a factless fact table?](data-modeling.md#What-is-a-factless-fact-table)
++ [What is a bridge table and when do you need it?](data-modeling.md#What-is-a-bridge-table-and-when-do-you-need-it)
++ [What are degenerate dimensions?](data-modeling.md#What-are-degenerate-dimensions)
++ [How do you prevent double counting in analytical models?](data-modeling.md#How-do-you-prevent-double-counting-in-analytical-models)
++ [How do you validate a data model after changes?](data-modeling.md#How-do-you-validate-a-data-model-after-changes)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Data Quality
++ [What does data quality mean in data engineering?](data-quality.md#What-does-data-quality-mean-in-data-engineering)
++ [What are common dimensions of data quality?](data-quality.md#What-are-common-dimensions-of-data-quality)
++ [What is data freshness and how do you measure it?](data-quality.md#What-is-data-freshness-and-how-do-you-measure-it)
++ [What is the difference between data validation and data reconciliation?](data-quality.md#What-is-the-difference-between-data-validation-and-data-reconciliation)
++ [What are row-level checks and aggregate checks?](data-quality.md#What-are-row-level-checks-and-aggregate-checks)
++ [How do you design quality checks for incremental pipelines?](data-quality.md#How-do-you-design-quality-checks-for-incremental-pipelines)
++ [How do you handle late arriving data from a quality perspective?](data-quality.md#How-do-you-handle-late-arriving-data-from-a-quality-perspective)
++ [How do you detect schema drift and breaking changes?](data-quality.md#How-do-you-detect-schema-drift-and-breaking-changes)
++ [What are data contracts?](data-quality.md#What-are-data-contracts)
++ [How do you avoid noisy alerts (false positives) in data quality monitoring?](data-quality.md#How-do-you-avoid-noisy-alerts-(false-positives)-in-data-quality-monitoring)
++ [What is anomaly detection for metrics and when is it useful?](data-quality.md#What-is-anomaly-detection-for-metrics-and-when-is-it-useful)
++ [How do you quarantine bad data without blocking the entire pipeline?](data-quality.md#How-do-you-quarantine-bad-data-without-blocking-the-entire-pipeline)
++ [How do you test data transformations?](data-quality.md#How-do-you-test-data-transformations)
++ [What is the minimum set of checks you would add to every table?](data-quality.md#What-is-the-minimum-set-of-checks-you-would-add-to-every-table)
++ [What are common data quality failure modes?](data-quality.md#What-are-common-data-quality-failure-modes)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Data Observability
++ [What is data observability?](observability.md#What-is-data-observability)
++ [How is data observability different from application observability?](observability.md#How-is-data-observability-different-from-application-observability)
++ [What are the key signals you monitor for data pipelines?](observability.md#What-are-the-key-signals-you-monitor-for-data-pipelines)
++ [How do you define and measure an end-to-end SLA for data?](observability.md#How-do-you-define-and-measure-an-end-to-end-SLA-for-data)
++ [What should you log for each pipeline run?](observability.md#What-should-you-log-for-each-pipeline-run)
++ [How do you detect silent failures?](observability.md#How-do-you-detect-silent-failures)
++ [What is lineage and how does it help during incidents?](observability.md#What-is-lineage-and-how-does-it-help-during-incidents)
++ [How do you monitor and debug a broken metric in BI?](observability.md#How-do-you-monitor-and-debug-a-broken-metric-in-BI)
++ [How do you design alerts to avoid alert fatigue?](observability.md#How-do-you-design-alerts-to-avoid-alert-fatigue)
++ [How do you approach backfills safely?](observability.md#How-do-you-approach-backfills-safely)
++ [What is a runbook and what should it contain?](observability.md#What-is-a-runbook-and-what-should-it-contain)
++ [What are common incident patterns in data platforms?](observability.md#What-are-common-incident-patterns-in-data-platforms)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Data Governance
++ [What is data governance and why does it matter?](data-governance.md#What-is-data-governance-and-why-does-it-matter)
++ [What is the difference between governance and security?](data-governance.md#What-is-the-difference-between-governance-and-security)
++ [What are common roles in data governance (owner/steward/custodian)?](data-governance.md#What-are-common-roles-in-data-governance-(owner/steward/custodian))
++ [What is a data catalog and what should it contain?](data-governance.md#What-is-a-data-catalog-and-what-should-it-contain)
++ [What is business glossary vs technical metadata?](data-governance.md#What-is-business-glossary-vs-technical-metadata)
++ [RBAC vs ABAC: what is the difference?](data-governance.md#RBAC-vs-ABAC:-what-is-the-difference)
++ [What is row-level and column-level security?](data-governance.md#What-is-row-level-and-column-level-security)
++ [How do you handle PII/PHI data in analytics platforms?](data-governance.md#How-do-you-handle-PII/PHI-data-in-analytics-platforms)
++ [What is data masking and tokenization?](data-governance.md#What-is-data-masking-and-tokenization)
++ [How do you implement auditability for data access?](data-governance.md#How-do-you-implement-auditability-for-data-access)
++ [How do you handle GDPR “right to be forgotten” in a lakehouse/warehouse?](data-governance.md#How-do-you-handle-GDPR-“right-to-be-forgotten”-in-a-lakehouse/warehouse)
++ [What are data retention policies and how do you enforce them?](data-governance.md#What-are-data-retention-policies-and-how-do-you-enforce-them)
 
 [Table of Contents](#Interview-questions-for-Data-Engineer)
 

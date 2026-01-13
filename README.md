@@ -229,6 +229,30 @@
     <th><a href="https://debezium.io/documentation/">Debezium docs</a></th>
   </tr>
     <tr>
+    <th colspan="2"><a href="./content/data-modeling.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Data Modeling"></a></th>
+    <th><a href="./content/data-modeling.md">Data Modeling</a></th>
+    <th>Dimensional modeling concepts used to build reliable analytics datasets.</th>
+    <th><a href="https://www.kimballgroup.com/">Kimball Group</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/data-quality.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Data Quality"></a></th>
+    <th><a href="./content/data-quality.md">Data Quality</a></th>
+    <th>Tests, monitoring, and practices to ensure datasets are trusted and correct.</th>
+    <th><a href="https://greatexpectations.io/docs/">Great Expectations docs</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/observability.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Data Observability"></a></th>
+    <th><a href="./content/observability.md">Data Observability</a></th>
+    <th>Monitoring and incident response practices for pipeline and dataset health.</th>
+    <th><a href="https://openlineage.io/">OpenLineage</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/data-governance.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Data Governance"></a></th>
+    <th><a href="./content/data-governance.md">Data Governance</a></th>
+    <th>Ownership, policies, privacy, and access controls for data platforms.</th>
+    <th><a href="https://github.com/datahub-project/datahub">DataHub</a></th>
+  </tr>
+    <tr>
     <th colspan="2"><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/datastruct.ico" alt="Airflow"></a></th>
     <th><a href="./content/data-structure.md">Data Structures</a></th>
     <th>A data structure is a specialized format for organizing, processing, retrieving and storing data. </th>
