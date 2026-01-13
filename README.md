@@ -100,6 +100,13 @@
     <th>Delta Lake is a storage framework that enables building a Lakehouse architecture with compute engines</th>
     <th><a href="https://github.com/MrPowers/delta-examples">Delta examples</a></th>
   </tr>
+  <tr>
+    <th><a href="https://github.com/apache/iceberg"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Iceberg"></a></th>
+    <th><a href="https://iceberg.apache.org/"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Iceberg"></a></th>
+    <th><a href="./content/iceberg.md">Apache Iceberg</a></th>
+    <th>Apache Iceberg is an open table format for huge analytic datasets.</th>
+    <th><a href="https://iceberg.apache.org/docs/latest/">Iceberg docs</a></th>
+  </tr>
  <th colspan="5"><a></a></th>
   <tr>
     <th colspan="5">Big Data Frameworks</th>
@@ -196,6 +203,17 @@
   </tr>
 <th colspan="5"><a></a></th>
   <tr>
+    <th colspan="5">Modern Data Stack</th>
+  </tr>
+  <tr>
+    <th><a href="https://github.com/dbt-labs/dbt-core"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="dbt"></a></th>
+    <th><a href="https://docs.getdbt.com/"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="dbt"></a></th>
+    <th><a href="./content/dbt.md">dbt</a></th>
+    <th>dbt is a transformation framework for building tested and documented SQL models.</th>
+    <th><a href="https://docs.getdbt.com/docs/build/tests">dbt tests</a></th>
+  </tr>
+<th colspan="5"><a></a></th>
+  <tr>
     <th colspan="5"><b>Theory</b></th>
   </tr>
     <tr>
@@ -203,6 +221,12 @@
     <th><a href="./content/dwha.md">DWH Architectures</a></th>
     <th>A data warehouse architecture is a method of defining the overall architecture of data communication processing and presentation that exist for end-clients computing within the enterprise.</th>
     <th><a href="https://github.com/numetriclabz/awesome-db">Awesome databases</a></th>
+  </tr>
+    <tr>
+    <th colspan="2"><a href="./content/cdc.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="CDC"></a></th>
+    <th><a href="./content/cdc.md">Change Data Capture (CDC)</a></th>
+    <th>CDC captures inserts/updates/deletes from source systems for low-latency ingestion.</th>
+    <th><a href="https://debezium.io/documentation/">Debezium docs</a></th>
   </tr>
     <tr>
     <th colspan="2"><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/datastruct.ico" alt="Airflow"></a></th>

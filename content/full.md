@@ -26,6 +26,9 @@
 + [Greenplum](#Greenplum)
 + [Redshift](#Redshift)
 + [Data Structures](#Data-Structures)
++ [dbt](#dbt)
++ [Apache Iceberg](#Apache-Iceberg)
++ [Change Data Capture (CDC)](#Change-Data-Capture-(CDC))
 
 ## Apache Hadoop
 + [What are the main components of a Hadoop Application?](hadoop.md#What-are-the-main-components-of-a-Hadoop-Application)
@@ -232,6 +235,63 @@
 + [Explain the significance of ssh and what is the port on which port does ssh work and why do we need password in ssh local host?](hadoop.md#Explain-the-significance-of-ssh-and-what-is-the-port-on-which-port-does-ssh-work-and-why-do-we-need-password-in-ssh-local-host)
 + [What is ssh and explain in detail about ssh communication between masters and the slaves?](hadoop.md#What-is-ssh-and-explain-in-detail-about-ssh-communication-between-masters-and-the-slaves)
 + [Can You Tell Is What Will Happen To A NameNode and When Job Tracker Is Not Up And Running?](hadoop.md#Can-you-tell-is-what-will-happen-to-a-NameNode-and-when-Job-tracker-is-not-up-and-running)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## dbt
++ [What is dbt?](dbt.md#What-is-dbt)
++ [How is dbt different from Airflow?](dbt.md#How-is-dbt-different-from-Airflow)
++ [What is a dbt model?](dbt.md#What-is-a-dbt-model)
++ [What does ref() do and why is it important?](dbt.md#What-does-ref()-do-and-why-is-it-important)
++ [What are typical layers in a dbt project (staging/intermediate/marts)?](dbt.md#What-are-typical-layers-in-a-dbt-project-(staging/intermediate/marts))
++ [What is a materialization in dbt?](dbt.md#What-is-a-materialization-in-dbt)
++ [When would you use view vs table materializations?](dbt.md#When-would-you-use-view-vs-table-materializations)
++ [What is an incremental model and what problems does it solve?](dbt.md#What-is-an-incremental-model-and-what-problems-does-it-solve)
++ [How do you design a reliable unique_key for incremental models?](dbt.md#How-do-you-design-a-reliable-unique_key-for-incremental-models)
++ [What are dbt tests and what types exist?](dbt.md#What-are-dbt-tests-and-what-types-exist)
++ [What are sources in dbt and how do you test them?](dbt.md#What-are-sources-in-dbt-and-how-do-you-test-them)
++ [What are snapshots in dbt and when would you use them?](dbt.md#What-are-snapshots-in-dbt-and-when-would-you-use-them)
++ [What are macros in dbt and when should you use them?](dbt.md#What-are-macros-in-dbt-and-when-should-you-use-them)
++ [What is dbt state selection (slim CI) and why is it useful?](dbt.md#What-is-dbt-state-selection-(slim-CI)-and-why-is-it-useful)
++ [How do you approach CI/CD for dbt projects?](dbt.md#How-do-you-approach-CI/CD-for-dbt-projects)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Apache Iceberg
++ [What is Apache Iceberg?](iceberg.md#What-is-Apache-Iceberg)
++ [What problems does Iceberg solve compared to plain Parquet datasets?](iceberg.md#What-problems-does-Iceberg-solve-compared-to-plain-Parquet-datasets)
++ [What is a snapshot in Iceberg?](iceberg.md#What-is-a-snapshot-in-Iceberg)
++ [What is time travel and why is it useful?](iceberg.md#What-is-time-travel-and-why-is-it-useful)
++ [How does Iceberg handle concurrent writes?](iceberg.md#How-does-Iceberg-handle-concurrent-writes)
++ [What is hidden partitioning in Iceberg?](iceberg.md#What-is-hidden-partitioning-in-Iceberg)
++ [What is partition evolution and why is it important?](iceberg.md#What-is-partition-evolution-and-why-is-it-important)
++ [How does schema evolution work in Iceberg?](iceberg.md#How-does-schema-evolution-work-in-Iceberg)
++ [What are equality deletes and positional deletes?](iceberg.md#What-are-equality-deletes-and-positional-deletes)
++ [How do upserts/merges work with Iceberg?](iceberg.md#How-do-upserts/merges-work-with-Iceberg)
++ [Why does the small files problem happen and how do you mitigate it?](iceberg.md#Why-does-the-small-files-problem-happen-and-how-do-you-mitigate-it)
++ [What maintenance operations are common for Iceberg tables?](iceberg.md#What-maintenance-operations-are-common-for-Iceberg-tables)
++ [What is an Iceberg catalog and what options exist?](iceberg.md#What-is-an-Iceberg-catalog-and-what-options-exist)
++ [How would you migrate an existing dataset to Iceberg?](iceberg.md#How-would-you-migrate-an-existing-dataset-to-Iceberg)
++ [Iceberg vs Delta vs Hudi: when would you choose Iceberg?](iceberg.md#Iceberg-vs-Delta-vs-Hudi:-when-would-you-choose-Iceberg)
+
+[Table of Contents](#Interview-questions-for-Data-Engineer)
+
+## Change Data Capture (CDC)
++ [What is CDC (Change Data Capture)?](cdc.md#What-is-CDC-(Change-Data-Capture))
++ [When would you choose CDC over batch ingestion?](cdc.md#When-would-you-choose-CDC-over-batch-ingestion)
++ [What are common CDC sources (WAL/binlog/triggers) and trade-offs?](cdc.md#What-are-common-CDC-sources-(WAL/binlog/triggers)-and-trade-offs)
++ [What is the difference between snapshot and incremental CDC?](cdc.md#What-is-the-difference-between-snapshot-and-incremental-CDC)
++ [What delivery semantics exist (at-most-once/at-least-once/exactly-once)?](cdc.md#What-delivery-semantics-exist-(at-most-once/at-least-once/exactly-once))
++ [How do you make CDC ingestion idempotent?](cdc.md#How-do-you-make-CDC-ingestion-idempotent)
++ [How do you handle deletes in CDC pipelines?](cdc.md#How-do-you-handle-deletes-in-CDC-pipelines)
++ [How do you handle updates when the source does not provide full row images?](cdc.md#How-do-you-handle-updates-when-the-source-does-not-provide-full-row-images)
++ [What is ordering and why is it hard in CDC?](cdc.md#What-is-ordering-and-why-is-it-hard-in-CDC)
++ [What is a watermark/offset and where should it be stored?](cdc.md#What-is-a-watermark/offset-and-where-should-it-be-stored)
++ [How do you handle schema evolution with CDC?](cdc.md#How-do-you-handle-schema-evolution-with-CDC)
++ [What is the outbox pattern and why is it useful?](cdc.md#What-is-the-outbox-pattern-and-why-is-it-useful)
++ [How do you monitor CDC lag and where can lag come from?](cdc.md#How-do-you-monitor-CDC-lag-and-where-can-lag-come-from)
++ [How do you design a safe backfill/reprocessing strategy for CDC?](cdc.md#How-do-you-design-a-safe-backfill/reprocessing-strategy-for-CDC)
++ [What are the most common failure modes in CDC pipelines?](cdc.md#What-are-the-most-common-failure-modes-in-CDC-pipelines)
 
 [Table of Contents](#Interview-questions-for-Data-Engineer)
 
