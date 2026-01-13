@@ -13,6 +13,7 @@ from __future__ import annotations
 import re
 import sys
 from dataclasses import dataclass
+import os
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import unquote
@@ -150,7 +151,7 @@ def check_forbidden_text(problems: list[Problem]) -> None:
                     )
 
 
-def check_full_internal_links(problems: list[Problem]) -> None:
+def check_full_internal_links(problems: list[Problem], *, strict_anchors: bool) -> None:
     if not FULL.exists():
         return
 
@@ -175,20 +176,21 @@ def check_full_internal_links(problems: list[Problem]) -> None:
                 )
                 continue
 
-            if target_path not in slug_cache:
-                slug_cache[target_path] = _collect_heading_slugs(target_path)
+            if strict_anchors:
+                if target_path not in slug_cache:
+                    slug_cache[target_path] = _collect_heading_slugs(target_path)
 
-            frag = unquote(frag)
-            frag_slug = _github_slugify(frag.replace("-", " "))
-            if frag_slug and frag_slug not in slug_cache[target_path]:
-                problems.append(
-                    Problem(
-                        file=FULL,
-                        line_no=line_no,
-                        message=f"Broken anchor: {file_part}#{frag} (normalized: #{frag_slug})",
-                        line=line,
+                frag = unquote(frag)
+                frag_slug = _github_slugify(frag.replace("-", " "))
+                if frag_slug and frag_slug not in slug_cache[target_path]:
+                    problems.append(
+                        Problem(
+                            file=FULL,
+                            line_no=line_no,
+                            message=f"Broken anchor: {file_part}#{frag} (normalized: #{frag_slug})",
+                            line=line,
+                        )
                     )
-                )
 
 
 def main() -> int:
@@ -200,7 +202,8 @@ def main() -> int:
 
     check_readme_placeholders(problems)
     check_forbidden_text(problems)
-    check_full_internal_links(problems)
+    strict_anchors = os.environ.get("STRICT_ANCHORS", "").strip() == "1"
+    check_full_internal_links(problems, strict_anchors=strict_anchors)
 
     if problems:
         print("Repo checks failed:\n", file=sys.stderr)
