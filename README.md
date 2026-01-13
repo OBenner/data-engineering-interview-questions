@@ -1,9 +1,9 @@
 <h1 align="center">More than 2000+ questions for preparing a Data Engineer interview.</h1>
 <h2 align="center"><a href="./content/full.md">Full list of questions</a></h2>
+<p align="center">Pick a topic below or use the full list to practice end-to-end.</p>
 <h1 align="center">Interview questions for Data Engineer</h1>
 <div>
 <table>
-  <tr>
   <tr>
     <th colspan="5">Databases and Data Warehouses</th>
   </tr>
@@ -91,7 +91,7 @@
     <th><a href="https://parquet.apache.org/"><img style="vertical-align:middle" src="img/icon/parquet.ico" alt="Parquet"></a></th>
     <th><a href="./content/parquet.md">Apache Parquet</a></th>
     <th>Apache Parquet is a column-oriented data file format designed for efficient data storage and retrieval.</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://github.com/apache/parquet-format">Parquet format</a> · <a href="https://parquet.apache.org/docs/">Docs</a></th>
   </tr>
   <tr>
     <th><a href="https://github.com/delta-io"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Delta"></a></th>
@@ -117,7 +117,7 @@
     <th><a href="https://flume.apache.org/"><img style="vertical-align:middle" src="img/icon/flume.ico" alt="Flume"></a></th>
     <th><a href="./content/flume.md">Apache Flume</a></th>
     <th>Apache Flume is a distributed, reliable, and available software for efficiently collecting, aggregating, and moving large amounts of log data.</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://flume.apache.org/FlumeUserGuide.html">Flume User Guide</a></th>
   </tr>
   <tr>
     <th><a href="https://github.com/apache/hadoop"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Hadoop"></a></th>
@@ -132,7 +132,7 @@
     <th><a href="https://impala.apache.org/"><img style="vertical-align:middle" src="img/icon/impala.ico" alt="Impala"></a></th>
     <th><a href="./content/impala.md">Apache Impala</a></th>
     <th>Apache Impala is a parallel processing SQL query engine for data stored in a computer cluster running Apache Hadoop.</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://impala.apache.org/docs/build/html/">Impala docs</a></th>
   </tr>
   <tr>
     <th><a href="https://github.com/apache/kafka"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Kafka"></a></th>
@@ -208,7 +208,7 @@
     <th colspan="2"><a href="./content/data-structure.md"><img style="vertical-align:middle" src="img/icon/datastruct.ico" alt="Airflow"></a></th>
     <th><a href="./content/data-structure.md">Data Structures</a></th>
     <th>A data structure is a specialized format for organizing, processing, retrieving and storing data. </th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://github.com/tayllan/awesome-algorithms">Awesome Algorithms</a></th>
   </tr>
     <tr>
     <th colspan="2"><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/sql.ico" alt="SQL"></a></th>
@@ -224,19 +224,19 @@
     <th colspan="2"><a href="./content/tableau.md"><img style="vertical-align:middle" src="img/icon/tableau.ico" alt="Tableau"></a></th>
     <th><a href="./content/tableau.md">Tableau</a></th>
     <th>Tableau is a powerful data visualization tool used in the Business Intelligence.</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://help.tableau.com/current/pro/desktop/en-us/default.htm">Tableau Desktop docs</a></th>
   </tr>
     <th colspan="2"><a href="./content/looker.md"><img style="vertical-align:middle" src="img/icon/looker.ico" alt="Looker"></a></th>
     <th><a href="./content/looker.md">Looker</a></th>
     <th>Looker is an enterprise platform for BI, data applications, and embedded analytics that helps you explore and share insights in real time.</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://cloud.google.com/looker/docs">Looker docs</a></th>
   </tr>
  <tr>
     <th><a href="https://github.com/apache/superset"><img  style="vertical-align:middle"  src="img/icon/github.ico" alt="Kafka"></a></th>
     <th colspan="2"><a href="https://superset.apache.org/"><img style="vertical-align:middle" src="img/icon/superset.ico" alt="Apache Superset"></a></th>
     <th><a href="./content/superset.md">Apache Superset</a></th>
     <th>Superset is a modern data exploration and data visualization platform</th>
-    <th><a href="TODO">TODO</a></th>
+    <th><a href="https://superset.apache.org/docs/intro">Superset docs</a></th>
   </tr>
 
 
@@ -245,4 +245,5 @@
 <div>
 <h2 align="center"> Contribution </h2>
 <h3>Please contribute to this repository to help it make better. Any change like new question, code improvement, doc improvement etc is very welcome.</h3>
+<p align="center">See <a href="./CONTRIBUTING.md">CONTRIBUTING.md</a> for quick checks and guidelines.</p>
 </div>

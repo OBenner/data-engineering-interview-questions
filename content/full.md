@@ -1746,7 +1746,7 @@
 + [Write query to find employees with duplicate email.](sql.md#Write-query-to-find-employees-with-duplicate-email)
 + [Write a query to find all employee whose name contains the word "rich", regardless of case.](sql.md#Write-a-query-to-find-all-employee-whose-name-contains-the-word-"rich",-regardless-of-case)
 + [Is it safe to use rowid to locate a record in oracle sql queries?](sql.md#Is-it-safe-to-use-rowid-to-locate-a-record-in-oracle-sql-queries)
-+ [What is a pseudoпїЅolumn?](sql.md#What-is-a-pseudoпїЅolumn)
++ [What is a pseudo-column?](sql.md#What-is-a-pseudo-column)
 + [What are the reasons for denormalizing the data?](sql.md#What-are-the-reasons-for-denormalizing-the-data)
 + [What is the feature in sql for writing if and else statements?](sql.md#What-is-the-feature-in-sql-for-writing-if-and-else-statements)
 + [What is the difference between delete and truncate in sql?](sql.md#What-is-the-difference-between-delete-and-truncate-in-sql)

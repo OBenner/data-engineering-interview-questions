@@ -17,7 +17,7 @@
 + [Write query to find employees with duplicate email.](#Write-query-to-find-employees-with-duplicate-email)
 + [Write a query to find all employee whose name contains the word "rich", regardless of case.](#Write-a-query-to-find-all-employee-whose-name-contains-the-word-"rich",-regardless-of-case)
 + [Is it safe to use rowid to locate a record in oracle sql queries?](#Is-it-safe-to-use-rowid-to-locate-a-record-in-oracle-sql-queries)
-+ [What is a pseudoпїЅolumn?](#What-is-a-pseudoпїЅolumn)
++ [What is a pseudo-column?](#What-is-a-pseudo-column)
 + [What are the reasons for denormalizing the data?](#What-are-the-reasons-for-denormalizing-the-data)
 + [What is the feature in sql for writing if and else statements?](#What-is-the-feature-in-sql-for-writing-if-and-else-statements)
 + [What is the difference between delete and truncate in sql?](#What-is-the-difference-between-delete-and-truncate-in-sql)
@@ -626,7 +626,7 @@ ROWID is the physical location of a row. We can do very fast lookup based on ROW
 
 [Table of Contents](#SQL)
 
-## What is a pseudo�olumn?
+## What is a pseudo-column?
 A Pseudocolumn is like a table column, but it is not stored in the same table. We can select from a Pseudocolumn, but we can not insert, update or delete on a Pseudocolumn. A Pseudocolumn is like a function with no arguments. Two most popular Pseudocolumns in Oracle are ROWID and ROWNUM. NEXTVAL and CURRVAL are also pseudo columns.
 
 [Table of Contents](#SQL)
