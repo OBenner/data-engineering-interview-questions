@@ -269,7 +269,8 @@
     <th colspan="2"><a href="./content/python.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="Python"></a></th>
     <th><a href="./content/python.md">Python for Data Engineering</a></th>
     <th>Python fundamentals for reliable, scalable data pipelines and tooling.</th>
-    <th><a href="https://arrow.apache.org/docs/python/">PyArrow docs</a></th>
+    <th><a href="https://arrow.apache.org/docs/python/">PyArrow docs</a>
+        <a href="https://datadriven.io/python-practice-problems">DataDriven Python practice</a></th>
   </tr>
     <tr>
     <th colspan="2"><a href="./content/system-design.md"><img style="vertical-align:middle" src="img/icon/fire.ico" alt="System Design"></a></th>
@@ -287,7 +288,8 @@
     <th colspan="2"><a href="./content/sql.md"><img style="vertical-align:middle" src="img/icon/sql.ico" alt="SQL"></a></th>
     <th><a href="./content/sql.md">SQL</a></th>
     <th>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).</th>
-    <th><a href="https://github.com/danhuss/awesome-sql">Awesome SQL</a></th>
+    <th><a href="https://github.com/danhuss/awesome-sql">Awesome SQL</a>
+        <a href="https://datadriven.io/sql-practice-problems">DataDriven SQL practice</a></th>
   </tr>
 <th colspan="5"><a></a></th>
   <tr>
